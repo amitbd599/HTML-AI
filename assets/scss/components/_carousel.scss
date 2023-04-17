@@ -10,7 +10,7 @@
     width: 65px;
     line-height: 65px;
     font-size: 20px;
-    color: var(--tp-common-white);
+    color: var(--common-white);
     border-radius: 6px;
     border: none;
     outline: none;
@@ -25,8 +25,8 @@
         display: none;
     }
     &:hover{
-        background: var(--tp-theme-1);
-        color: var(--tp-common-white);
+        background: var(--theme-1);
+        color: var(--common-white);
     }
 }
 .ms-button{
@@ -64,12 +64,12 @@
 // slider button-2
 .ms-button-2{
     font-size: 20px;
-    background-color: var(--tp-common-white);
+    background-color: var(--common-white);
     height: 60px;
     width: 60px;
     line-height: 60px;
     font-size: 20px;
-    color: var(--tp-heading-primary);
+    color: var(--heading-primary);
     border-radius: 50%;
     border: none;
     outline: none;
@@ -85,8 +85,8 @@
         display: none;
     }
     &:hover{
-        background: var(--tp-theme-1);
-        color: var(--tp-common-white);
+        background: var(--theme-1);
+        color: var(--common-white);
     }
     @media #{$lg,$md} {
         top: 82%;
@@ -102,7 +102,7 @@
 .ms-button-3{
     font-size: 14px;
     position: relative;
-    font-weight: var(--tp-fw-sbold);
+    font-weight: var(--fw-sbold);
     color: #c6c9cd;
     & i{
         margin: 0 5px;
@@ -111,7 +111,7 @@
         display: none;
     }
     &:hover{
-        color: var(--tp-theme-1);
+        color: var(--theme-1);
     }
     @media #{$xs} {
         display: none;
@@ -136,15 +136,15 @@
         height: 50px;
         width: 50px;
         line-height: 50px;
-        background: var(--tp-common-white);
-        color: var(--tp-heading-primary);
+        background: var(--common-white);
+        color: var(--heading-primary);
         text-align: center;
         font-size: 20px;
         border-radius: 6px;
         transition: .3s;
         &:hover{
-            background: var(--tp-theme-1);
-            color: var(--tp-common-white);
+            background: var(--theme-1);
+            color: var(--common-white);
         }
     }
 }
@@ -167,7 +167,7 @@
     justify-content: space-between;
 }
 
-//realted slider arrow  
+//realted slider arrow
 .related__services-arrow{
     position: absolute;
     right: 16%;
@@ -175,7 +175,7 @@
     width: 115px;
     display: flex;
     justify-content: space-between;
-    
+
     @media #{$sm} {
         top: 10%;
     }
@@ -201,7 +201,7 @@
         position: relative;
     }
     & .swiper-pagination-bullet-active {
-        background: var(--tp-theme-1);
+        background: var(--theme-1);
         height: 30px;
     }
 }

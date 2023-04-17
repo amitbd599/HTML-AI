@@ -9,7 +9,7 @@
 .page{
     &__title{
         font-size: 70px;
-        color: var(--tp-common-white);
+        color: var(--common-white);
         line-height: 62px;
         margin-bottom: 0;
 
@@ -46,11 +46,11 @@
                             font-weight: 600;
                             font-size: 16px;
                             &:hover{
-                                color: var(--tp-theme-1);
+                                color: var(--theme-1);
                             }
                         }
                         & span{
-                            color: var(--tp-common-white);
+                            color: var(--common-white);
                             text-transform: capitalize;
                             font-weight: 600;
                             font-size: 16px;

@@ -1,31 +1,23 @@
-@use '../utils' as *;
+@use "../utils" as *;
 
 /*--
     - Background color
 -----------------------------------------*/
-.grey-bg {
-	background: var(--tp-grey-1);
+.dark-bg-1 {
+  background: var(--body-1);
 }
-.grey-bg-5 {
-	background: var(--tp-grey-5);
+.dark-bg-2 {
+  background: var(--body-2);
 }
-.grey-bg-8 {
-	background: var(--tp-grey-8);
-}
-.theme-bg{
-	background: var(--tp-theme-1);
+.gd-bg {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    4deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 21, 30, 1) 100%
+  );
 }
 
 .white-bg {
-	background: var(--tp-common-white);
-}
-
-.black-bg {
-	background: var(--tp-common-black);
-}
-.black-bg-2 {
-	background: var(--tp-common-black-2);
-}
-.black-bg-3 {
-	background: var(--tp-heading-primary);
+  background: var(--common-white);
 }
