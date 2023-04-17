@@ -12,8 +12,9 @@
       .swiper-wrapper {
         position: relative;
         .item-slider {
-          height: 608px;
+          height: auto;
           position: relative;
+          padding: 80px 0;
           .slide-bg {
             position: absolute;
             left: 0;
@@ -28,11 +29,25 @@
             -webkit-transition: all 10s cubic-bezier(0, 0, 0.2, 1);
             transition: all 10s cubic-bezier(0, 0, 0.2, 1);
             mix-blend-mode: multiply;
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              background: rgb(0 0 0 / 48%);
+              z-index: 9;
+            }
           }
+
           .slider-content-inner {
             position: relative;
             z-index: 9;
-            padding: 100px 0;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
             .slider-title {
               font-size: var(--fz-h2);
               text-transform: capitalize;
@@ -48,16 +63,68 @@
           .slider-content-inner-right {
             display: flex;
             justify-content: flex-end;
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            height: 435px;
             .img-wrapper {
               position: relative;
               z-index: 9;
-              width: 400px;
               height: 100%;
               overflow: hidden;
               img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+              }
+            }
+          }
+          &.swiper-slide-active {
+            .slide-bg {
+              transform: scale(1.2);
+            }
+            .slider-content-inner {
+              .slider-title {
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                -webkit-animation-name: heroSliderAnimation;
+                animation-name: heroSliderAnimation;
+                -webkit-animation-delay: 0.5s;
+                animation-delay: 0.5s;
+                -webkit-animation-duration: 0.5s;
+                animation-duration: 0.5s;
+              }
+              .description {
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                -webkit-animation-name: heroSliderAnimation;
+                animation-name: heroSliderAnimation;
+                -webkit-animation-delay: 0.8s;
+                animation-delay: 0.8s;
+                -webkit-animation-duration: 0.5s;
+                animation-duration: 0.5s;
+              }
+              .inner-btn {
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                -webkit-animation-name: heroSliderAnimation;
+                animation-name: heroSliderAnimation;
+                -webkit-animation-delay: 1s;
+                animation-delay: 1s;
+                -webkit-animation-duration: 0.5s;
+                animation-duration: 0.5s;
+              }
+            }
+            .slider-content-inner-right {
+              .img-wrapper {
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+                -webkit-animation-name: heroSliderAnimation;
+                animation-name: heroSliderAnimation;
+                -webkit-animation-delay: 0.8s;
+                animation-delay: 0.8s;
+                -webkit-animation-duration: 0.6s;
+                animation-duration: 0.6s;
               }
             }
           }
@@ -68,6 +135,9 @@
           z-index: 9;
           top: 100px;
           left: 10px;
+          -webkit-animation: slide-top 10s linear 0.3s infinite
+            alternate-reverse both;
+          animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
           img {
             width: 60px;
           }
@@ -76,6 +146,9 @@
           z-index: 9;
           top: 40px;
           left: 550px;
+          -webkit-animation: rotate-in-center 12s linear 0s infinite reverse
+            backwards;
+          animation: rotate-in-center 12s linear 0s infinite reverse backwards;
           img {
             width: 40px;
           }
@@ -84,14 +157,21 @@
           z-index: 9;
           top: 70px;
           left: 710px;
+          -webkit-animation: scale-down-center 5s linear infinite
+            alternate-reverse both;
+          animation: scale-down-center 5s linear infinite alternate-reverse both;
+
           img {
-            width: 24px;
+            width: 50px;
           }
         }
         .inner-shape-4 {
           z-index: 9;
           bottom: 74px;
           left: 104px;
+          -webkit-animation: rotate-in-center 16s linear 0.4s infinite reverse
+            backwards;
+          animation: rotate-in-center 16s linear 0.4s infinite reverse backwards;
           img {
             width: 20px;
           }
@@ -99,15 +179,18 @@
         .inner-shape-5 {
           z-index: 9;
           bottom: 74px;
-          left: 104px;
+          left: 54%;
+          -webkit-animation: rotate-in-center 12s linear 0s infinite reverse
+            backwards;
+          animation: rotate-in-center 12s linear 0s infinite reverse backwards;
           img {
-            width: 20px;
+            width: 40px;
           }
         }
         .inner-shape-6 {
           z-index: 9;
-          bottom: 151px;
-          left: 44%;
+          bottom: 100px;
+          left: 36%;
           img {
             width: 50px;
           }
@@ -116,6 +199,9 @@
           z-index: 9;
           right: 9%;
           top: 10%;
+          -webkit-animation: slide-right 10s linear 0.3s infinite
+            alternate-reverse both;
+          animation: slide-right 10s linear 0.3s infinite alternate-reverse both;
           img {
             width: 15px;
           }
@@ -124,6 +210,9 @@
           z-index: 9;
           right: 3%;
           bottom: 18%;
+          -webkit-animation: slide-top 12s linear 0.6s infinite
+            alternate-reverse both;
+          animation: slide-top 12s linear 0.6s infinite alternate-reverse both;
           img {
             width: 45px;
           }
@@ -132,6 +221,9 @@
           z-index: 9;
           right: 10%;
           bottom: 15%;
+          -webkit-animation: slide-right 15s linear 1s infinite
+            alternate-reverse both;
+          animation: slide-right 15s linear 1s infinite alternate-reverse both;
           img {
             width: 15px;
           }

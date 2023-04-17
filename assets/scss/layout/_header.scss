@@ -43,6 +43,9 @@
               display: inline-block;
               -webkit-transition: 0.3s;
               transition: 0.3s;
+              &:hover {
+                color: var(--theme-1);
+              }
             }
             &.has-dropdown {
               a {

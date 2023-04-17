@@ -154,6 +154,11 @@ h5,
 h6 {
   @include transition(0.3s);
 }
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 a:focus,
 .button:focus {

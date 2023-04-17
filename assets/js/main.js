@@ -15,21 +15,21 @@
   // ************************ //
   // 01. Hero Slider One
 
-  //   var heroSliderOne = new Swiper(".hero-slider-init-one", {
-  //     spaceBetween: 0,
-  //     effect: "fade",
-  //     loop: true,
-  //     autoplay: {
-  //       delay: 6000,
-  //     },
-  //     navigation: {
-  //       nextEl: ".swiper-button-next",
-  //       prevEl: ".swiper-button-prev",
-  //     },
-  //     thumbs: {
-  //       swiper: swiper,
-  //     },
-  //   });
+  var heroSliderOne = new Swiper(".hero-slider-init-one", {
+    spaceBetween: 0,
+    effect: "fade",
+    loop: true,
+    autoplay: {
+      delay: 6000,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
 
   // ************************ //
 
