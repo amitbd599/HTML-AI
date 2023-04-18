@@ -42,3 +42,26 @@
     }
   }
 }
+
+// Pagination buttons
+
+.pagination-button-design-one {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    background: #fff;
+    opacity: 1;
+    display: inline-block;
+    transition: all 0.1s linear;
+
+    &.swiper-pagination-bullet-active {
+      border-radius: 2px;
+      width: 16px;
+      background: var(--theme-1);
+    }
+  }
+}

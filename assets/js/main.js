@@ -26,10 +26,53 @@
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    thumbs: {
-      swiper: swiper,
-    },
   });
+
+  //  Team Slider One
+  if (jQuery(".team-one").length > 0) {
+    var TeamVersionOne = new Swiper(".team-one", {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      slidesPerGroup: 2,
+      loop: true,
+      speed: 1000,
+      autoplay: {
+        delay: 6000,
+      },
+      pagination: {
+        el: ".team-version-one-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          pagination: false,
+          spaceBetween: 20,
+          slidesPerGroup: 1,
+        },
+        500: {
+          slidesPerView: 1,
+          pagination: false,
+          spaceBetween: 20,
+          slidesPerGroup: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+        1400: {
+          slidesPerView: 4,
+        },
+      },
+    });
+  }
 
   // ************************ //
 
