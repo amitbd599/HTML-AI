@@ -107,6 +107,9 @@
       .shape-img-3 {
         top: 13%;
         right: 14%;
+        -webkit-animation: scale-down-center 15s linear infinite
+          alternate-reverse both;
+        animation: scale-down-center 15s linear infinite alternate-reverse both;
         img {
           width: 120px;
         }

@@ -10,11 +10,13 @@
     line-height: 1.2;
     color: var(--theme-1);
     text-transform: uppercase;
+    font-family: var(--ff-body);
   }
   h2 {
     margin-top: 15px;
     font-size: 26px;
     line-height: 1.2;
+    text-transform: capitalize;
   }
   p {
     margin-top: 15px;
