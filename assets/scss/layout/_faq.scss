@@ -1,140 +1,133 @@
-@use '../utils' as *;
+@use "../utils" as *;
 
 /*----------------------------------------*/
 /*  04. Faq CSS START
 /*----------------------------------------*/
-.faq{
-    &__area{
-        .faq__content{
-            margin-right: 60px;
-            @media #{$lg} {
-                margin-right: 10px;
-            }
-            @media #{$md,$sm,$xs} {
-                margin-right: 0;
-            }
-            .accordion-button {
-                border: 0;
-                font-size: 18px;
-                line-height: 1.4;
-                color: var(--tp-heading-primary);
-                padding-left: 0;
-                font-weight: var(--tp-fw-sbold);
-                position: relative;
-                padding: 25px 0;
-                & span{
-                    color: #c0c1c1;
-                    margin-right: 5px;
-                    display: inline-block;
-                }
-                &:hover{
-                    color: var(--tp-theme-1);
-                }
-            }
-            .accordion-collapse{
-                border: 0;
-            }
-            .accordion-button:not(.collapsed) {
-                background: transparent;
-                color: inherit;
-                & span{
-                    color: var(--tp-theme-1);
-                }
-            }
-            .accordion-body {
-                padding-left: 0;
-                padding-top: 0;
-                & p {
-                    font-size: 16px;
-                    line-height: 25px;
-                    margin-bottom: 0;
-                }
-            }
-            .accordion-item {
-                border-left: 0;
-                border-right: 0;
-            }
-            .accordion-button:focus {
-                box-shadow: none;
-            }
-            .accordion-button::after{
-                content: "\f067";
-                background-image: none;
-                font-family: "Font Awesome 6 Pro";
-                position: absolute;
-                left: 0;
-                right: 10px;
-                color: #c0c1c1;
-                top: 20%;
-                @media #{$xs} {
-                    right: 5px;
-                }  
-            }
-            .accordion-button:not(.collapsed)::after{
-                background-image: none;
-                content: '\f068';
-                transform: rotate(0deg);
-                color: var(--tp-theme-1);
-            }
+
+.faq-section {
+  &.one {
+    background: linear-gradient(180deg, #243949 0%, #00151e 100%);
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+    .faq-inner {
+      margin-top: 110px;
+      .icon-shape {
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
-    }
-    &__left{
-        &-info{
-            margin-left: 60px;
-            @media #{$md,$sm,$xs} {
-                margin-left: 0;
-                margin-top: 55px;
-            }
+      }
+      .intro {
+        margin-top: 15px;
+        h3 {
+          font-size: 18px;
+          line-height: 1.2;
+          font-weight: var(--fw-600);
         }
-    }
-    &__accordion-2{
-        & .sm-accordion-item{
-            border-radius: 6px;
-            border-bottom: 0;
-            & .sm-accordion-button{
-                box-shadow: none;
-                outline: none;
-                font-size: 18px;
-                font-weight: var(--tp-fw-medium);
-                padding: 20px 30px;
-                border-radius: 6px;
-                transition: .3s;
-                &:hover{
-                    color: var(--tp-theme-1);
+      }
+      .faq-list {
+        margin-top: 15px;
+        .accordion {
+          .accordion-item {
+            margin-bottom: 16px;
+            border-radius: 5px;
+            overflow: hidden;
+            .accordion-header {
+              .accordion-button {
+                padding: 0px 16px;
+                font-size: 15px !important;
+                font-weight: 600;
+                background: var(--theme-1);
+                color: var(--common-white);
+                &.collapsed {
+                  background: var(--common-white);
+                  color: var(--text-h);
                 }
-                &:focus{
-                    box-shadow: none;
-                    outline: none;
+                &:focus {
+                  z-index: 3;
+                  border-color: transparent;
+                  outline: 0;
+                  box-shadow: none !important;
                 }
-                &:not(.collapsed) {
-                    color: var(--tp-common-white);
-                    background-color: var(--tp-theme-1);
-                    box-shadow: none;
-                    border-bottom-left-radius: 0px;
-                    border-bottom-right-radius: 0px;
-                  }
-            }
-            & .accordion-body{
-                background: var(--tp-theme-1);
-                border-bottom-left-radius: 6px;
-                border-bottom-right-radius: 6px;
-                padding: 30px 30px;
-                padding-top: 0;
-                & p{
-                    color: var(--tp-common-white);
-                    font-size: 16px;
-                    margin-bottom: 0;
-                    line-height: 26px;
+                &::after {
+                  flex-shrink: 0;
+                  width: 1.25rem;
+                  height: 1.25rem;
+                  margin-left: auto;
+                  font-family: "Font Awesome 5 Pro";
+                  font-weight: 900;
+                  content: "\2b";
+                  background-image: none;
+                  transform: none;
+                  position: absolute;
+                  right: 14px;
+                  top: 0;
                 }
+                &:not(.collapsed)::after {
+                  font-family: "Font Awesome 5 Pro";
+                  font-weight: 900;
+                  content: "\f068";
+                  background-image: none;
+                  transform: none;
+                  position: absolute;
+                  right: 14px;
+                  top: 0;
+                }
+              }
             }
-            & .accordion-button::after{
-                content: "\f178";
-                background-image: none;
-                font-family: "Font Awesome 6 Pro";
+            .accordion-collapse {
+              background: var(--common-white);
+              color: var(--text-p-1);
+              font-weight: 600;
             }
+          }
         }
+      }
     }
-    &__image{
-        position: relative;
+    .shape-image {
+      .shape-img-1 {
+        left: -12px;
+        top: 8%;
+        img {
+          width: 60px;
+        }
+      }
+      .shape-img-2 {
+        top: -21px;
+        right: -7px;
+        img {
+          width: 160px;
+        }
+      }
+      .shape-img-3 {
+        top: 13%;
+        right: 14%;
+        img {
+          width: 120px;
+        }
+      }
+      .shape-img-4 {
+        bottom: 21%;
+        right: 20px;
+        -webkit-animation: slide-top 10s linear 0.3s infinite alternate-reverse
+          both;
+        animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+        img {
+          width: 40px;
+        }
+      }
+      .shape-img-5 {
+        bottom: 7px;
+        left: -28px;
+        img {
+          width: 300px;
+        }
+      }
     }
+  }
 }

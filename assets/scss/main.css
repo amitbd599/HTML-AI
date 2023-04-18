@@ -714,7 +714,7 @@ input[type=color] {
 /*  05. Section Tilte CSS START
 /*----------------------------------------*/
 .section-title-shape-one h3 {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.2;
   color: var(--theme-1);
   text-transform: uppercase;
@@ -730,6 +730,12 @@ input[type=color] {
 .section-title-shape-one.middle {
   text-align: center;
   padding: 0 150px;
+}
+.section-title-shape-one.middle h3 {
+  color: var(--common-white);
+}
+.section-title-shape-one.left h3 {
+  color: var(--common-white);
 }
 
 /* ===========Hero Slider ========== */
@@ -4320,140 +4326,123 @@ input[type=color] {
 /*----------------------------------------*/
 /*  04. Faq CSS START
 /*----------------------------------------*/
-.faq__area .faq__content {
-  margin-right: 60px;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .faq__area .faq__content {
-    margin-right: 10px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
-  .faq__area .faq__content {
-    margin-right: 0;
-  }
-}
-.faq__area .faq__content .accordion-button {
-  border: 0;
-  font-size: 18px;
-  line-height: 1.4;
-  color: var(--tp-heading-primary);
-  padding-left: 0;
-  font-weight: var(--tp-fw-sbold);
+.faq-section.one {
+  background: linear-gradient(180deg, #243949 0%, #00151e 100%);
+  padding: 120px 0;
   position: relative;
-  padding: 25px 0;
+  overflow: hidden;
 }
-.faq__area .faq__content .accordion-button span {
-  color: #c0c1c1;
-  margin-right: 5px;
-  display: inline-block;
+.faq-section.one .faq-inner {
+  margin-top: 110px;
 }
-.faq__area .faq__content .accordion-button:hover {
-  color: var(--tp-theme-1);
+.faq-section.one .faq-inner .icon-shape {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
 }
-.faq__area .faq__content .accordion-collapse {
-  border: 0;
+.faq-section.one .faq-inner .icon-shape img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.faq__area .faq__content .accordion-button:not(.collapsed) {
-  background: transparent;
-  color: inherit;
+.faq-section.one .faq-inner .intro {
+  margin-top: 15px;
 }
-.faq__area .faq__content .accordion-button:not(.collapsed) span {
-  color: var(--tp-theme-1);
+.faq-section.one .faq-inner .intro h3 {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: var(--fw-600);
 }
-.faq__area .faq__content .accordion-body {
-  padding-left: 0;
-  padding-top: 0;
+.faq-section.one .faq-inner .faq-list {
+  margin-top: 15px;
 }
-.faq__area .faq__content .accordion-body p {
-  font-size: 16px;
-  line-height: 25px;
-  margin-bottom: 0;
+.faq-section.one .faq-inner .faq-list .accordion .accordion-item {
+  margin-bottom: 16px;
+  border-radius: 5px;
+  overflow: hidden;
 }
-.faq__area .faq__content .accordion-item {
-  border-left: 0;
-  border-right: 0;
+.faq-section.one .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button {
+  padding: 0px 16px;
+  font-size: 15px !important;
+  font-weight: 600;
+  background: var(--theme-1);
+  color: var(--common-white);
 }
-.faq__area .faq__content .accordion-button:focus {
-  box-shadow: none;
+.faq-section.one .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+  background: var(--common-white);
+  color: var(--text-h);
 }
-.faq__area .faq__content .accordion-button::after {
-  content: "\f067";
+.faq-section.one .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button:focus {
+  z-index: 3;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none !important;
+}
+.faq-section.one .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "+";
   background-image: none;
-  font-family: "Font Awesome 6 Pro";
+  transform: none;
   position: absolute;
-  left: 0;
-  right: 10px;
-  color: #c0c1c1;
-  top: 20%;
+  right: 14px;
+  top: 0;
 }
-@media (max-width: 575px) {
-  .faq__area .faq__content .accordion-button::after {
-    right: 5px;
-  }
-}
-.faq__area .faq__content .accordion-button:not(.collapsed)::after {
-  background-image: none;
+.faq-section.one .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
   content: "\f068";
-  transform: rotate(0deg);
-  color: var(--tp-theme-1);
-}
-.faq__left-info {
-  margin-left: 60px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
-  .faq__left-info {
-    margin-left: 0;
-    margin-top: 55px;
-  }
-}
-.faq__accordion-2 .sm-accordion-item {
-  border-radius: 6px;
-  border-bottom: 0;
-}
-.faq__accordion-2 .sm-accordion-item .sm-accordion-button {
-  box-shadow: none;
-  outline: none;
-  font-size: 18px;
-  font-weight: var(--tp-fw-medium);
-  padding: 20px 30px;
-  border-radius: 6px;
-  transition: 0.3s;
-}
-.faq__accordion-2 .sm-accordion-item .sm-accordion-button:hover {
-  color: var(--tp-theme-1);
-}
-.faq__accordion-2 .sm-accordion-item .sm-accordion-button:focus {
-  box-shadow: none;
-  outline: none;
-}
-.faq__accordion-2 .sm-accordion-item .sm-accordion-button:not(.collapsed) {
-  color: var(--tp-common-white);
-  background-color: var(--tp-theme-1);
-  box-shadow: none;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-.faq__accordion-2 .sm-accordion-item .accordion-body {
-  background: var(--tp-theme-1);
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  padding: 30px 30px;
-  padding-top: 0;
-}
-.faq__accordion-2 .sm-accordion-item .accordion-body p {
-  color: var(--tp-common-white);
-  font-size: 16px;
-  margin-bottom: 0;
-  line-height: 26px;
-}
-.faq__accordion-2 .sm-accordion-item .accordion-button::after {
-  content: "\f178";
   background-image: none;
-  font-family: "Font Awesome 6 Pro";
+  transform: none;
+  position: absolute;
+  right: 14px;
+  top: 0;
 }
-.faq__image {
-  position: relative;
+.faq-section.one .faq-inner .faq-list .accordion .accordion-item .accordion-collapse {
+  background: var(--common-white);
+  color: var(--text-p-1);
+  font-weight: 600;
+}
+.faq-section.one .shape-image .shape-img-1 {
+  left: -12px;
+  top: 8%;
+}
+.faq-section.one .shape-image .shape-img-1 img {
+  width: 60px;
+}
+.faq-section.one .shape-image .shape-img-2 {
+  top: -21px;
+  right: -7px;
+}
+.faq-section.one .shape-image .shape-img-2 img {
+  width: 160px;
+}
+.faq-section.one .shape-image .shape-img-3 {
+  top: 13%;
+  right: 14%;
+}
+.faq-section.one .shape-image .shape-img-3 img {
+  width: 120px;
+}
+.faq-section.one .shape-image .shape-img-4 {
+  bottom: 21%;
+  right: 20px;
+  animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+}
+.faq-section.one .shape-image .shape-img-4 img {
+  width: 40px;
+}
+.faq-section.one .shape-image .shape-img-5 {
+  bottom: 7px;
+  left: -28px;
+}
+.faq-section.one .shape-image .shape-img-5 img {
+  width: 300px;
 }
 
 /*----------------------------------------*/
