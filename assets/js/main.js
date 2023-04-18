@@ -13,7 +13,7 @@
 
   //! My All Slider
   // ************************ //
-  // 01. Hero Slider One
+  //! 01. Hero Slider One
 
   var heroSliderOne = new Swiper(".hero-slider-init-one", {
     spaceBetween: 0,
@@ -28,7 +28,7 @@
     },
   });
 
-  //  Team Slider One
+  //!  Team Slider One
   if (jQuery(".team-one").length > 0) {
     var TeamVersionOne = new Swiper(".team-one", {
       slidesPerView: 4,
@@ -73,6 +73,12 @@
       },
     });
   }
+
+  //! Counter Js
+  $(".counter").counterUp({
+    delay: 10,
+    time: 1000,
+  });
 
   // ************************ //
 
@@ -310,11 +316,6 @@
   });
 
   ////////////////////////////////////////////////////
-  // 21. Counter Js
-  $(".counter").counterUp({
-    delay: 10,
-    time: 1000,
-  });
 
   ////////////////////////////////////////////////////
   // 22. Parallax Js
