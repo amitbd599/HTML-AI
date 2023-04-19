@@ -10,8 +10,6 @@
     background: var(--common-body-2);
     padding: 120px 0;
     z-index: 9;
-    .section-title-shape-one {
-    }
     .price-body {
       z-index: 9;
       .price-inner {
@@ -118,7 +116,7 @@
       }
       .shape-7 {
         right: 0;
-        bottom: 0;
+        bottom: 10px;
         width: 220px;
         z-index: -1;
         opacity: 0.6;

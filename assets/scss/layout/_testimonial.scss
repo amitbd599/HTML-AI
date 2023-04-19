@@ -1,239 +1,148 @@
-@use '../utils' as *;
+@use "../utils" as *;
 
 /*----------------------------------------*/
 /*  03. Testimonial CSS START
 /*----------------------------------------*/
 
-.testimonial{
-    &__area{
-        position: relative;
-        z-index: 3;
-        &-2{
-            position: relative;
-            z-index: 3;
-            @media #{$md,$sm,$xs} {
-                padding-bottom: 60px;
-            }
-        }
+.testimonial-section {
+  position: relative;
+  &.one {
+    background: var(--common-body-1);
+    padding: 120px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 9;
+    overflow: hidden;
+    .section-title-shape-one {
+      margin-bottom: 70px;
     }
-    &__right{
-        position: relative;
-        &-bg{
-            position: absolute;
-            width: 35%;
-            top: 0;
-            height: 100%;
-            right: 0;
-            z-index: -1;
-            @media #{$md,$sm,$xs}{
-                display: none;
-            }
-        }
-        &-image{
-            position: absolute;
-            top: 0;
-            @media #{$lg} {
-                position: static;
-                margin-bottom: 30px;
-            }
-            @media #{$md,$sm,$xs} {
-                display: none;
-            }
-            & img{
-                @media #{$xl} {
-                    width: 90%;
-                }
-            }
-        }
-    }
-    &__slider{
-        position: relative;
-        margin-right: -400px;
-        @media #{$xs,$sm,$md} {
-            margin-right: 0;
-        }
-        &-3{
-            margin-top: -100px;
-            & .swiper-slide-active{
-                position: relative;
-                &::before{
-                    position: absolute;
-                    content: '';
-                    background: var(--tp-border-2);
-                    height: 220px;
-                    width: 1px;
-                    top: 50%;
-                    right: -1px;
-                    transform: translateY(-50%);
-                    @media #{$md,$sm,$xs} {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-    &__item{
-        padding: 35px 35px;
-        background: var(--tp-common-white);
-        border-radius: 6px;
-        box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.04);
-        & .review{
-            &__info{
+    .swiper {
+      z-index: 9;
+      &.testimonial-one {
+        .swiper-wrapper {
+          .swiper-slide {
+            .inner-wrapper {
+              background: var(--common-gd);
+              border-radius: 10px;
+              padding: 40px 40px;
+              .intro-body {
                 display: flex;
                 align-items: center;
-                & .client{
-                    &__content{
-                        margin-left: 20px;
-                    }
-                    &__name{
-                        font-size: 20px;
-                        margin-bottom: 0;
-                    }
-                    &__designation{
-                        & p{
-                            font-size: 14px;
-                            margin-bottom: 0;
-                            & a{
-                                font-weight: var(--tp-fw-sbold);
-                                color: var(--tp-theme-1);
-                                display: inline-block;
-                            }
-                        }
-                    }
+                gap: 15px;
+                .img-file {
+                  width: 80px;
+                  height: 80px;
+                  overflow: hidden;
+                  border-radius: 100%;
+                  img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  }
                 }
+                .text-file {
+                  h3 {
+                    font-size: 22px;
+                    font-weight: var(--fw-600);
+                    margin: 0px;
+                    line-height: normal;
+                    text-transform: capitalize;
+                  }
+                  h5 {
+                    font-size: 14px;
+                    font-weight: var(fw-normal);
+                    line-height: normal;
+                    margin: 0;
+                    margin-top: 5px;
+                    text-transform: capitalize;
+                  }
+                }
+              }
+              .review {
+                margin-top: 20px;
+                position: relative;
+                p {
+                  font-size: 15px;
+                  margin: 0;
+                }
+                .star {
+                  margin-top: 20px;
+                  display: flex;
+                  gap: 5px;
+                  i {
+                    color: #f7d800;
+                  }
+                }
+                .shape {
+                  display: flex;
+                  justify-content: flex-end;
+                  position: absolute;
+                  top: 96px;
+                  right: 25px;
+                  i {
+                    font-size: 60px;
+                    color: var(--common-white);
+                  }
+                }
+              }
             }
-            &__text{
-                font-size: 18px;
-                line-height: 26px;
-            }
+          }
         }
-        &-2{
-            display: flex;
-            background: var(--tp-grey-5);
-            padding: 20px 30px;
-            padding-left: 20px;
-            border-radius: 6px;
-            position: relative;
-            z-index: 1;
-            @media #{$xs} {
-                display: block;
-                text-align: center;
-            }
-            & .tclient{
-                &__details{
-                    margin-right: 30px;
-                    margin-top: -50px;
-                    @media #{$xs} {
-                        margin-top: 0;
-                        margin-right: 0;
-                    }
-                }
-                &__designation{
-                    & h5{
-                        font-size: 18px;
-                        margin-bottom: 0;
-                    }
-                    & span{
-                        font-size: 14px;
-                    }
-                }
-            }
-            & .review__text-2{
-                & p{
-                    font-size: 18px;
-                    line-height: 26px;
-                    color: var(--tp-heading-primary);
-                    margin-bottom: 0;
-                }
-            }
-            & .quote-img{
-                position: absolute;
-                right: 10px;
-                bottom: 10px;
-                z-index: -1;
-            }
-        }
-        &-3{
-            padding-right: 70px;
-            z-index: 3;
-            @media #{$xl} {
-                padding-right: 40px;
-            }
-        }
-        &-box{
-            padding: 0 30px;
-            & .quote__text{
-                font-size: 24px;
-                line-height: 32px;
-                @media #{$sm,$xs} {
-                    font-size: 20px;
-                    
-                }
-            }
-            & .author{
-                &__info{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                &__image{
-                    margin-right: 20px;
-                    & img{
-                        border-radius: 50%;
-                    }
-                }
-                &__content{
-                    text-align: left;
-                    & h5{
-                        font-size: 18px;
-                        margin-bottom: 0;
-                    }
-                    & span{
-                        font-size: 14px;
-                    }   
-                }
-            }
-        }
+      }
     }
-    &__left-info{
-        margin-left: 80px;
-        @media #{$md,$sm,$xs} {
-            margin-left: 0;
-        }
-        &-2{
-            margin-left: 70px;
-            @media #{$lg,$md,$sm,$xs} {
-                margin-left: 0;
-                margin-top: 50px;
-            }
-        }
-    }
-    &__shape{
-        position: absolute;
-        top: 0;
-        left: 0;
+    .shape-image {
+      .shape-1 {
+        left: 20px;
+        top: 20%;
+        width: 30px;
         z-index: -1;
-        &-2{
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: -1;
-        }
+        -webkit-animation: slide-top 10s linear 0.3s infinite alternate-reverse
+          both;
+        animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+      }
+      .shape-2 {
+        right: 26px;
+        top: 49%;
+        width: 18px;
+        z-index: -1;
+      }
+      .shape-3 {
+        right: 98px;
+        bottom: 9%;
+        width: 36px;
+        z-index: -1;
+        animation: animationFramesOne 25s linear 0.8s infinite;
+        -webkit-animation: animationFramesOne 25s linear 0.8s infinite;
+      }
+      .shape-4 {
+        left: 18%;
+        top: 13%;
+        width: 50px;
+        z-index: -1;
+        -webkit-animation: scale-down-center 5s linear infinite
+          alternate-reverse both;
+        animation: scale-down-center 5s linear infinite alternate-reverse both;
+      }
+      .shape-5 {
+        right: 18%;
+        top: 13%;
+        width: 130px;
+        z-index: -1;
+        animation: animationFramesOne 60s linear 0.8s infinite;
+        -webkit-animation: animationFramesOne 60s linear 0.8s infinite;
+        opacity: 0.5;
+      }
+      .shape-6 {
+        right: 42%;
+        top: 5%;
+        width: 24px;
+        z-index: -1;
+        animation: animationFramesOne 40s linear 0.8s infinite alternate-reverse
+          forwards;
+        -webkit-animation: animationFramesOne 40s linear 0.8s infinite
+          alternate-reverse forwards;
+      }
     }
-    &__side{
-        &-image{
-            position: relative;
-            & img{
-                border-radius: 10px;
-            }
-        }
-    }
-    &__icon{
-        &-3{
-            position: absolute;
-            right: 0;
-            bottom: 0px;
-            z-index: -1;
-        }
-    }
+  }
 }

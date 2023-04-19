@@ -65,3 +65,35 @@
     }
   }
 }
+
+// Arrow buttons Up
+
+.arrow {
+  position: absolute;
+  right: 92px;
+  top: 218px;
+  gap: 15px;
+  display: flex;
+  justify-content: flex-end;
+  .testimonialOne-button {
+    background: var(--common-gd);
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      transition: all 0.2s linear;
+    }
+    &:hover {
+      animation: pulse-small 0.8s;
+      i {
+        color: var(--theme-1);
+      }
+    }
+    &::after {
+      display: none;
+    }
+  }
+}
