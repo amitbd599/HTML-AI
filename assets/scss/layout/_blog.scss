@@ -10,6 +10,7 @@
     z-index: 9;
     padding: 120px 0;
     position: relative;
+    overflow: hidden;
     .section-title-shape-one {
       margin-bottom: 70px;
     }
@@ -137,6 +138,16 @@
         top: 95px;
         z-index: -1;
         width: 42px;
+      }
+      .shape-5 {
+        right: 34%;
+        top: 12%;
+        z-index: -1;
+        width: 30px;
+        animation: animationFramesOne 40s linear 0.8s infinite alternate-reverse
+          forwards;
+        -webkit-animation: animationFramesOne 40s linear 0.8s infinite
+          alternate-reverse forwards;
       }
     }
   }
