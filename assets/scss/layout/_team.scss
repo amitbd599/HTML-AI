@@ -52,35 +52,8 @@
                       transform: translateX(140%);
                     }
                     .social {
-                      display: flex;
                       justify-content: center;
-                      gap: 10px;
-                      margin-top: 20px;
-                      transition: all 0.4s linear;
                       transform: translateY(337%);
-                      a {
-                        width: 35px;
-                        height: 35px;
-                        background: linear-gradient(
-                          180deg,
-                          #243949 0%,
-                          #00151e 100%
-                        );
-                        border-radius: 5px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        i {
-                          font-size: 16px;
-                          transition: all 0.1s linear;
-                        }
-                        &:hover {
-                          animation: pulse-small 0.8s;
-                          i {
-                            color: var(--theme-1);
-                          }
-                        }
-                      }
                     }
                   }
                 }
