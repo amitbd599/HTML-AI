@@ -11,7 +11,9 @@
     background: var(--common-body-1);
     padding: 120px 0;
     position: relative;
+    z-index: 9;
     .left-wrapper {
+      z-index: 9;
       padding-right: 15px;
       .img-file {
         position: relative;
@@ -70,9 +72,18 @@
             }
           }
         }
+        .shape-7 {
+          left: -30px;
+          bottom: -5%;
+          z-index: -1;
+          img {
+            width: 68px;
+          }
+        }
       }
     }
     .right-wrapper {
+      z-index: 9;
       .inner-list {
         margin-top: 10px;
         ul {
@@ -104,6 +115,7 @@
     .shape-1 {
       right: 15px;
       top: 80%;
+      z-index: -1;
 
       img {
         width: 80px;
@@ -112,6 +124,7 @@
     .shape-2 {
       left: 15px;
       top: 50%;
+      z-index: -1;
       -webkit-animation: slide-top 10s linear 0.3s infinite alternate-reverse
         both;
       animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
@@ -122,8 +135,40 @@
     .shape-3 {
       right: 0;
       top: 0;
+      z-index: -1;
       img {
         width: 180px;
+      }
+    }
+    .shape-4 {
+      right: 25%;
+      top: 9%;
+      z-index: -1;
+      animation: animationFramesOne 35s linear infinite;
+      -webkit-animation: animationFramesOne 35s linear infinite;
+      img {
+        width: 30px;
+      }
+    }
+    .shape-5 {
+      left: 0%;
+      top: 10%;
+      z-index: -1;
+      animation: animationFramesOne 35s linear infinite reverse;
+      -webkit-animation: animationFramesOne 35s linear infinite reverse;
+      img {
+        width: 30px;
+      }
+    }
+    .shape-6 {
+      left: 59%;
+      top: 8%;
+      z-index: -1;
+      -webkit-animation: rotate-in-center 6s linear 0s infinite reverse
+        backwards;
+      animation: rotate-in-center 6s linear 0s infinite reverse backwards;
+      img {
+        width: 25px;
       }
     }
   }

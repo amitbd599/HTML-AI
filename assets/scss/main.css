@@ -1384,6 +1384,7 @@ input[type=color] {
   position: relative;
   margin-bottom: 30px;
   transition: all 0.2s linear;
+  z-index: 9;
 }
 .service-section.one .section-wrapper .wrapper-inner {
   background: var(--common-white);
@@ -1423,7 +1424,8 @@ input[type=color] {
   margin: 0;
 }
 .service-section.one .section-wrapper:hover {
-  transform: translateY(-5px);
+  border-radius: 5px;
+  animation: pulse 1.5s;
 }
 .service-section.one .inner-btn {
   margin-top: 15px;
@@ -1431,6 +1433,7 @@ input[type=color] {
 .service-section.one .shape-image .shape-1 {
   top: 24px;
   left: 0;
+  z-index: -1;
 }
 .service-section.one .shape-image .shape-1 img {
   width: 140px;
@@ -1438,6 +1441,7 @@ input[type=color] {
 .service-section.one .shape-image .shape-2 {
   top: 8%;
   right: 20%;
+  z-index: -1;
   animation: animationFramesOne 25s linear infinite;
   -webkit-animation: animationFramesOne 25s linear infinite;
 }
@@ -1447,6 +1451,7 @@ input[type=color] {
 .service-section.one .shape-image .shape-3 {
   top: 8%;
   left: 20%;
+  z-index: -1;
   animation: animationFramesOne 35s linear infinite;
   -webkit-animation: animationFramesOne 35s linear infinite;
 }
@@ -1456,6 +1461,7 @@ input[type=color] {
 .service-section.one .shape-image .shape-4 {
   bottom: 15%;
   left: 20%;
+  z-index: -1;
   animation: animationFramesOne 35s linear infinite;
   -webkit-animation: animationFramesOne 35s linear infinite;
 }
@@ -1465,6 +1471,7 @@ input[type=color] {
 .service-section.one .shape-image .shape-5 {
   bottom: 26%;
   right: 15px;
+  z-index: -1;
   animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
 }
 .service-section.one .shape-image .shape-5 img {
@@ -1473,11 +1480,20 @@ input[type=color] {
 .service-section.one .shape-image .shape-6 {
   top: 10%;
   left: 15px;
+  z-index: -1;
   animation: animationFramesOne 45s linear 0.5s infinite;
   -webkit-animation: animationFramesOne 45s linear 0.5s infinite;
 }
 .service-section.one .shape-image .shape-6 img {
   width: 40px;
+}
+.service-section.one .shape-image .shape-7 {
+  bottom: 20%;
+  left: 39px;
+  z-index: -1;
+}
+.service-section.one .shape-image .shape-7 img {
+  width: auto;
 }
 
 /*----------------------------------------*/
@@ -1487,8 +1503,10 @@ input[type=color] {
   background: var(--common-body-1);
   padding: 120px 0;
   position: relative;
+  z-index: 9;
 }
 .about-section.one .left-wrapper {
+  z-index: 9;
   padding-right: 15px;
 }
 .about-section.one .left-wrapper .img-file {
@@ -1545,6 +1563,17 @@ input[type=color] {
 .about-section.one .left-wrapper .img-file .shape-overlay .video-intro:hover .icon {
   animation: pulse 2s infinite;
 }
+.about-section.one .left-wrapper .img-file .shape-7 {
+  left: -30px;
+  bottom: -5%;
+  z-index: -1;
+}
+.about-section.one .left-wrapper .img-file .shape-7 img {
+  width: 68px;
+}
+.about-section.one .right-wrapper {
+  z-index: 9;
+}
 .about-section.one .right-wrapper .inner-list {
   margin-top: 10px;
 }
@@ -1571,6 +1600,7 @@ input[type=color] {
 .about-section .shape-img .shape-1 {
   right: 15px;
   top: 80%;
+  z-index: -1;
 }
 .about-section .shape-img .shape-1 img {
   width: 80px;
@@ -1578,6 +1608,7 @@ input[type=color] {
 .about-section .shape-img .shape-2 {
   left: 15px;
   top: 50%;
+  z-index: -1;
   animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
 }
 .about-section .shape-img .shape-2 img {
@@ -1586,9 +1617,39 @@ input[type=color] {
 .about-section .shape-img .shape-3 {
   right: 0;
   top: 0;
+  z-index: -1;
 }
 .about-section .shape-img .shape-3 img {
   width: 180px;
+}
+.about-section .shape-img .shape-4 {
+  right: 25%;
+  top: 9%;
+  z-index: -1;
+  animation: animationFramesOne 35s linear infinite;
+  -webkit-animation: animationFramesOne 35s linear infinite;
+}
+.about-section .shape-img .shape-4 img {
+  width: 30px;
+}
+.about-section .shape-img .shape-5 {
+  left: 0%;
+  top: 10%;
+  z-index: -1;
+  animation: animationFramesOne 35s linear infinite reverse;
+  -webkit-animation: animationFramesOne 35s linear infinite reverse;
+}
+.about-section .shape-img .shape-5 img {
+  width: 30px;
+}
+.about-section .shape-img .shape-6 {
+  left: 59%;
+  top: 8%;
+  z-index: -1;
+  animation: rotate-in-center 6s linear 0s infinite reverse backwards;
+}
+.about-section .shape-img .shape-6 img {
+  width: 25px;
 }
 
 /*----------------------------------------*/
@@ -2020,6 +2081,22 @@ input[type=color] {
 .project-section.one .shape-image .shape-img-8 img {
   width: 30px;
 }
+.project-section.one .shape-image .shape-img-9 {
+  right: 60px;
+  top: 7%;
+  z-index: -1;
+}
+.project-section.one .shape-image .shape-img-9 img {
+  width: 52px;
+}
+.project-section.one .shape-image .shape-img-10 {
+  left: 25px;
+  top: 7%;
+  z-index: -1;
+}
+.project-section.one .shape-image .shape-img-10 img {
+  width: 75px;
+}
 
 /*----------------------------------------*/
 /*  03. Testimonial CSS START
@@ -2283,6 +2360,14 @@ input[type=color] {
 }
 .team-section.one .shape-image .shape-img-7 img {
   width: 100px;
+}
+.team-section.one .shape-image .shape-img-8 {
+  right: 39%;
+  top: 6%;
+  z-index: -1;
+}
+.team-section.one .shape-image .shape-img-8 img {
+  width: 55px;
 }
 
 /*----------------------------------------*/
@@ -3332,13 +3417,15 @@ input[type=color] {
 /*  04. Faq CSS START
 /*----------------------------------------*/
 .faq-section.one {
-  background: linear-gradient(180deg, #243949 0%, #00151e 100%);
+  background: var(--common-body-2);
   padding: 120px 0;
   position: relative;
   overflow: hidden;
+  z-index: 9;
 }
 .faq-section.one .faq-inner {
   margin-top: 110px;
+  z-index: 9;
 }
 .faq-section.one .faq-inner .icon-shape {
   width: 80px;
@@ -3416,20 +3503,23 @@ input[type=color] {
 .faq-section.one .shape-image .shape-img-1 {
   left: -12px;
   top: 8%;
+  z-index: -1;
 }
 .faq-section.one .shape-image .shape-img-1 img {
   width: 60px;
 }
 .faq-section.one .shape-image .shape-img-2 {
-  top: -21px;
-  right: -7px;
+  top: -24px;
+  right: -28px;
+  z-index: -1;
 }
 .faq-section.one .shape-image .shape-img-2 img {
-  width: 160px;
+  width: 100px;
 }
 .faq-section.one .shape-image .shape-img-3 {
   top: 13%;
   right: 14%;
+  z-index: -1;
   animation: scale-down-center 15s linear infinite alternate-reverse both;
 }
 .faq-section.one .shape-image .shape-img-3 img {
@@ -3438,6 +3528,7 @@ input[type=color] {
 .faq-section.one .shape-image .shape-img-4 {
   bottom: 21%;
   right: 20px;
+  z-index: -1;
   animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
 }
 .faq-section.one .shape-image .shape-img-4 img {
@@ -3446,9 +3537,38 @@ input[type=color] {
 .faq-section.one .shape-image .shape-img-5 {
   bottom: 7px;
   left: -28px;
+  z-index: -1;
 }
 .faq-section.one .shape-image .shape-img-5 img {
   width: 300px;
+}
+.faq-section.one .shape-image .shape-img-6 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 45s linear infinite reverse;
+  -webkit-animation: animationFramesOne 45s linear infinite reverse;
+}
+.faq-section.one .shape-image .shape-img-6 img {
+  width: 30px;
+}
+.faq-section.one .shape-image .shape-img-7 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 55s linear infinite;
+  -webkit-animation: animationFramesOne 55s linear infinite;
+}
+.faq-section.one .shape-image .shape-img-7 img {
+  width: 25px;
+}
+.faq-section.one .shape-image .shape-img-8 {
+  top: 85px;
+  right: 54%;
+  z-index: -1;
+}
+.faq-section.one .shape-image .shape-img-8 img {
+  width: 200px;
 }
 
 /*----------------------------------------*/
@@ -4213,9 +4333,15 @@ input[type=color] {
   padding-top: 20px;
 }
 .footer-section.one .shape-image .shape-1 {
-  position: absolute;
   left: -9px;
   bottom: 10px;
   width: 281px;
   z-index: -1;
+}
+.footer-section.one .shape-image .shape-2 {
+  right: -4px;
+  bottom: -7px;
+  width: 400px;
+  z-index: -1;
+  opacity: 0.3;
 }/*# sourceMappingURL=main.css.map */

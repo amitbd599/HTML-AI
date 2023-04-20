@@ -6,12 +6,14 @@
 
 .faq-section {
   &.one {
-    background: linear-gradient(180deg, #243949 0%, #00151e 100%);
+    background: var(--common-body-2);
     padding: 120px 0;
     position: relative;
     overflow: hidden;
+    z-index: 9;
     .faq-inner {
       margin-top: 110px;
+      z-index: 9;
       .icon-shape {
         width: 80px;
         height: 80px;
@@ -93,20 +95,23 @@
       .shape-img-1 {
         left: -12px;
         top: 8%;
+        z-index: -1;
         img {
           width: 60px;
         }
       }
       .shape-img-2 {
-        top: -21px;
-        right: -7px;
+        top: -24px;
+        right: -28px;
+        z-index: -1;
         img {
-          width: 160px;
+          width: 100px;
         }
       }
       .shape-img-3 {
         top: 13%;
         right: 14%;
+        z-index: -1;
         -webkit-animation: scale-down-center 15s linear infinite
           alternate-reverse both;
         animation: scale-down-center 15s linear infinite alternate-reverse both;
@@ -117,6 +122,7 @@
       .shape-img-4 {
         bottom: 21%;
         right: 20px;
+        z-index: -1;
         -webkit-animation: slide-top 10s linear 0.3s infinite alternate-reverse
           both;
         animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
@@ -127,8 +133,37 @@
       .shape-img-5 {
         bottom: 7px;
         left: -28px;
+        z-index: -1;
         img {
           width: 300px;
+        }
+      }
+      .shape-img-6 {
+        top: 74px;
+        right: 42%;
+        z-index: -1;
+        animation: animationFramesOne 45s linear infinite reverse;
+        -webkit-animation: animationFramesOne 45s linear infinite reverse;
+        img {
+          width: 30px;
+        }
+      }
+      .shape-img-7 {
+        top: 74px;
+        right: 42%;
+        z-index: -1;
+        animation: animationFramesOne 55s linear infinite;
+        -webkit-animation: animationFramesOne 55s linear infinite;
+        img {
+          width: 25px;
+        }
+      }
+      .shape-img-8 {
+        top: 85px;
+        right: 54%;
+        z-index: -1;
+        img {
+          width: 200px;
         }
       }
     }

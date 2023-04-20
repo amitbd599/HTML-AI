@@ -22,6 +22,7 @@
       position: relative;
       margin-bottom: 30px;
       transition: all 0.2s linear;
+      z-index: 9;
       .wrapper-inner {
         background: var(--common-white);
         padding: 25px 20px;
@@ -59,7 +60,8 @@
         }
       }
       &:hover {
-        transform: translateY(-5px);
+        border-radius: 5px;
+        animation: pulse 1.5s;
       }
     }
     .inner-btn {
@@ -69,6 +71,7 @@
       .shape-1 {
         top: 24px;
         left: 0;
+        z-index: -1;
         img {
           width: 140px;
         }
@@ -76,6 +79,7 @@
       .shape-2 {
         top: 8%;
         right: 20%;
+        z-index: -1;
         animation: animationFramesOne 25s linear infinite;
         -webkit-animation: animationFramesOne 25s linear infinite;
         img {
@@ -85,6 +89,7 @@
       .shape-3 {
         top: 8%;
         left: 20%;
+        z-index: -1;
         animation: animationFramesOne 35s linear infinite;
         -webkit-animation: animationFramesOne 35s linear infinite;
         img {
@@ -94,6 +99,7 @@
       .shape-4 {
         bottom: 15%;
         left: 20%;
+        z-index: -1;
         animation: animationFramesOne 35s linear infinite;
         -webkit-animation: animationFramesOne 35s linear infinite;
         img {
@@ -103,6 +109,7 @@
       .shape-5 {
         bottom: 26%;
         right: 15px;
+        z-index: -1;
         -webkit-animation: slide-top 10s linear 0.3s infinite alternate-reverse
           both;
         animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
@@ -113,10 +120,19 @@
       .shape-6 {
         top: 10%;
         left: 15px;
+        z-index: -1;
         animation: animationFramesOne 45s linear 0.5s infinite;
         -webkit-animation: animationFramesOne 45s linear 0.5s infinite;
         img {
           width: 40px;
+        }
+      }
+      .shape-7 {
+        bottom: 20%;
+        left: 39px;
+        z-index: -1;
+        img {
+          width: auto;
         }
       }
     }
