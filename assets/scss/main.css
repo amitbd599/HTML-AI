@@ -606,6 +606,57 @@ input[type=color] {
 }
 
 /*--
+    - back-to-top
+-----------------------------------------*/
+.progress-wrap {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 2px rgba(95, 58, 252, 0.2);
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all 200ms linear;
+}
+.progress-wrap.active-progress {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.progress-wrap::after {
+  position: absolute;
+  content: "\f342";
+  font-family: "Font Awesome 5 Pro";
+  text-align: center;
+  line-height: 46px;
+  font-size: 20px;
+  color: var(--theme-1);
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+  transition: all 200ms linear;
+}
+.progress-wrap svg path {
+  fill: none;
+}
+.progress-wrap svg.progress-circle path {
+  stroke: var(--theme-1);
+  stroke-width: 4;
+  box-sizing: border-box;
+  transition: all 200ms linear;
+}
+
+/*--
     - Page title
 -----------------------------------------*/
 /*----------------------------------------*/
@@ -791,6 +842,92 @@ input[type=color] {
   color: var(--common-white);
 }
 
+/*----------------------------------------*/
+/*  00. Breadcrumb Css Start
+/*----------------------------------------*/
+.breadcrumb {
+  padding: 120px 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 9;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.breadcrumb::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+.breadcrumb .breadcrumb-inner {
+  z-index: 9;
+}
+.breadcrumb .breadcrumb-inner h2 {
+  font-size: 36px;
+  font-weight: var(--fw-700);
+  margin: 0;
+}
+.breadcrumb .breadcrumb-inner .link-shape {
+  margin-top: 5px;
+}
+.breadcrumb .breadcrumb-inner .link-shape a {
+  font-size: 16px;
+  font-weight: 600;
+}
+.breadcrumb .breadcrumb-inner .link-shape a:hover {
+  color: var(--theme-1);
+}
+.breadcrumb .breadcrumb-inner .link-shape span {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--theme-1);
+}
+.breadcrumb .shape-img .shape-1 {
+  right: 115px;
+  bottom: 22%;
+  z-index: 0;
+  animation: trigger 6s linear infinite;
+  width: 140px;
+}
+.breadcrumb .shape-img .shape-2 {
+  right: 35%;
+  bottom: 67%;
+  width: 20px;
+  z-index: 0;
+  animation: animationFramesOne 35s linear infinite;
+  -webkit-animation: animationFramesOne 35s linear infinite;
+}
+.breadcrumb .shape-img .shape-3 {
+  right: 45%;
+  bottom: 57%;
+  width: 26px;
+  z-index: 0;
+  animation: animationFramesOne 55s linear infinite reverse;
+  -webkit-animation: animationFramesOne 55s linear infinite reverse;
+}
+.breadcrumb .shape-img .shape-5 {
+  right: 56%;
+  bottom: 62%;
+  width: 15px;
+  z-index: 0;
+  animation: animationFramesOne 60s linear infinite;
+  -webkit-animation: animationFramesOne 60s linear infinite;
+}
+.breadcrumb .shape-img .shape-4 {
+  right: 26%;
+  bottom: 8%;
+  width: 35px;
+  z-index: 0;
+  animation: rotate-in-center 10s linear 0s infinite;
+  -webkit-animation: rotate-in-center 10s linear 0s infinite;
+}
+
 /* ===========Hero Slider ========== */
 @keyframes heroSliderAnimation {
   0% {
@@ -887,6 +1024,14 @@ input[type=color] {
   }
   100% {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+@keyframes trigger {
+  50% {
+    transform: rotate(-4deg);
+  }
+  80% {
+    transform: translateX(10px);
   }
 }
 /* 00. ========= video-ripple ========== */
@@ -1040,6 +1185,9 @@ input[type=color] {
 .header-area-1 .menu-area .main-menu nav ul li a:hover {
   color: var(--theme-1);
 }
+.header-area-1 .menu-area .main-menu nav ul li.active a {
+  color: var(--theme-1);
+}
 .header-area-1 .menu-area .main-menu nav ul li.has-dropdown a {
   padding-right: 14px;
 }
@@ -1051,6 +1199,12 @@ input[type=color] {
   font-size: 16px;
   color: var(--common-white);
   font-family: "Font Awesome 6 Pro";
+}
+.header-area-1 .menu-area .main-menu nav ul li.has-dropdown a:hover {
+  color: var(--theme-1);
+}
+.header-area-1 .menu-area .main-menu nav ul li.has-dropdown a:hover::after {
+  color: var(--theme-1);
 }
 .header-area-1 .menu-area .main-menu nav ul li.has-dropdown ul.sub-menu {
   position: absolute;
@@ -1080,10 +1234,10 @@ input[type=color] {
   color: var(--text-h);
   text-transform: capitalize;
 }
-.header-area-1 .menu-area .main-menu nav ul li.has-dropdown ul.sub-menu li:hover {
+.header-area-1 .menu-area .main-menu nav ul li.has-dropdown ul.sub-menu li:hover, .header-area-1 .menu-area .main-menu nav ul li.has-dropdown ul.sub-menu li.active {
   background: var(--theme-1);
 }
-.header-area-1 .menu-area .main-menu nav ul li.has-dropdown ul.sub-menu li:hover a {
+.header-area-1 .menu-area .main-menu nav ul li.has-dropdown ul.sub-menu li:hover a, .header-area-1 .menu-area .main-menu nav ul li.has-dropdown ul.sub-menu li.active a {
   color: var(--common-white);
 }
 .header-area-1 .menu-area .main-menu nav ul li:hover ul.sub-menu {
@@ -1507,6 +1661,114 @@ input[type=color] {
 }
 .service-section.one .shape-image .shape-7 img {
   width: auto;
+}
+
+.service-details-section {
+  background: var(--common-body-2);
+  padding: 120px 0;
+  position: relative;
+  z-index: 9;
+}
+.service-details-section .right-wrapper .title {
+  font-size: 26px;
+}
+.service-details-section .left-wrapper .img-file {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.service-details-section .question-field {
+  padding-right: 20px;
+}
+.service-details-section .question-field .title {
+  font-size: 26px;
+}
+.service-details-section .question-field ul li {
+  font-size: 15px;
+  padding-left: 20px;
+  margin-bottom: 7px;
+  position: relative;
+}
+.service-details-section .question-field ul li::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "\f324";
+  font-size: 13px;
+  margin-top: 1px;
+}
+.service-details-section .faq-inner {
+  z-index: 9;
+}
+.service-details-section .faq-inner .intro {
+  margin-top: 15px;
+}
+.service-details-section .faq-inner .intro h3 {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: var(--fw-600);
+}
+.service-details-section .faq-inner .faq-list {
+  margin-top: 15px;
+}
+.service-details-section .faq-inner .faq-list .accordion .accordion-item {
+  margin-bottom: 16px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.service-details-section .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button {
+  padding: 15px 16px;
+  font-size: 15px !important;
+  line-height: 25px;
+  font-weight: 600;
+  background: var(--theme-1);
+  color: var(--common-white);
+}
+.service-details-section .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+  background: var(--common-white);
+  color: var(--text-h);
+}
+.service-details-section .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button:focus {
+  z-index: 3;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none !important;
+}
+.service-details-section .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "+";
+  background-image: none;
+  transform: none;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.service-details-section .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "\f068";
+  background-image: none;
+  transform: none;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.service-details-section .faq-inner .faq-list .accordion .accordion-item .accordion-collapse {
+  background: var(--common-white);
+  color: var(--text-p-1);
+  font-weight: 600;
+}
+.service-details-section .shape-image .shape-1 {
+  right: 40px;
+  bottom: -108px;
+  z-index: -1;
+  width: 250px;
 }
 
 /*----------------------------------------*/

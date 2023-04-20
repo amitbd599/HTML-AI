@@ -260,6 +260,25 @@
   }
 }
 
+// Trigger animation
+
+@keyframes trigger {
+  50% {
+    transform: rotate(-4deg);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+}
+@-webkit-keyframes trigger {
+  50% {
+    transform: rotate(-4deg);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 /* 00. ========= video-ripple ========== */
 @keyframes video-ripple {
   0%,

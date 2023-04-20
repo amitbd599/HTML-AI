@@ -47,6 +47,11 @@
                 color: var(--theme-1);
               }
             }
+            &.active {
+              a {
+                color: var(--theme-1);
+              }
+            }
             &.has-dropdown {
               a {
                 padding-right: 14px;
@@ -58,6 +63,12 @@
                   font-size: 16px;
                   color: var(--common-white);
                   font-family: "Font Awesome 6 Pro";
+                }
+                &:hover {
+                  color: var(--theme-1);
+                  &::after {
+                    color: var(--theme-1);
+                  }
                 }
               }
               ul.sub-menu {
@@ -91,7 +102,8 @@
                     color: var(--text-h);
                     text-transform: capitalize;
                   }
-                  &:hover {
+                  &:hover,
+                  &.active {
                     background: var(--theme-1);
                     a {
                       color: var(--common-white);

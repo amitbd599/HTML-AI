@@ -138,3 +138,128 @@
     }
   }
 }
+
+// Service Details Section
+
+.service-details-section {
+  background: var(--common-body-2);
+  padding: 120px 0;
+  position: relative;
+  z-index: 9;
+  .right-wrapper {
+    .title {
+      font-size: 26px;
+    }
+  }
+  .left-wrapper {
+    .img-file {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+  .question-field {
+    padding-right: 20px;
+    .title {
+      font-size: 26px;
+    }
+    ul {
+      li {
+        font-size: 15px;
+        padding-left: 20px;
+        margin-bottom: 7px;
+        position: relative;
+        &::after {
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-family: "Font Awesome 5 Pro";
+          font-weight: 900;
+          content: "\f324";
+          font-size: 13px;
+          margin-top: 1px;
+        }
+      }
+    }
+  }
+
+  .faq-inner {
+    z-index: 9;
+    .intro {
+      margin-top: 15px;
+      h3 {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: var(--fw-600);
+      }
+    }
+    .faq-list {
+      margin-top: 15px;
+      .accordion {
+        .accordion-item {
+          margin-bottom: 16px;
+          border-radius: 5px;
+          overflow: hidden;
+          .accordion-header {
+            .accordion-button {
+              padding: 15px 16px;
+              font-size: 15px !important;
+              line-height: 25px;
+
+              font-weight: 600;
+              background: var(--theme-1);
+              color: var(--common-white);
+              &.collapsed {
+                background: var(--common-white);
+                color: var(--text-h);
+              }
+              &:focus {
+                z-index: 3;
+                border-color: transparent;
+                outline: 0;
+                box-shadow: none !important;
+              }
+              &::after {
+                flex-shrink: 0;
+                width: 1.25rem;
+                height: 1.25rem;
+                margin-left: auto;
+                font-family: "Font Awesome 5 Pro";
+                font-weight: 900;
+                content: "\2b";
+                background-image: none;
+                transform: none;
+                position: absolute;
+                right: 10px;
+                top: 15px;
+              }
+              &:not(.collapsed)::after {
+                font-family: "Font Awesome 5 Pro";
+                font-weight: 900;
+                content: "\f068";
+                background-image: none;
+                transform: none;
+                position: absolute;
+                right: 10px;
+                top: 15px;
+              }
+            }
+          }
+          .accordion-collapse {
+            background: var(--common-white);
+            color: var(--text-p-1);
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .shape-image {
+    .shape-1 {
+      right: 40px;
+      bottom: -108px;
+      z-index: -1;
+      width: 250px;
+    }
+  }
+}
