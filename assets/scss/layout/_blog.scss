@@ -156,5 +156,45 @@
         width: 150px;
       }
     }
+    .pagination {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      ul {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        li {
+          a {
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(180deg, #243949 0%, #00151e 100%);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            &:hover {
+              animation: pulse-small 0.8s;
+              color: var(--theme-1);
+            }
+          }
+        }
+      }
+    }
+    &.blog-grid {
+      .blog-items {
+        margin-bottom: 60px;
+      }
+    }
+  }
+  .shape-image {
+    .shape-7 {
+      right: 40px;
+      bottom: -108px;
+      z-index: -1;
+      width: 250px;
+    }
   }
 }

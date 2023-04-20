@@ -1664,7 +1664,7 @@ input[type=color] {
 }
 
 .service-details-section {
-  background: var(--common-body-2);
+  background: var(--common-body-1);
   padding: 120px 0;
   position: relative;
   z-index: 9;
@@ -2800,6 +2800,40 @@ input[type=color] {
   z-index: -1;
   width: 150px;
 }
+.blog-section.one .pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.blog-section.one .pagination ul {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.blog-section.one .pagination ul li a {
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(180deg, #243949 0%, #00151e 100%);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.blog-section.one .pagination ul li a:hover {
+  animation: pulse-small 0.8s;
+  color: var(--theme-1);
+}
+.blog-section.one.blog-grid .blog-items {
+  margin-bottom: 60px;
+}
+.blog-section .shape-image .shape-7 {
+  right: 40px;
+  bottom: -108px;
+  z-index: -1;
+  width: 250px;
+}
 
 /*----------------------------------------*/
 /*  00. Feature CSS START
@@ -3751,8 +3785,9 @@ input[type=color] {
   overflow: hidden;
 }
 .faq-section.one .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button {
-  padding: 0px 16px;
+  padding: 15px 16px;
   font-size: 15px !important;
+  line-height: 25px;
   font-weight: 600;
   background: var(--theme-1);
   color: var(--common-white);
@@ -3778,8 +3813,8 @@ input[type=color] {
   background-image: none;
   transform: none;
   position: absolute;
-  right: 14px;
-  top: 0;
+  right: 10px;
+  top: 15px;
 }
 .faq-section.one .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
   font-family: "Font Awesome 5 Pro";
@@ -3788,8 +3823,8 @@ input[type=color] {
   background-image: none;
   transform: none;
   position: absolute;
-  right: 14px;
-  top: 0;
+  right: 10px;
+  top: 15px;
 }
 .faq-section.one .faq-inner .faq-list .accordion .accordion-item .accordion-collapse {
   background: var(--common-white);
