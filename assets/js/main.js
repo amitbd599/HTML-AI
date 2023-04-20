@@ -125,7 +125,22 @@
     });
   }
 
-  // ************************ //
+  //! magnificPopup video view
+  $(".popup-video").magnificPopup({
+    type: "iframe",
+  });
+
+  //! Sticky Header Js
+  windowOn.on("scroll", function () {
+    var scroll = $(window).scrollTop();
+    if (scroll < 100) {
+      $("#header-sticky").removeClass("header__sticky");
+    } else {
+      $("#header-sticky").addClass("header__sticky");
+    }
+  });
+
+  // **************************************************** //
 
   ////////////////////////////////////////////////////
   // 01. PreLoader Js
@@ -177,15 +192,6 @@
   });
 
   ////////////////////////////////////////////////////
-  // 06. Sticky Header Js
-  windowOn.on("scroll", function () {
-    var scroll = $(window).scrollTop();
-    if (scroll < 100) {
-      $("#header-sticky").removeClass("header__sticky");
-    } else {
-      $("#header-sticky").addClass("header__sticky");
-    }
-  });
 
   ////////////////////////////////////////////////////
   // 07. Data CSS Js
@@ -311,9 +317,9 @@
   });
 
   /* magnificPopup video view */
-  $(".popup-video").magnificPopup({
-    type: "iframe",
-  });
+  // $(".popup-video").magnificPopup({
+  //   type: "iframe",
+  // });
 
   ////////////////////////////////////////////////////
   // 14. Wow Js

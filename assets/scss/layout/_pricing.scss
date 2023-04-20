@@ -136,6 +136,12 @@
           both;
         animation: slide-top 20s linear 0.6s infinite alternate-reverse both;
       }
+      .shape-10 {
+        top: 13%;
+        right: 37%;
+        width: 150px;
+        z-index: -1;
+      }
     }
   }
 }

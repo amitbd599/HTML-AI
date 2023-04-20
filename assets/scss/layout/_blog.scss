@@ -149,6 +149,12 @@
         -webkit-animation: animationFramesOne 40s linear 0.8s infinite
           alternate-reverse forwards;
       }
+      .shape-6 {
+        left: 19%;
+        top: 11%;
+        z-index: -1;
+        width: 150px;
+      }
     }
   }
 }
