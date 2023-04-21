@@ -2701,7 +2701,7 @@ input[type=color] {
   background: var(--common-body-1);
 }
 .widget-area .widget.widget-post {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .widget-area .widget.widget-post .post {
   background: var(--common-white);
@@ -2754,7 +2754,7 @@ input[type=color] {
   border: none;
 }
 .widget-area .widget.widget-follow {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .widget-area .widget.widget-follow .follow {
   background: var(--common-white);
@@ -2798,7 +2798,7 @@ input[type=color] {
   color: var(--common-white);
 }
 .widget-area .widget.widget-categories {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .widget-area .widget.widget-categories .categories {
   background: var(--common-white);
@@ -2811,6 +2811,60 @@ input[type=color] {
   font-weight: 800;
   color: var(--text-h);
   margin: 0;
+}
+.widget-area .widget.widget-categories .categories .list-inner {
+  margin-top: 10px;
+}
+.widget-area .widget.widget-categories .categories .list-inner ul li {
+  padding-bottom: 4px;
+}
+.widget-area .widget.widget-categories .categories .list-inner ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-h);
+  border-bottom: 1px solid #ddd;
+}
+.widget-area .widget.widget-categories .categories .list-inner ul li a:hover {
+  color: var(--theme-1);
+}
+.widget-area .widget.widget-categories .categories .list-inner ul li:last-child a {
+  border: none;
+}
+.widget-area .widget.widget-tags {
+  margin-top: 30px;
+}
+.widget-area .widget.widget-tags .tags {
+  background: var(--common-white);
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+.widget-area .widget.widget-tags .tags .title h2 {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 800;
+  color: var(--text-h);
+  margin: 0;
+}
+.widget-area .widget.widget-tags .tags .list-grid a {
+  display: inline-block;
+  color: var(--text-p-1);
+  font-weight: 400;
+  font-size: 15px;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: all 0.2s linear;
+}
+.widget-area .widget.widget-tags .tags .list-grid a:hover {
+  background: var(--theme-1);
+  color: var(--common-white);
+  border: 1px solid var(--theme-1);
 }
 
 /*----------------------------------------*/
