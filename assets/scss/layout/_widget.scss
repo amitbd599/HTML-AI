@@ -180,6 +180,7 @@
           ul {
             li {
               padding-bottom: 4px;
+              transition: all 0.2s linear;
               a {
                 display: flex;
                 justify-content: space-between;
@@ -189,6 +190,7 @@
                 font-weight: 600;
                 color: var(--text-h);
                 border-bottom: 1px solid #ddd;
+                @include transition(0.2s);
                 &:hover {
                   color: var(--theme-1);
                 }

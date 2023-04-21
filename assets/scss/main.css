@@ -140,7 +140,7 @@ h6 {
   margin-top: 0px;
   font-weight: var(--fw-700);
   line-height: 1.2;
-  transition: all 0.3s ease-out 0s;
+  transition: all 0.3s linear;
 }
 
 h1 {
@@ -185,30 +185,6 @@ p {
   color: var(--text-p-2);
   margin-bottom: 16px;
   line-height: 26px;
-}
-
-a,
-.btn,
-button,
-span,
-p,
-i,
-input,
-select,
-textarea,
-li,
-img,
-svg path,
-*::after,
-*::before,
-.transition-3,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  transition: all 0.3s ease-out 0s;
 }
 
 ul {
@@ -390,7 +366,7 @@ input[type=color] {
   left: 0;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease-out 0s;
+  transition: all 0.3s linear;
 }
 .body-overlay:hover {
   cursor: pointer;
@@ -2817,6 +2793,7 @@ input[type=color] {
 }
 .widget-area .widget.widget-categories .categories .list-inner ul li {
   padding-bottom: 4px;
+  transition: all 0.2s linear;
 }
 .widget-area .widget.widget-categories .categories .list-inner ul li a {
   display: flex;
@@ -2827,6 +2804,7 @@ input[type=color] {
   font-weight: 600;
   color: var(--text-h);
   border-bottom: 1px solid #ddd;
+  transition: all 0.2s linear;
 }
 .widget-area .widget.widget-categories .categories .list-inner ul li a:hover {
   color: var(--theme-1);
@@ -4589,7 +4567,7 @@ input[type=color] {
   left: 0;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease-out 0s;
+  transition: all 0.3s linear;
 }
 .body-overlay:hover {
   cursor: pointer;

@@ -131,29 +131,29 @@ p {
   line-height: 26px;
 }
 
-a,
-.btn,
-button,
-span,
-p,
-i,
-input,
-select,
-textarea,
-li,
-img,
-svg path,
-*::after,
-*::before,
-.transition-3,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @include transition(0.3s);
-}
+// a,
+// .btn,
+// button,
+// span,
+// p,
+// i,
+// input,
+// select,
+// textarea,
+// li,
+// img,
+// svg path,
+// *::after,
+// *::before,
+// .transition-3,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   @include transition(0.1s);
+// }
 ul {
   list-style: none;
   margin: 0;
