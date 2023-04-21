@@ -79,7 +79,7 @@
   --theme-2: #02f3f7;
   --border-1: #ededed;
   --border-2: #e9e9e9;
-  --border-3: #999999;
+  --border-3: #424242;
   /**
     @font weight declaration
     */
@@ -3186,6 +3186,86 @@ input[type=color] {
 }
 .blog-section.details .wrapper .article-content .blog-footer .social ul li a:hover i {
   color: var(--common-white);
+}
+.blog-section.details .wrapper .comment {
+  margin-top: 20px;
+}
+.blog-section.details .wrapper .comment .title h2 {
+  font-size: 22px;
+}
+.blog-section.details .wrapper .comment .root-comment {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--border-3);
+  padding-bottom: 35px;
+  margin-top: 35px;
+}
+.blog-section.details .wrapper .comment .root-comment .profile {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.blog-section.details .wrapper .comment .root-comment .profile img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-section.details .wrapper .comment .root-comment .intro h3 {
+  font-size: 18px;
+  line-height: normal;
+}
+.blog-section.details .wrapper .comment .root-comment .intro .date {
+  font-size: 14px;
+  margin-top: 4px;
+  line-height: normal;
+}
+.blog-section.details .wrapper .comment .root-comment .intro .text {
+  font-size: 15px;
+}
+.blog-section.details .wrapper .comment .root-comment .intro .reply {
+  margin-top: 20px;
+}
+.blog-section.details .wrapper .comment .root-comment .intro .reply a {
+  border-radius: 50px;
+  transition: all 0.2s linear;
+  background: #f7f7f7;
+  font-size: 15px;
+  color: var(--text-h);
+  padding: 8px 18px;
+  font-weight: 600;
+  transition: all 0.2s linear;
+}
+.blog-section.details .wrapper .comment .root-comment .intro .reply a:hover {
+  background: var(--theme-1);
+  color: var(--common-white);
+}
+.blog-section.details .wrapper .comment .root-comment.has-child {
+  margin-left: 50px;
+}
+.blog-section.details .wrapper .leave-reply {
+  margin-top: 30px;
+}
+.blog-section.details .wrapper .leave-reply .title h4 {
+  font-size: 18px;
+  line-height: normal;
+}
+.blog-section.details .wrapper .leave-reply .comment-form .form-author,
+.blog-section.details .wrapper .leave-reply .comment-form .form-email {
+  width: 100%;
+}
+.blog-section.details .wrapper .leave-reply .comment-form .form-author label,
+.blog-section.details .wrapper .leave-reply .comment-form .form-email label {
+  display: block;
+}
+.blog-section.details .wrapper .leave-reply .comment-form .form-author input,
+.blog-section.details .wrapper .leave-reply .comment-form .form-email input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
 }
 .blog-section .shape-image .shape-7 {
   right: 40px;
