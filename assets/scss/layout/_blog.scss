@@ -60,9 +60,6 @@
             span {
               color: var(--common-white);
             }
-            &:hover {
-              animation: pulse-small 0.8s;
-            }
           }
         }
         .title {
@@ -179,6 +176,9 @@
               animation: pulse-small 0.8s;
               color: var(--theme-1);
             }
+            &.active {
+              color: var(--theme-1);
+            }
           }
         }
       }
@@ -186,6 +186,64 @@
     &.blog-grid {
       .blog-items {
         margin-bottom: 60px;
+      }
+    }
+    &.blog-list {
+      .blog-items {
+        margin-bottom: 50px;
+        &::after {
+          display: none;
+        }
+        .text-file {
+          padding: 20px 0;
+          background: transparent;
+          .intro {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+            .dp-img {
+              width: auto;
+              height: auto;
+              border-radius: 0;
+            }
+            .admin {
+              color: var(--common-white);
+              font-weight: normal;
+            }
+            .date {
+              padding: 5px 0;
+              border-radius: 0;
+            }
+          }
+          .title {
+            margin-top: 15px;
+            h2 {
+              font-size: 26px;
+              font-weight: var(--fw-800);
+              color: var(--common-white);
+              line-height: 1.2;
+              transition: all 0.1s linear;
+              a {
+                transition: all 0.1s linear;
+              }
+              &:hover {
+                color: var(--theme-1);
+              }
+            }
+            p {
+              margin-top: 20px;
+              color: var(--text-p-2);
+            }
+            .inner-btn {
+              margin-top: 25px;
+            }
+          }
+        }
+      }
+      .pagination {
+        margin-top: 0;
+        justify-content: flex-start;
       }
     }
   }

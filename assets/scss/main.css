@@ -2655,6 +2655,165 @@ input[type=color] {
 }
 
 /*----------------------------------------*/
+/*  00. Widgets CSS START
+/*----------------------------------------*/
+.widget-area .widget.widget-search .search {
+  background: var(--common-white);
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+.widget-area .widget.widget-search .search .title h2 {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 800;
+  color: var(--text-h);
+}
+.widget-area .widget.widget-search .search .search-wrap .search-form {
+  position: relative;
+  overflow: hidden;
+}
+.widget-area .widget.widget-search .search .search-wrap .search-form input {
+  background-color: transparent;
+  height: 50px;
+  padding: 6px 15px;
+  width: 100%;
+  display: block;
+  outline: 0;
+  transition: 0.5s;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-size: 16px;
+  overflow: hidden;
+}
+.widget-area .widget.widget-search .search .search-wrap .search-form button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 50px;
+  background: var(--theme-1);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 5px 5px 0px;
+}
+.widget-area .widget.widget-search .search .search-wrap .search-form button:hover {
+  background: var(--common-body-1);
+}
+.widget-area .widget.widget-post {
+  margin-top: 20px;
+}
+.widget-area .widget.widget-post .post {
+  background: var(--common-white);
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+.widget-area .widget.widget-post .post .title h2 {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 800;
+  color: var(--text-h);
+  margin: 0;
+}
+.widget-area .widget.widget-post .post .post-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.widget-area .widget.widget-post .post .post-item .img-file {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+.widget-area .widget.widget-post .post .post-item .img-file img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.widget-area .widget.widget-post .post .post-item .info time {
+  color: var(--text-p-1);
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.widget-area .widget.widget-post .post .post-item .info .title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.widget-area .widget.widget-post .post .post-item .info .title a {
+  color: var(--text-h);
+  transition: all 0.2s linear;
+}
+.widget-area .widget.widget-post .post .post-item .info .title a:hover {
+  color: var(--theme-1);
+}
+.widget-area .widget.widget-post .post .post-item:last-child {
+  border: none;
+}
+.widget-area .widget.widget-follow {
+  margin-top: 20px;
+}
+.widget-area .widget.widget-follow .follow {
+  background: var(--common-white);
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+.widget-area .widget.widget-follow .follow .title h2 {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 800;
+  color: var(--text-h);
+  margin: 0;
+}
+.widget-area .widget.widget-follow .follow .social {
+  margin-top: 10px;
+}
+.widget-area .widget.widget-follow .follow .social ul {
+  display: flex;
+  gap: 10px;
+}
+.widget-area .widget.widget-follow .follow .social ul li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--theme-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  transition: all 0.2s linear;
+}
+.widget-area .widget.widget-follow .follow .social ul li a i {
+  font-size: 18px;
+  color: var(--theme-1);
+  transition: all 0.2s linear;
+}
+.widget-area .widget.widget-follow .follow .social ul li a:hover {
+  background: var(--theme-1);
+}
+.widget-area .widget.widget-follow .follow .social ul li a:hover i {
+  color: var(--common-white);
+}
+.widget-area .widget.widget-categories {
+  margin-top: 20px;
+}
+.widget-area .widget.widget-categories .categories {
+  background: var(--common-white);
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+.widget-area .widget.widget-categories .categories .title h2 {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 800;
+  color: var(--text-h);
+  margin: 0;
+}
+
+/*----------------------------------------*/
 /*  03. Blog CSS START
 /*----------------------------------------*/
 .blog-section.one {
@@ -2716,9 +2875,6 @@ input[type=color] {
 }
 .blog-section.one .blog-items .text-file .intro .date span {
   color: var(--common-white);
-}
-.blog-section.one .blog-items .text-file .intro .date:hover {
-  animation: pulse-small 0.8s;
 }
 .blog-section.one .blog-items .text-file .title {
   margin-top: 20px;
@@ -2825,8 +2981,67 @@ input[type=color] {
   animation: pulse-small 0.8s;
   color: var(--theme-1);
 }
+.blog-section.one .pagination ul li a.active {
+  color: var(--theme-1);
+}
 .blog-section.one.blog-grid .blog-items {
   margin-bottom: 60px;
+}
+.blog-section.one.blog-list .blog-items {
+  margin-bottom: 50px;
+}
+.blog-section.one.blog-list .blog-items::after {
+  display: none;
+}
+.blog-section.one.blog-list .blog-items .text-file {
+  padding: 20px 0;
+  background: transparent;
+}
+.blog-section.one.blog-list .blog-items .text-file .intro {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+.blog-section.one.blog-list .blog-items .text-file .intro .dp-img {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+}
+.blog-section.one.blog-list .blog-items .text-file .intro .admin {
+  color: var(--common-white);
+  font-weight: normal;
+}
+.blog-section.one.blog-list .blog-items .text-file .intro .date {
+  padding: 5px 0;
+  border-radius: 0;
+}
+.blog-section.one.blog-list .blog-items .text-file .title {
+  margin-top: 15px;
+}
+.blog-section.one.blog-list .blog-items .text-file .title h2 {
+  font-size: 26px;
+  font-weight: var(--fw-800);
+  color: var(--common-white);
+  line-height: 1.2;
+  transition: all 0.1s linear;
+}
+.blog-section.one.blog-list .blog-items .text-file .title h2 a {
+  transition: all 0.1s linear;
+}
+.blog-section.one.blog-list .blog-items .text-file .title h2:hover {
+  color: var(--theme-1);
+}
+.blog-section.one.blog-list .blog-items .text-file .title p {
+  margin-top: 20px;
+  color: var(--text-p-2);
+}
+.blog-section.one.blog-list .blog-items .text-file .title .inner-btn {
+  margin-top: 25px;
+}
+.blog-section.one.blog-list .pagination {
+  margin-top: 0;
+  justify-content: flex-start;
 }
 .blog-section .shape-image .shape-7 {
   right: 40px;
