@@ -48,6 +48,9 @@
 /*----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,800&family=Orbitron:wght@400;500;600;700;800;900&display=swap");
 :root {
+  --container-width: 1200px;
+  --small-container-width: 1000px;
+  --large-container-width: 1550px;
   /**
     @font family declaration
     */
@@ -387,6 +390,30 @@ input[type=color] {
   }
 }
 
+.large-container {
+  position: static;
+  max-width: var(--large-container-width);
+  padding: 0px 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.auto-container {
+  position: static;
+  max-width: var(--container-width);
+  padding: 0px 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.small-container {
+  position: static;
+  max-width: var(--small-container-width);
+  padding: 0px 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 /*--
     - Background color
 -----------------------------------------*/
@@ -541,8 +568,8 @@ input[type=color] {
 
 .arrow {
   position: absolute;
-  right: 92px;
-  top: 218px;
+  right: -10px;
+  top: -60px;
   gap: 15px;
   display: flex;
   justify-content: flex-end;
@@ -1511,6 +1538,7 @@ input[type=color] {
 .service-section.one {
   position: relative;
   z-index: 9;
+  overflow: hidden;
 }
 .service-section.one .section-title-shape-one {
   margin-bottom: 60px;
@@ -1630,11 +1658,86 @@ input[type=color] {
 .service-section.one .shape-image .shape-7 img {
   width: auto;
 }
+.service-section.one.single-row {
+  overflow: hidden;
+  background-image: none !important;
+}
+.service-section.one.single-row .shape-image-file .shape-img-1 {
+  left: -12px;
+  top: 8%;
+  z-index: -1;
+}
+.service-section.one.single-row .shape-image-file .shape-img-1 img {
+  width: 60px;
+}
+.service-section.one.single-row .shape-image-file .shape-img-2 {
+  top: -24px;
+  right: -28px;
+  z-index: -1;
+}
+.service-section.one.single-row .shape-image-file .shape-img-2 img {
+  width: 100px;
+}
+.service-section.one.single-row .shape-image-file .shape-img-3 {
+  top: 13%;
+  right: 14%;
+  z-index: -1;
+  animation: scale-down-center 15s linear infinite alternate-reverse both;
+}
+.service-section.one.single-row .shape-image-file .shape-img-3 img {
+  width: 120px;
+}
+.service-section.one.single-row .shape-image-file .shape-img-4 {
+  bottom: 21%;
+  right: 20px;
+  z-index: -1;
+  animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+}
+.service-section.one.single-row .shape-image-file .shape-img-4 img {
+  width: 40px;
+}
+.service-section.one.single-row .shape-image-file .shape-img-5 {
+  bottom: 40px;
+  left: -28px;
+  z-index: -1;
+}
+.service-section.one.single-row .shape-image-file .shape-img-5 img {
+  width: 200px;
+}
+.service-section.one.single-row .shape-image-file .shape-img-6 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 45s linear infinite reverse;
+  -webkit-animation: animationFramesOne 45s linear infinite reverse;
+}
+.service-section.one.single-row .shape-image-file .shape-img-6 img {
+  width: 30px;
+}
+.service-section.one.single-row .shape-image-file .shape-img-7 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 55s linear infinite;
+  -webkit-animation: animationFramesOne 55s linear infinite;
+}
+.service-section.one.single-row .shape-image-file .shape-img-7 img {
+  width: 25px;
+}
+.service-section.one.single-row .shape-image-file .shape-img-8 {
+  top: 26px;
+  right: 54%;
+  z-index: -1;
+}
+.service-section.one.single-row .shape-image-file .shape-img-8 img {
+  width: 200px;
+}
 
 .service-details-section {
   background: var(--common-body-1);
   padding: 120px 0;
   position: relative;
+  overflow: hidden;
   z-index: 9;
 }
 .service-details-section .right-wrapper .title {
@@ -1732,11 +1835,75 @@ input[type=color] {
   color: var(--text-p-1);
   font-weight: 600;
 }
-.service-details-section .shape-image .shape-1 {
-  right: 40px;
-  bottom: -108px;
+.service-details-section .shape-image-file .shape-img-1 {
+  left: -12px;
+  top: 8%;
   z-index: -1;
-  width: 250px;
+}
+.service-details-section .shape-image-file .shape-img-1 img {
+  width: 60px;
+}
+.service-details-section .shape-image-file .shape-img-2 {
+  top: -24px;
+  right: -28px;
+  z-index: -1;
+}
+.service-details-section .shape-image-file .shape-img-2 img {
+  width: 100px;
+}
+.service-details-section .shape-image-file .shape-img-3 {
+  top: 13%;
+  right: 14%;
+  z-index: -1;
+  animation: scale-down-center 15s linear infinite alternate-reverse both;
+}
+.service-details-section .shape-image-file .shape-img-3 img {
+  width: 120px;
+}
+.service-details-section .shape-image-file .shape-img-4 {
+  bottom: 21%;
+  right: 20px;
+  z-index: -1;
+  animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+}
+.service-details-section .shape-image-file .shape-img-4 img {
+  width: 40px;
+}
+.service-details-section .shape-image-file .shape-img-5 {
+  bottom: 40px;
+  left: -28px;
+  z-index: -1;
+}
+.service-details-section .shape-image-file .shape-img-5 img {
+  width: 200px;
+}
+.service-details-section .shape-image-file .shape-img-6 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 45s linear infinite reverse;
+  -webkit-animation: animationFramesOne 45s linear infinite reverse;
+}
+.service-details-section .shape-image-file .shape-img-6 img {
+  width: 30px;
+}
+.service-details-section .shape-image-file .shape-img-7 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 55s linear infinite;
+  -webkit-animation: animationFramesOne 55s linear infinite;
+}
+.service-details-section .shape-image-file .shape-img-7 img {
+  width: 25px;
+}
+.service-details-section .shape-image-file .shape-img-8 {
+  top: 26px;
+  right: 54%;
+  z-index: -1;
+}
+.service-details-section .shape-image-file .shape-img-8 img {
+  width: 200px;
 }
 
 /*----------------------------------------*/
@@ -2434,8 +2601,8 @@ input[type=color] {
   display: flex;
   justify-content: flex-end;
   position: absolute;
-  top: 96px;
-  right: 25px;
+  top: -88px;
+  right: 0;
 }
 .testimonial-section.one .swiper.testimonial-one .swiper-wrapper .swiper-slide .inner-wrapper .review .shape i {
   font-size: 60px;
@@ -2635,6 +2802,9 @@ input[type=color] {
 .team-section.one .shape-image .shape-img-9 img {
   width: 130px;
 }
+.team-section.one.single-row {
+  overflow: hidden;
+}
 .team-section.one.single-row .inner-wrapper {
   margin-bottom: 30px;
 }
@@ -2714,6 +2884,76 @@ input[type=color] {
 }
 .team-section.one.single-row .pagination ul li a.active {
   color: var(--theme-1);
+}
+.team-section.one.single-row .shape-image-file .shape-img-1 {
+  left: -12px;
+  top: 8%;
+  z-index: -1;
+}
+.team-section.one.single-row .shape-image-file .shape-img-1 img {
+  width: 60px;
+}
+.team-section.one.single-row .shape-image-file .shape-img-2 {
+  top: -24px;
+  right: -28px;
+  z-index: -1;
+}
+.team-section.one.single-row .shape-image-file .shape-img-2 img {
+  width: 100px;
+}
+.team-section.one.single-row .shape-image-file .shape-img-3 {
+  top: 13%;
+  right: 14%;
+  z-index: -1;
+  animation: scale-down-center 15s linear infinite alternate-reverse both;
+}
+.team-section.one.single-row .shape-image-file .shape-img-3 img {
+  width: 120px;
+}
+.team-section.one.single-row .shape-image-file .shape-img-4 {
+  bottom: 21%;
+  right: 20px;
+  z-index: -1;
+  animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+}
+.team-section.one.single-row .shape-image-file .shape-img-4 img {
+  width: 40px;
+}
+.team-section.one.single-row .shape-image-file .shape-img-5 {
+  bottom: 40px;
+  left: -28px;
+  z-index: -1;
+}
+.team-section.one.single-row .shape-image-file .shape-img-5 img {
+  width: 200px;
+}
+.team-section.one.single-row .shape-image-file .shape-img-6 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 45s linear infinite reverse;
+  -webkit-animation: animationFramesOne 45s linear infinite reverse;
+}
+.team-section.one.single-row .shape-image-file .shape-img-6 img {
+  width: 30px;
+}
+.team-section.one.single-row .shape-image-file .shape-img-7 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 55s linear infinite;
+  -webkit-animation: animationFramesOne 55s linear infinite;
+}
+.team-section.one.single-row .shape-image-file .shape-img-7 img {
+  width: 25px;
+}
+.team-section.one.single-row .shape-image-file .shape-img-8 {
+  top: 26px;
+  right: 54%;
+  z-index: -1;
+}
+.team-section.one.single-row .shape-image-file .shape-img-8 img {
+  width: 200px;
 }
 
 /*----------------------------------------*/
@@ -2812,6 +3052,76 @@ input[type=color] {
 }
 .review-section .pagination ul li a.active {
   color: var(--theme-1);
+}
+.review-section .shape-image .shape-img-1 {
+  left: -12px;
+  top: 8%;
+  z-index: -1;
+}
+.review-section .shape-image .shape-img-1 img {
+  width: 60px;
+}
+.review-section .shape-image .shape-img-2 {
+  top: -24px;
+  right: -28px;
+  z-index: -1;
+}
+.review-section .shape-image .shape-img-2 img {
+  width: 100px;
+}
+.review-section .shape-image .shape-img-3 {
+  top: 13%;
+  right: 14%;
+  z-index: -1;
+  animation: scale-down-center 15s linear infinite alternate-reverse both;
+}
+.review-section .shape-image .shape-img-3 img {
+  width: 120px;
+}
+.review-section .shape-image .shape-img-4 {
+  bottom: 21%;
+  right: 20px;
+  z-index: -1;
+  animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+}
+.review-section .shape-image .shape-img-4 img {
+  width: 40px;
+}
+.review-section .shape-image .shape-img-5 {
+  bottom: 40px;
+  left: -28px;
+  z-index: -1;
+}
+.review-section .shape-image .shape-img-5 img {
+  width: 200px;
+}
+.review-section .shape-image .shape-img-6 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 45s linear infinite reverse;
+  -webkit-animation: animationFramesOne 45s linear infinite reverse;
+}
+.review-section .shape-image .shape-img-6 img {
+  width: 30px;
+}
+.review-section .shape-image .shape-img-7 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 55s linear infinite;
+  -webkit-animation: animationFramesOne 55s linear infinite;
+}
+.review-section .shape-image .shape-img-7 img {
+  width: 25px;
+}
+.review-section .shape-image .shape-img-8 {
+  top: 26px;
+  right: 54%;
+  z-index: -1;
+}
+.review-section .shape-image .shape-img-8 img {
+  width: 200px;
 }
 
 /*----------------------------------------*/
@@ -3206,6 +3516,76 @@ input[type=color] {
 .blog-section.one.blog-grid .blog-items {
   margin-bottom: 60px;
 }
+.blog-section.one.blog-grid .shape-image-file .shape-img-1 {
+  left: -12px;
+  top: 8%;
+  z-index: -1;
+}
+.blog-section.one.blog-grid .shape-image-file .shape-img-1 img {
+  width: 60px;
+}
+.blog-section.one.blog-grid .shape-image-file .shape-img-2 {
+  top: -24px;
+  right: -28px;
+  z-index: -1;
+}
+.blog-section.one.blog-grid .shape-image-file .shape-img-2 img {
+  width: 100px;
+}
+.blog-section.one.blog-grid .shape-image-file .shape-img-3 {
+  top: 13%;
+  right: 14%;
+  z-index: -1;
+  animation: scale-down-center 15s linear infinite alternate-reverse both;
+}
+.blog-section.one.blog-grid .shape-image-file .shape-img-3 img {
+  width: 120px;
+}
+.blog-section.one.blog-grid .shape-image-file .shape-img-4 {
+  bottom: 21%;
+  right: 20px;
+  z-index: -1;
+  animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+}
+.blog-section.one.blog-grid .shape-image-file .shape-img-4 img {
+  width: 40px;
+}
+.blog-section.one.blog-grid .shape-image-file .shape-img-5 {
+  bottom: 7px;
+  left: -28px;
+  z-index: -1;
+}
+.blog-section.one.blog-grid .shape-image-file .shape-img-5 img {
+  width: 300px;
+}
+.blog-section.one.blog-grid .shape-image-file .shape-img-6 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 45s linear infinite reverse;
+  -webkit-animation: animationFramesOne 45s linear infinite reverse;
+}
+.blog-section.one.blog-grid .shape-image-file .shape-img-6 img {
+  width: 30px;
+}
+.blog-section.one.blog-grid .shape-image-file .shape-img-7 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 55s linear infinite;
+  -webkit-animation: animationFramesOne 55s linear infinite;
+}
+.blog-section.one.blog-grid .shape-image-file .shape-img-7 img {
+  width: 25px;
+}
+.blog-section.one.blog-grid .shape-image-file .shape-img-8 {
+  top: 26px;
+  right: 54%;
+  z-index: -1;
+}
+.blog-section.one.blog-grid .shape-image-file .shape-img-8 img {
+  width: 200px;
+}
 .blog-section.one.blog-list .blog-items {
   margin-bottom: 50px;
 }
@@ -3261,6 +3641,76 @@ input[type=color] {
 .blog-section.one.blog-list .pagination {
   margin-top: 0;
   justify-content: flex-start;
+}
+.blog-section.one.blog-list .shape-image-file .shape-img-1 {
+  left: -12px;
+  top: 8%;
+  z-index: -1;
+}
+.blog-section.one.blog-list .shape-image-file .shape-img-1 img {
+  width: 60px;
+}
+.blog-section.one.blog-list .shape-image-file .shape-img-2 {
+  top: -24px;
+  right: -28px;
+  z-index: -1;
+}
+.blog-section.one.blog-list .shape-image-file .shape-img-2 img {
+  width: 100px;
+}
+.blog-section.one.blog-list .shape-image-file .shape-img-3 {
+  top: 13%;
+  right: 14%;
+  z-index: -1;
+  animation: scale-down-center 15s linear infinite alternate-reverse both;
+}
+.blog-section.one.blog-list .shape-image-file .shape-img-3 img {
+  width: 120px;
+}
+.blog-section.one.blog-list .shape-image-file .shape-img-4 {
+  bottom: 21%;
+  right: 20px;
+  z-index: -1;
+  animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+}
+.blog-section.one.blog-list .shape-image-file .shape-img-4 img {
+  width: 40px;
+}
+.blog-section.one.blog-list .shape-image-file .shape-img-5 {
+  bottom: 40px;
+  left: -28px;
+  z-index: -1;
+}
+.blog-section.one.blog-list .shape-image-file .shape-img-5 img {
+  width: 200px;
+}
+.blog-section.one.blog-list .shape-image-file .shape-img-6 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 45s linear infinite reverse;
+  -webkit-animation: animationFramesOne 45s linear infinite reverse;
+}
+.blog-section.one.blog-list .shape-image-file .shape-img-6 img {
+  width: 30px;
+}
+.blog-section.one.blog-list .shape-image-file .shape-img-7 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 55s linear infinite;
+  -webkit-animation: animationFramesOne 55s linear infinite;
+}
+.blog-section.one.blog-list .shape-image-file .shape-img-7 img {
+  width: 25px;
+}
+.blog-section.one.blog-list .shape-image-file .shape-img-8 {
+  top: 26px;
+  right: 54%;
+  z-index: -1;
+}
+.blog-section.one.blog-list .shape-image-file .shape-img-8 img {
+  width: 200px;
 }
 .blog-section.details {
   background: var(--common-body-1);
@@ -3492,11 +3942,75 @@ input[type=color] {
 .blog-section.details .wrapper .leave-reply .comment-form .required {
   color: red;
 }
-.blog-section .shape-image .shape-7 {
-  right: 40px;
-  bottom: -108px;
+.blog-section .shape-image-file .shape-img-1 {
+  left: -12px;
+  top: 40px;
   z-index: -1;
-  width: 250px;
+}
+.blog-section .shape-image-file .shape-img-1 img {
+  width: 60px;
+}
+.blog-section .shape-image-file .shape-img-2 {
+  top: -24px;
+  right: -28px;
+  z-index: -1;
+}
+.blog-section .shape-image-file .shape-img-2 img {
+  width: 100px;
+}
+.blog-section .shape-image-file .shape-img-3 {
+  top: 13%;
+  right: 14%;
+  z-index: -1;
+  animation: scale-down-center 15s linear infinite alternate-reverse both;
+}
+.blog-section .shape-image-file .shape-img-3 img {
+  width: 120px;
+}
+.blog-section .shape-image-file .shape-img-4 {
+  bottom: 21%;
+  right: 20px;
+  z-index: -1;
+  animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+}
+.blog-section .shape-image-file .shape-img-4 img {
+  width: 40px;
+}
+.blog-section .shape-image-file .shape-img-5 {
+  bottom: 40px;
+  left: -28px;
+  z-index: -1;
+}
+.blog-section .shape-image-file .shape-img-5 img {
+  width: 200px;
+}
+.blog-section .shape-image-file .shape-img-6 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 45s linear infinite reverse;
+  -webkit-animation: animationFramesOne 45s linear infinite reverse;
+}
+.blog-section .shape-image-file .shape-img-6 img {
+  width: 30px;
+}
+.blog-section .shape-image-file .shape-img-7 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 55s linear infinite;
+  -webkit-animation: animationFramesOne 55s linear infinite;
+}
+.blog-section .shape-image-file .shape-img-7 img {
+  width: 25px;
+}
+.blog-section .shape-image-file .shape-img-8 {
+  top: 26px;
+  right: 54%;
+  z-index: -1;
+}
+.blog-section .shape-image-file .shape-img-8 img {
+  width: 200px;
 }
 
 /*----------------------------------------*/
@@ -4686,6 +5200,76 @@ input[type=color] {
 .contact-section .contact-map iframe {
   width: 100%;
   height: 450px;
+}
+.contact-section .shape-image-file .shape-img-1 {
+  left: -12px;
+  top: 8%;
+  z-index: -1;
+}
+.contact-section .shape-image-file .shape-img-1 img {
+  width: 60px;
+}
+.contact-section .shape-image-file .shape-img-2 {
+  top: -24px;
+  right: -28px;
+  z-index: -1;
+}
+.contact-section .shape-image-file .shape-img-2 img {
+  width: 100px;
+}
+.contact-section .shape-image-file .shape-img-3 {
+  top: 13%;
+  right: 14%;
+  z-index: -1;
+  animation: scale-down-center 15s linear infinite alternate-reverse both;
+}
+.contact-section .shape-image-file .shape-img-3 img {
+  width: 120px;
+}
+.contact-section .shape-image-file .shape-img-4 {
+  bottom: 21%;
+  right: 20px;
+  z-index: -1;
+  animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+}
+.contact-section .shape-image-file .shape-img-4 img {
+  width: 40px;
+}
+.contact-section .shape-image-file .shape-img-5 {
+  bottom: 40px;
+  left: -28px;
+  z-index: -1;
+}
+.contact-section .shape-image-file .shape-img-5 img {
+  width: 200px;
+}
+.contact-section .shape-image-file .shape-img-6 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 45s linear infinite reverse;
+  -webkit-animation: animationFramesOne 45s linear infinite reverse;
+}
+.contact-section .shape-image-file .shape-img-6 img {
+  width: 30px;
+}
+.contact-section .shape-image-file .shape-img-7 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 55s linear infinite;
+  -webkit-animation: animationFramesOne 55s linear infinite;
+}
+.contact-section .shape-image-file .shape-img-7 img {
+  width: 25px;
+}
+.contact-section .shape-image-file .shape-img-8 {
+  top: 26px;
+  right: 54%;
+  z-index: -1;
+}
+.contact-section .shape-image-file .shape-img-8 img {
+  width: 200px;
 }
 
 /*----------------------------------------*/

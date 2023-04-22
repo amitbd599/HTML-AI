@@ -2,6 +2,11 @@
 @use "typography" as *;
 
 :root {
+  // Custom Container
+  --container-width: 1200px;
+  --small-container-width: 1000px;
+  --large-container-width: 1550px;
+
   /**
     @font family declaration
     */
