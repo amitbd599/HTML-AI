@@ -173,5 +173,93 @@
         }
       }
     }
+    &.single-row {
+      .inner-wrapper {
+        margin-bottom: 30px;
+        .img-file {
+          position: relative;
+          border-radius: 10px;
+          overflow: hidden;
+          .shape-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s linear;
+            .inner-data {
+              margin-top: 70px;
+              h3 {
+                font-size: 20px;
+                font-weight: var(--fw-600);
+                margin: 0;
+                transition: all 0.4s linear;
+                transform: translateX(-140%);
+              }
+              p {
+                font-size: 14px;
+                line-height: 1.5;
+                margin-bottom: 0;
+                transition: all 0.4s linear;
+                transform: translateX(140%);
+              }
+              .social {
+                justify-content: center;
+                transform: translateY(337%);
+              }
+            }
+          }
+          &:hover {
+            .shape-overlay {
+              background: #000000ba;
+              .inner-data {
+                h3,
+                p {
+                  transform: translateX(0);
+                }
+                .social {
+                  transform: translateY(0);
+                }
+              }
+            }
+          }
+        }
+      }
+      .pagination {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        ul {
+          display: flex;
+          gap: 12px;
+          align-items: center;
+          justify-content: center;
+          li {
+            a {
+              width: 35px;
+              height: 35px;
+              background: linear-gradient(180deg, #243949 0%, #00151e 100%);
+              border-radius: 5px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: 600;
+              &:hover {
+                animation: pulse-small 0.8s;
+                color: var(--theme-1);
+              }
+              &.active {
+                color: var(--theme-1);
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
