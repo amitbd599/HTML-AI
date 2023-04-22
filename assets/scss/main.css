@@ -4448,10 +4448,13 @@ input[type=color] {
   padding: 30px 20px;
   border-radius: 8px;
   text-align: center;
+  transition: all 0.2s linear;
+  cursor: pointer;
 }
 .contact-section .location-tag .item .icon i {
   color: var(--theme-1);
   font-size: 50px;
+  transition: all 0.2s linear;
 }
 .contact-section .location-tag .item .view {
   margin-top: 16px;
@@ -4461,18 +4464,30 @@ input[type=color] {
   font-weight: 700;
   line-height: normal;
   color: var(--text-h);
+  transition: all 0.2s linear;
 }
 .contact-section .location-tag .item .view p {
   font-size: 15px;
   color: var(--text-p-1);
   margin-bottom: 0;
+  transition: all 0.2s linear;
+}
+.contact-section .location-tag .item:hover {
+  background: var(--theme-1);
+}
+.contact-section .location-tag .item:hover .icon i {
+  color: var(--common-white);
+}
+.contact-section .location-tag .item:hover .view h3,
+.contact-section .location-tag .item:hover .view p {
+  color: var(--common-white);
 }
 .contact-section .contact-map {
   margin-top: 60px;
 }
 .contact-section .contact-map iframe {
   width: 100%;
-  height: 400px;
+  height: 450px;
 }
 
 /*----------------------------------------*/
