@@ -449,17 +449,19 @@
                               </div>
 
 
-                              <div class="comment-form-url">
+                              <div class="form-web">
                                  <label>Website</label>
                                  <input type="url" id="url" name="url">
                               </div>
-                              <div class="comment-form-comment">
-                                 <label>Comment</label>
-                                 <textarea name="comment" id="comment" cols="45" rows="5" maxlength="65525"
-                                    required="required" spellcheck="false">
-                                 </textarea>
+
+
+                              <div class="form-comment">
+                                 <label>Comment <span class="required">*</span></label>
+                                 <textarea rows="8" spellcheck="false"></textarea>
                               </div>
-                              <div class="comment-form-cookies-consent">
+
+
+                              <div class="cookies-consent">
                                  <input type="checkbox" value="yes" name="wp-comment-cookies-consent"
                                     id="wp-comment-cookies-consent">
                                  <label for="wp-comment-cookies-consent">Save my name, email, and website in this
@@ -467,12 +469,16 @@
                                     for the next time I comment.</label>
                               </div>
                               <div class="form-submit">
-                                 <input type="submit" name="submit" id="submit" class="submit" value="Post A Comment">
+                                 <div class="inner-btn">
+                                    <div>
+                                       <button class="default-btn" type="submit">
+                                          Post A Comment
+                                       </button>
+                                    </div>
+                                 </div>
                               </div>
                            </form>
                         </div>
-
-
                      </div>
                   </div>
                </div>
