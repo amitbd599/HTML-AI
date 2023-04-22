@@ -2717,6 +2717,104 @@ input[type=color] {
 }
 
 /*----------------------------------------*/
+/*  00. Review-section START
+/*----------------------------------------*/
+.review-section {
+  background: var(--common-body-1);
+  z-index: 9;
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+.review-section .review-inner {
+  padding: 0 5px;
+  margin-bottom: 60px;
+}
+.review-section .review-inner .review-box {
+  background: var(--common-body-2);
+  position: relative;
+  padding: 30px 30px;
+  border-radius: 8px;
+}
+.review-section .review-inner .review-box .icons {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.review-section .review-inner .review-box .icons i {
+  color: #f7dd00;
+}
+.review-section .review-inner .review-box .review-text p {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.review-section .review-inner .review-box::after {
+  position: absolute;
+  content: "";
+  left: 34px;
+  bottom: -22px;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  background: #00151e;
+  width: 24px;
+  height: 24px;
+  z-index: 9;
+}
+.review-section .review-inner .profile {
+  margin-top: 40px;
+  display: flex;
+  gap: 18px;
+}
+.review-section .review-inner .profile .img-file {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.review-section .review-inner .profile .img-file img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.review-section .review-inner .profile .text-file h4 {
+  font-size: 20px;
+  line-height: normal;
+}
+.review-section .review-inner .profile .text-file p {
+  margin: 0;
+}
+.review-section .pagination {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.review-section .pagination ul {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.review-section .pagination ul li a {
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(180deg, #243949 0%, #00151e 100%);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.review-section .pagination ul li a:hover {
+  animation: pulse-small 0.8s;
+  color: var(--theme-1);
+}
+.review-section .pagination ul li a.active {
+  color: var(--theme-1);
+}
+
+/*----------------------------------------*/
 /*  00. Widgets CSS START
 /*----------------------------------------*/
 .widget-area .widget.widget-search .search {

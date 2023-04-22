@@ -1,0 +1,105 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  00. Review-section START
+/*----------------------------------------*/
+
+.review-section {
+  background: var(--common-body-1);
+  z-index: 9;
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+  .review-inner {
+    padding: 0 5px;
+    margin-bottom: 60px;
+    .review-box {
+      background: var(--common-body-2);
+      position: relative;
+      padding: 30px 30px;
+      border-radius: 8px;
+      .icons {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        i {
+          color: #f7dd00;
+        }
+      }
+      .review-text {
+        p {
+          font-size: 16px;
+          margin-top: 15px;
+          margin-bottom: 0;
+        }
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        left: 34px;
+        bottom: -22px;
+        -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+        background: #00151e;
+        width: 24px;
+        height: 24px;
+        z-index: 9;
+      }
+    }
+    .profile {
+      margin-top: 40px;
+      display: flex;
+      gap: 18px;
+      .img-file {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .text-file {
+        h4 {
+          font-size: 20px;
+          line-height: normal;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    ul {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: center;
+      li {
+        a {
+          width: 35px;
+          height: 35px;
+          background: linear-gradient(180deg, #243949 0%, #00151e 100%);
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
+          &:hover {
+            animation: pulse-small 0.8s;
+            color: var(--theme-1);
+          }
+          &.active {
+            color: var(--theme-1);
+          }
+        }
+      }
+    }
+  }
+}
