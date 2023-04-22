@@ -5817,4 +5817,39 @@ input[type=color] {
   width: 400px;
   z-index: -1;
   opacity: 0.3;
+}
+
+/*----------------------------------------*/
+/*  00. 404 CSS START
+/*----------------------------------------*/
+.error-section {
+  background: var(--common-body-1);
+  padding: 120px 0;
+  position: relative;
+  z-index: 9;
+}
+.error-section .wrapper {
+  text-align: center;
+  width: 100%;
+}
+.error-section .wrapper .img-file {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+.error-section .wrapper .img-file img {
+  width: 100%;
+  height: 100%;
+}
+.error-section .wrapper .text-file {
+  margin-top: 20px;
+}
+.error-section .wrapper .text-file h4 {
+  font-size: 26px;
+  font-weight: 800;
+}
+.error-section .wrapper .text-file p {
+  font-size: 15px;
 }/*# sourceMappingURL=main.css.map */
