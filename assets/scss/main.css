@@ -387,18 +387,6 @@ input[type=color] {
   }
 }
 
-@media (min-width: 1400px) {
-  .custom-container {
-    max-width: 1680px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .custom-container-3 {
-    max-width: 1200px;
-  }
-}
-
 /*--
     - Background color
 -----------------------------------------*/
@@ -4386,7 +4374,7 @@ input[type=color] {
 .contact-section {
   background: var(--common-body-1);
   z-index: 9;
-  padding: 120px 0;
+  padding: 120px 0 0;
   position: relative;
   overflow: hidden;
 }
@@ -4452,28 +4440,14 @@ input[type=color] {
 .contact-section .appointment .table tbody tr td {
   color: var(--common-white);
 }
-.contact-section .get-in-touch {
+.contact-section .location-tag {
   margin-top: 80px;
-}
-.contact-section .get-in-touch .title h4 {
-  font-size: 16px;
-  line-height: normal;
-}
-.contact-section .get-in-touch .title h2 {
-  margin-top: 15px;
-  font-size: 22px;
-  line-height: normal;
-}
-.contact-section .get-in-touch .text {
-  margin-top: 20px;
-}
-.contact-section .get-in-touch .text p {
-  font-size: 15px;
 }
 .contact-section .location-tag .item {
   background: var(--common-white);
-  padding: 20px;
+  padding: 30px 20px;
   border-radius: 8px;
+  text-align: center;
 }
 .contact-section .location-tag .item .icon i {
   color: var(--theme-1);
@@ -4493,9 +4467,12 @@ input[type=color] {
   color: var(--text-p-1);
   margin-bottom: 0;
 }
-.contact-section .location-tag .item .view p:last-child {
-  margin-top: 10px;
-  font-size: 20px;
+.contact-section .contact-map {
+  margin-top: 60px;
+}
+.contact-section .contact-map iframe {
+  width: 100%;
+  height: 400px;
 }
 
 /*----------------------------------------*/
