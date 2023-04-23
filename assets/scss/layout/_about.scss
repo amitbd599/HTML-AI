@@ -118,65 +118,185 @@
         margin-top: 25px;
       }
     }
-  }
-  .shape-img {
-    .shape-1 {
-      right: 15px;
-      top: 80%;
-      z-index: -1;
+    .shape-img {
+      .shape-1 {
+        right: 15px;
+        top: 80%;
+        z-index: -1;
 
-      img {
-        width: 80px;
+        img {
+          width: 80px;
+        }
+      }
+      .shape-2 {
+        left: 15px;
+        top: 50%;
+        z-index: -1;
+        -webkit-animation: slide-top 10s linear 0.3s infinite alternate-reverse
+          both;
+        animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+        img {
+          width: 40px;
+        }
+      }
+      .shape-3 {
+        right: 0;
+        top: 0;
+        z-index: -1;
+        img {
+          width: 180px;
+        }
+      }
+      .shape-4 {
+        right: 25%;
+        top: 9%;
+        z-index: -1;
+        animation: animationFramesOne 35s linear infinite;
+        -webkit-animation: animationFramesOne 35s linear infinite;
+        img {
+          width: 30px;
+        }
+      }
+      .shape-5 {
+        left: 0%;
+        top: 10%;
+        z-index: -1;
+        animation: animationFramesOne 35s linear infinite reverse;
+        -webkit-animation: animationFramesOne 35s linear infinite reverse;
+        img {
+          width: 30px;
+        }
+      }
+      .shape-6 {
+        left: 59%;
+        top: 8%;
+        z-index: -1;
+        -webkit-animation: rotate-in-center 6s linear 0s infinite reverse
+          backwards;
+        animation: rotate-in-center 6s linear 0s infinite reverse backwards;
+        img {
+          width: 25px;
+        }
       }
     }
-    .shape-2 {
-      left: 15px;
-      top: 50%;
-      z-index: -1;
-      -webkit-animation: slide-top 10s linear 0.3s infinite alternate-reverse
-        both;
-      animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
-      img {
-        width: 40px;
+  }
+  &.two {
+    background: var(--common-body-1);
+    padding: 120px 0;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+
+    .inner-list {
+      position: relative;
+      z-index: 9;
+      ul {
+        li {
+          font-size: 16px;
+          line-height: 26px;
+          position: relative;
+          padding-left: 20px;
+          margin-bottom: 10px;
+          &::after {
+            position: absolute;
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 400;
+            content: "\f324";
+            left: 0;
+            top: 0;
+            font-size: 15px;
+            color: var(--theme-1);
+          }
+        }
+      }
+      .inner-btn {
+        margin-top: 30px;
+        justify-content: flex-start;
       }
     }
-    .shape-3 {
-      right: 0;
-      top: 0;
-      z-index: -1;
-      img {
+    .img-file {
+      padding-left: 20px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .shape-img {
+      .shape-1 {
+        left: -4px;
+        top: 40px;
+        width: 85px;
+        z-index: -1;
+      }
+      .shape-2 {
+        right: 40px;
+        top: -3px;
+        width: 85px;
+        z-index: -1;
+      }
+      .shape-3 {
+        right: 230px;
+        bottom: 80px;
+        width: 120px;
+        z-index: -1;
+        animation: trigger 6s linear infinite;
+      }
+      .shape-4 {
+        right: 570px;
+        bottom: 24px;
+        width: 30px;
+        z-index: -1;
+        animation: trigger 6s linear 0.3s infinite reverse;
+      }
+      .shape-5 {
+        right: 570px;
+        top: 24px;
+        width: 34px;
+        z-index: -1;
+        animation: animationFramesOne 30s linear infinite reverse backwards;
+        -webkit-animation: animationFramesOne 30s linear infinite reverse
+          backwards;
+      }
+      .shape-6 {
+        right: 342px;
+        top: 67px;
+        width: 20px;
+        z-index: -1;
+        animation: trigger 6s linear infinite reverse;
+      }
+      .shape-7 {
+        left: 340px;
+        top: 48px;
         width: 180px;
+        z-index: -1;
       }
-    }
-    .shape-4 {
-      right: 25%;
-      top: 9%;
-      z-index: -1;
-      animation: animationFramesOne 35s linear infinite;
-      -webkit-animation: animationFramesOne 35s linear infinite;
-      img {
-        width: 30px;
+      .shape-8 {
+        left: -10px;
+        bottom: -14px;
+        width: 143px;
+        z-index: -1;
+        transform: rotate(270deg);
       }
-    }
-    .shape-5 {
-      left: 0%;
-      top: 10%;
-      z-index: -1;
-      animation: animationFramesOne 35s linear infinite reverse;
-      -webkit-animation: animationFramesOne 35s linear infinite reverse;
-      img {
-        width: 30px;
+      .shape-9 {
+        left: 548px;
+        bottom: 30px;
+        width: 80px;
+        z-index: -1;
       }
-    }
-    .shape-6 {
-      left: 59%;
-      top: 8%;
-      z-index: -1;
-      -webkit-animation: rotate-in-center 6s linear 0s infinite reverse
-        backwards;
-      animation: rotate-in-center 6s linear 0s infinite reverse backwards;
-      img {
+      .shape-10 {
+        left: 548px;
+        top: 30px;
         width: 25px;
+        z-index: -1;
+        animation: animationFramesOne 50s linear infinite;
+        -webkit-animation: animationFramesOne 50s linear infinite;
+      }
+      .shape-11 {
+        left: 775px;
+        bottom: 130px;
+        width: 50px;
+        z-index: -1;
+        animation: rotate-in-center 12s linear 0s infinite reverse backwards;
       }
     }
   }

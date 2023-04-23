@@ -11,6 +11,9 @@
     color: var(--theme-1);
     text-transform: uppercase;
     font-family: var(--ff-body);
+    &.white {
+      color: var(--common-white);
+    }
   }
   h2 {
     margin-top: 15px;
