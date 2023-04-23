@@ -280,12 +280,6 @@
     }
   }
 
-  .img-file {
-    img {
-      animation: trigger 15s linear 1s infinite;
-    }
-  }
-
   .shape-img {
     .shape-1 {
       left: 35%;
@@ -360,6 +354,13 @@
       right: 17%;
       top: 19%;
       width: 41px;
+      z-index: 0;
+      animation: trigger 6s linear infinite;
+    }
+    .shape-11 {
+      left: 199px;
+      bottom: 28%;
+      width: 45px;
       z-index: 0;
       animation: trigger 6s linear infinite;
     }

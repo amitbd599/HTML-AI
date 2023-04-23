@@ -1729,9 +1729,6 @@ input[type=color] {
 .hero-section .wrapper .inner-btn {
   margin-top: 20px;
 }
-.hero-section .img-file img {
-  animation: trigger 15s linear 1s infinite;
-}
 .hero-section .shape-img .shape-1 {
   left: 35%;
   top: 36px;
@@ -1802,6 +1799,13 @@ input[type=color] {
   right: 17%;
   top: 19%;
   width: 41px;
+  z-index: 0;
+  animation: trigger 6s linear infinite;
+}
+.hero-section .shape-img .shape-11 {
+  left: 199px;
+  bottom: 28%;
+  width: 45px;
   z-index: 0;
   animation: trigger 6s linear infinite;
 }
