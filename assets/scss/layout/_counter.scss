@@ -198,4 +198,44 @@
       }
     }
   }
+  &.two {
+    background: var(--common-body-1);
+    padding: 60px 0;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .wrapper {
+      h2 {
+        font-size: 50px;
+        line-height: 1.2;
+        color: var(--theme-1);
+        margin: 0;
+      }
+      h3 {
+        font-size: 40px;
+        line-height: 1.2;
+        margin: 0;
+      }
+      h4 {
+        font-size: 22px;
+        line-height: 1.2;
+      }
+    }
+  }
+  .shape-img {
+    .shape-1 {
+      right: -2px;
+      top: -2px;
+      width: 70px;
+    }
+    .shape-2 {
+      left: 10px;
+      top: 160px;
+      width: 52px;
+      animation: trigger 6s linear infinite;
+    }
+  }
 }
