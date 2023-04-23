@@ -3081,6 +3081,105 @@ input[type=color] {
 .project-section.one .shape-image .shape-img-10 img {
   width: 75px;
 }
+.project-section.two {
+  background: var(--common-body-2);
+  padding: 120px 0;
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+}
+.project-section.two .section-title-shape-one {
+  margin-bottom: 60px;
+}
+.project-section.two .project-wrapper {
+  z-index: 9;
+  margin-bottom: 120px;
+  background: var(--common-body-2);
+  position: relative;
+}
+.project-section.two .project-wrapper img {
+  border-radius: 8px;
+  width: 100%;
+}
+.project-section.two .project-wrapper .shape-overlay {
+  position: absolute;
+  background: var(--common-white);
+  padding: 20px;
+  bottom: -40%;
+  left: 0;
+  margin: 35px;
+  border-radius: 8px;
+}
+.project-section.two .project-wrapper .shape-overlay h3 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-h);
+}
+.project-section.two .project-wrapper .shape-overlay p {
+  text-align: center;
+  margin: 0;
+  color: var(--text-p-1);
+}
+.project-section.two .project-wrapper .shape-overlay .default-btn {
+  margin-top: 20px;
+}
+.project-section.two .project-wrapper:hover {
+  border-radius: 8px;
+  animation: pulse 1s;
+}
+.project-section.two .inner-btn {
+  margin-top: 15px;
+}
+.project-section.two .shape-image .shape-1 {
+  right: 0;
+  top: 0;
+  z-index: 0;
+  width: 150px;
+  transform: rotate(90deg);
+}
+.project-section.two .shape-image .shape-2 {
+  left: 41%;
+  top: 12%;
+  z-index: 0;
+  width: 140px;
+}
+.project-section.two .shape-image .shape-3 {
+  right: 41%;
+  top: 12%;
+  z-index: 0;
+  width: 20px;
+  animation: animationFramesOne 30s linear infinite reverse backwards;
+  -webkit-animation: animationFramesOne 30s linear infinite reverse backwards;
+}
+.project-section.two .shape-image .shape-4 {
+  right: 21%;
+  top: 18%;
+  z-index: 0;
+  width: 20px;
+  animation: animationFramesOne 30s linear infinite;
+  -webkit-animation: animationFramesOne 30s linear infinite;
+}
+.project-section.two .shape-image .shape-5 {
+  right: 26%;
+  top: 10%;
+  z-index: 0;
+  width: 20px;
+  animation: trigger 4s linear infinite;
+}
+.project-section.two .shape-image .shape-6 {
+  right: 6%;
+  bottom: 7%;
+  z-index: 0;
+  width: 63px;
+  animation: trigger 6s linear infinite;
+}
+.project-section.two .shape-image .shape-7 {
+  left: 0;
+  bottom: 0%;
+  z-index: 0;
+  width: 416px;
+}
 .project-section.single-row .pagination {
   margin-top: 30px;
   display: flex;
@@ -3606,7 +3705,7 @@ input[type=color] {
 .testimonial-section.two .shape-image .shape-7 {
   left: 7px;
   bottom: -5px;
-  width: 100px;
+  width: 120px;
   z-index: 0;
 }
 
