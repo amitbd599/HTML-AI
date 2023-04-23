@@ -219,6 +219,142 @@
       }
     }
   }
+  &.two {
+    background: var(--common-body-2);
+    z-index: 9;
+    overflow: hidden;
+    padding: 120px 0;
+    min-height: auto;
+    position: relative;
+
+    .section-title-shape-one {
+      margin-bottom: 60px;
+    }
+    .section-wrapper {
+      margin-bottom: 30px;
+      overflow: hidden;
+      .wrapper-inner {
+        background: var(--common-body-1);
+        padding: 30px 25px;
+        border-radius: 5px;
+        text-align: center;
+        position: relative;
+        @include transition(0.3s);
+
+        .img-file {
+          width: 80px;
+          height: 80px;
+          overflow: hidden;
+          margin: auto;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include transition(0.3s);
+          }
+        }
+        .text-file {
+          margin: auto;
+          h3 {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: var(--fw-800);
+            line-height: 1.2;
+            color: var(--common-white);
+            transition: all 0.1s linear !important;
+            &:hover {
+              color: var(--theme-1);
+            }
+          }
+          p {
+            font-size: 15px;
+            color: var(--text-p-2);
+            margin: 0;
+          }
+        }
+
+        &:hover {
+          transform: translateY(-10px);
+
+          .img-file {
+            img {
+              transform: rotateY(180deg);
+            }
+          }
+        }
+      }
+    }
+    .inner-btn {
+      margin-top: 20px;
+    }
+  }
+
+  .shape-img {
+    .shape-1 {
+      left: 4px;
+      top: -2px;
+      width: 100px;
+      z-index: -1;
+    }
+    .shape-2 {
+      right: 40px;
+      top: 24px;
+      width: 50px;
+      z-index: -1;
+    }
+    .shape-3 {
+      right: 230px;
+      bottom: 80px;
+      width: 21px;
+      z-index: -1;
+      animation: trigger 6s linear infinite;
+    }
+
+    .shape-5 {
+      right: 570px;
+      top: 24px;
+      width: 34px;
+      z-index: -1;
+      animation: animationFramesOne 30s linear infinite reverse backwards;
+      -webkit-animation: animationFramesOne 30s linear infinite reverse
+        backwards;
+    }
+    .shape-6 {
+      left: 342px;
+      top: 184px;
+      width: 20px;
+      z-index: -1;
+      animation: trigger 6s linear infinite reverse;
+    }
+    .shape-7 {
+      right: 287px;
+      top: 95px;
+      width: 161px;
+      z-index: -1;
+    }
+    .shape-8 {
+      left: -10px;
+      bottom: -6px;
+      width: 180px;
+      z-index: -1;
+      transform: rotate(90deg);
+      opacity: 0.3;
+    }
+    .shape-9 {
+      left: 548px;
+      bottom: 30px;
+      width: 80px;
+      z-index: -1;
+    }
+    .shape-10 {
+      left: 140px;
+      top: 42px;
+      width: 22px;
+      z-index: -1;
+      animation: animationFramesOne 50s linear infinite;
+      -webkit-animation: animationFramesOne 50s linear infinite;
+    }
+  }
 }
 
 // Service Details Section
