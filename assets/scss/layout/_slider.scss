@@ -232,3 +232,136 @@
     }
   }
 }
+
+.hero-section {
+  background: var(--common-body-1);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000005c;
+    z-index: -1;
+  }
+  .wrapper {
+    z-index: 9;
+    position: relative;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    h3 {
+      font-size: 22px;
+      line-height: 32px;
+      color: var(--theme-1);
+    }
+    h2 {
+      margin-top: 20px;
+      font-size: 50px;
+      line-height: 60px;
+      text-transform: capitalize;
+      font-weight: var(--fw-800);
+    }
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    .inner-btn {
+      margin-top: 20px;
+    }
+  }
+
+  .img-file {
+    img {
+      animation: trigger 15s linear 1s infinite;
+    }
+  }
+
+  .shape-img {
+    .shape-1 {
+      left: 35%;
+      top: 36px;
+      width: 30px;
+      z-index: 0;
+      animation: animationFramesOne 55s linear infinite reverse;
+      -webkit-animation: animationFramesOne 55s linear infinite reverse;
+    }
+    .shape-2 {
+      left: 50%;
+      top: 36px;
+      width: 20px;
+      z-index: 0;
+      animation: animationFramesOne 55s linear infinite;
+      -webkit-animation: animationFramesOne 55s linear infinite;
+    }
+    .shape-3 {
+      right: 30%;
+      top: 86px;
+      width: 20px;
+      z-index: 0;
+      -webkit-animation: rotate-in-center 12s linear 0s infinite reverse
+        backwards;
+      animation: rotate-in-center 12s linear 0s infinite reverse backwards;
+    }
+    .shape-4 {
+      right: 30%;
+      top: 50%;
+      width: 60px;
+      z-index: 0;
+      animation: animationFramesOne 30s linear infinite;
+      -webkit-animation: animationFramesOne 30s linear infinite;
+    }
+    .shape-5 {
+      left: 30%;
+      top: 50%;
+      width: 30px;
+      z-index: 0;
+      animation: animationFramesOne 30s linear infinite reverse backwards;
+      -webkit-animation: animationFramesOne 30s linear infinite reverse
+        backwards;
+    }
+    .shape-6 {
+      left: 30%;
+      bottom: 8%;
+      width: 30px;
+      z-index: 0;
+      animation: slide-right 15s linear 1s infinite alternate-reverse both;
+    }
+    .shape-7 {
+      left: 0;
+      bottom: 1%;
+      width: 190px;
+      z-index: 0;
+    }
+    .shape-8 {
+      right: 110px;
+      bottom: 6%;
+      width: 100px;
+      z-index: 0;
+      animation: trigger 6s linear infinite;
+    }
+    .shape-9 {
+      right: 16%;
+      top: 6%;
+      width: 55px;
+      z-index: 0;
+      animation: trigger 6s linear infinite;
+    }
+    .shape-10 {
+      right: 17%;
+      top: 19%;
+      width: 41px;
+      z-index: 0;
+      animation: trigger 6s linear infinite;
+    }
+  }
+}
