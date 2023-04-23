@@ -97,3 +97,33 @@
     }
   }
 }
+
+.arrow-2 {
+  position: absolute;
+  right: -10px;
+  top: -60px;
+  gap: 20px;
+  display: flex;
+  justify-content: flex-end;
+  .testimonialOne-button {
+    background: var(--common-gd);
+    width: 45px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      transition: all 0.2s linear;
+    }
+    &:hover {
+      animation: pulse-small 0.8s;
+      i {
+        color: var(--theme-1);
+      }
+    }
+    &::after {
+      display: none;
+    }
+  }
+}
