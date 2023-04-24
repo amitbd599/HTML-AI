@@ -154,7 +154,7 @@
       border-radius: 5px;
       cursor: pointer;
       i {
-        color: red;
+        color: var(--theme-1);
         font-size: 30px;
 
         @include transition(0.3s);
