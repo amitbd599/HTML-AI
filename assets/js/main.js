@@ -140,6 +140,15 @@
     }
   });
 
+  //! 00. Sidebar Js
+  $(".sidebar-toggle").on("click", function () {
+    $(".sidebar-right").addClass("sidebar-opened");
+  });
+
+  $(".sidebar-close").on("click", function () {
+    $(".sidebar-right").removeClass("sidebar-opened");
+  });
+
   // **************************************************** //
 
   ////////////////////////////////////////////////////

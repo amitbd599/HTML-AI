@@ -316,3 +316,15 @@
   animation: sticky 1s;
   background: var(--common-body-1);
 }
+
+// Search styles
+
+.search-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--common-body-1);
+  z-index: 99;
+}

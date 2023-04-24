@@ -771,66 +771,154 @@ input[type=color] {
 /*  00. Modal CSS START
 /*----------------------------------------*/
 /* 01. ========= search-modal ========== */
-#search-modal {
-  background: rgba(0, 0, 0, 0.65);
+.search-box {
+  background: rgba(0, 0, 0, 0.77);
 }
-#search-modal button span {
+.search-box .close {
   color: #fff;
   top: 50px;
   right: 50px;
   position: absolute;
   font-size: 50px;
+  transition: all 0.3s linear;
 }
-#search-modal button span:hover {
+.search-box .close:hover {
   transform: rotate(90deg);
   color: var(--theme-1);
 }
-#search-modal .modal-dialog {
+.search-box .modal-dialog {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) !important;
   border: none;
   outline: 0;
 }
-#search-modal .modal-dialog .modal-content {
+.search-box .modal-dialog .modal-content {
   background: 0 0;
   box-shadow: none;
   border: none;
 }
-#search-modal .modal-dialog .modal-content form {
-  max-width: 555px;
+.search-box .modal-dialog .modal-content form {
+  max-width: 650px;
   position: relative;
+  border-radius: 30px;
+  overflow: hidden;
 }
-#search-modal .modal-dialog .modal-content form input {
-  width: 100%;
-  font-size: 36px;
+.search-box .modal-dialog .modal-content form input {
+  display: block;
+  width: 500px;
+  height: 60px;
   border: none;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.938);
-  background: 0 0;
-  color: #fff;
-  padding-bottom: 12px;
-  padding-right: 40px;
-  outline: none;
+  border-radius: 30px;
+  color: #111;
+  padding: 3px 0 0 25px;
 }
-#search-modal .modal-dialog .modal-content form input::-moz-placeholder {
-  font-size: 35px;
-  color: rgba(255, 255, 255, 0.938);
-}
-#search-modal .modal-dialog .modal-content form input::placeholder {
-  font-size: 35px;
-  color: rgba(255, 255, 255, 0.938);
-}
-#search-modal .modal-dialog .modal-content form button {
+.search-box .modal-dialog .modal-content form button {
   position: absolute;
-  right: 0;
+  right: 6px;
   margin-bottom: 3px;
-  font-size: 30px;
-  color: rgba(255, 255, 255, 0.938);
-  background: 0 0;
+  font-size: 18px;
+  color: var(--theme-1);
   border: none;
   cursor: pointer;
-  top: 11px;
+  top: 5px;
+  background: var(--common-body-1);
+  width: 50px;
+  height: 50px;
+  border-radius: 60px;
+}
+
+.sidebar-right {
+  background: rgba(0, 0, 0, 0.77);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  transform: translateX(100%);
+  transition: all 0.5s linear;
+}
+.sidebar-right .wrapper {
+  position: fixed;
+  right: 0;
+  width: 400px;
+  min-height: 100vh;
+  background: var(--common-white);
+  padding: 40px;
+  overflow-y: scroll;
+  height: 100%;
+}
+.sidebar-right .wrapper .title {
+  margin-top: 10px;
+}
+.sidebar-right .wrapper .title .logo {
+  width: 220px;
+}
+.sidebar-right .wrapper .title p {
+  margin-top: 20px;
+  color: var(--text-p-1);
+  margin-bottom: 0;
+  font-size: 15px;
+}
+.sidebar-right .wrapper .intro-text {
+  margin-top: 30px;
+}
+.sidebar-right .wrapper .intro-text .title-text h3 {
+  font-size: 20px;
+  color: var(--text-h);
+  line-height: normal;
+}
+.sidebar-right .wrapper .intro-text .img-file {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.sidebar-right .wrapper .intro-text .img-file img {
+  border-radius: 5px;
+}
+.sidebar-right .wrapper .intro-text p {
+  margin-top: 0px;
+  color: var(--text-p-1);
+  margin-bottom: 0;
+  font-size: 15px;
+}
+.sidebar-right .wrapper .intro-text ul li {
+  color: var(--text-p-1);
+  font-size: 16px;
+  margin: 5px;
+}
+.sidebar-right .wrapper .intro-text ul li i {
+  font-size: 16px;
+  color: var(--text-p-1);
+}
+.sidebar-right .wrapper .close-icon {
+  background: var(--common-body-1);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sidebar-right .wrapper .close-icon i {
+  color: red;
+  font-size: 30px;
+  transition: all 0.3s linear;
+}
+.sidebar-right .wrapper .close-icon i:hover {
+  transform: rotate(90deg);
+}
+.sidebar-right.sidebar-opened {
+  transform: translateX(0);
 }
 
 /*----------------------------------------*/
@@ -1444,6 +1532,16 @@ input[type=color] {
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.07);
   animation: sticky 1s;
   background: var(--common-body-1);
+}
+
+.search-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--common-body-1);
+  z-index: 99;
 }
 
 /*----------------------------------------*/
