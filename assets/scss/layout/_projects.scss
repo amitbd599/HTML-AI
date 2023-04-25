@@ -264,6 +264,163 @@
     }
   }
 
+  &.three {
+    background: var(--common-body-3);
+    padding: 120px 0;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+    .section-title-shape-one {
+      margin-bottom: 60px;
+    }
+    .project-wrapper {
+      z-index: 9;
+      position: relative;
+      margin-bottom: 30px;
+      .img-file {
+        img {
+          border-radius: 8px;
+          width: 100%;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        content: "";
+        background: rgb(19, 196, 161);
+        background: linear-gradient(
+          180deg,
+          rgba(19, 196, 161, 0.192) 6%,
+          rgb(0 0 0) 100%
+        );
+        opacity: 0.4;
+        border-radius: 8px;
+        z-index: 0;
+        @include transition(0.4s);
+      }
+      .shape-overlay {
+        position: absolute;
+        margin: 40px;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+        overflow: hidden;
+
+        .inner {
+          transform: translateY(30px);
+          @include transition(0.3s);
+          h2 {
+            font-size: 26px;
+            line-height: 1.2;
+            font-weight: 800;
+            color: var(--common-white);
+          }
+          p {
+            margin: 0;
+            font-size: 16px;
+            color: var(--text-p-2);
+          }
+          .link {
+            margin-top: 15px;
+            a {
+              font-size: 20px;
+              font-weight: 600;
+              position: relative;
+              @include transition(0.3s);
+              &::after {
+                position: absolute;
+                font-family: "Font Awesome 5 Pro";
+                content: "\f324";
+                font-size: 14px;
+                right: -22px;
+                top: 2px;
+              }
+
+              &:hover {
+                color: var(--theme-1);
+              }
+            }
+          }
+        }
+
+        .default-btn {
+          margin-top: 20px;
+        }
+      }
+      &:hover {
+        &::after {
+          @include transition(0.3s);
+          opacity: 1;
+        }
+        .shape-overlay {
+          .inner {
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+    .inner-btn {
+      margin-top: 15px;
+    }
+
+    .shape-image {
+      .shape-1 {
+        right: 0;
+        top: 0;
+        z-index: 0;
+        width: 150px;
+        transform: rotate(90deg);
+      }
+      .shape-2 {
+        left: 41%;
+        top: 12%;
+        z-index: 0;
+        width: 140px;
+      }
+      .shape-3 {
+        right: 41%;
+        top: 12%;
+        z-index: 0;
+        width: 20px;
+        animation: animationFramesOne 30s linear infinite reverse backwards;
+        -webkit-animation: animationFramesOne 30s linear infinite reverse
+          backwards;
+      }
+      .shape-4 {
+        right: 21%;
+        top: 18%;
+        z-index: 0;
+        width: 20px;
+        animation: animationFramesOne 30s linear infinite;
+        -webkit-animation: animationFramesOne 30s linear infinite;
+      }
+      .shape-5 {
+        right: 26%;
+        top: 10%;
+        z-index: 0;
+        width: 20px;
+        animation: trigger 4s linear infinite;
+      }
+      .shape-6 {
+        right: 6%;
+        bottom: 7%;
+        z-index: 0;
+        width: 63px;
+        animation: trigger 6s linear infinite;
+      }
+      .shape-7 {
+        left: 0;
+        bottom: 0%;
+        z-index: 0;
+        width: 416px;
+      }
+    }
+  }
+
   &.single-row {
     .pagination {
       margin-top: 30px;

@@ -340,6 +340,15 @@
           width: 60px;
         }
       }
+      .shape-img-2 {
+        right: -2px;
+        bottom: 28px;
+        z-index: -1;
+        opacity: 0.6;
+        img {
+          width: 230px;
+        }
+      }
 
       .shape-img-3 {
         top: 13%;

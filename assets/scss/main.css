@@ -5801,6 +5801,144 @@ input[type=color] {
   z-index: 0;
   width: 416px;
 }
+.project-section.three {
+  background: var(--common-body-3);
+  padding: 120px 0;
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+}
+.project-section.three .section-title-shape-one {
+  margin-bottom: 60px;
+}
+.project-section.three .project-wrapper {
+  z-index: 9;
+  position: relative;
+  margin-bottom: 30px;
+}
+.project-section.three .project-wrapper .img-file img {
+  border-radius: 8px;
+  width: 100%;
+}
+.project-section.three .project-wrapper::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  content: "";
+  background: rgb(19, 196, 161);
+  background: linear-gradient(180deg, rgba(19, 196, 161, 0.192) 6%, rgb(0, 0, 0) 100%);
+  opacity: 0.4;
+  border-radius: 8px;
+  z-index: 0;
+  transition: all 0.4s linear;
+}
+.project-section.three .project-wrapper .shape-overlay {
+  position: absolute;
+  margin: 40px;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  overflow: hidden;
+}
+.project-section.three .project-wrapper .shape-overlay .inner {
+  transform: translateY(30px);
+  transition: all 0.3s linear;
+}
+.project-section.three .project-wrapper .shape-overlay .inner h2 {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--common-white);
+}
+.project-section.three .project-wrapper .shape-overlay .inner p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--text-p-2);
+}
+.project-section.three .project-wrapper .shape-overlay .inner .link {
+  margin-top: 15px;
+}
+.project-section.three .project-wrapper .shape-overlay .inner .link a {
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s linear;
+}
+.project-section.three .project-wrapper .shape-overlay .inner .link a::after {
+  position: absolute;
+  font-family: "Font Awesome 5 Pro";
+  content: "\f324";
+  font-size: 14px;
+  right: -22px;
+  top: 2px;
+}
+.project-section.three .project-wrapper .shape-overlay .inner .link a:hover {
+  color: var(--theme-1);
+}
+.project-section.three .project-wrapper .shape-overlay .default-btn {
+  margin-top: 20px;
+}
+.project-section.three .project-wrapper:hover::after {
+  transition: all 0.3s linear;
+  opacity: 1;
+}
+.project-section.three .project-wrapper:hover .shape-overlay .inner {
+  transform: translateY(0);
+}
+.project-section.three .inner-btn {
+  margin-top: 15px;
+}
+.project-section.three .shape-image .shape-1 {
+  right: 0;
+  top: 0;
+  z-index: 0;
+  width: 150px;
+  transform: rotate(90deg);
+}
+.project-section.three .shape-image .shape-2 {
+  left: 41%;
+  top: 12%;
+  z-index: 0;
+  width: 140px;
+}
+.project-section.three .shape-image .shape-3 {
+  right: 41%;
+  top: 12%;
+  z-index: 0;
+  width: 20px;
+  animation: animationFramesOne 30s linear infinite reverse backwards;
+  -webkit-animation: animationFramesOne 30s linear infinite reverse backwards;
+}
+.project-section.three .shape-image .shape-4 {
+  right: 21%;
+  top: 18%;
+  z-index: 0;
+  width: 20px;
+  animation: animationFramesOne 30s linear infinite;
+  -webkit-animation: animationFramesOne 30s linear infinite;
+}
+.project-section.three .shape-image .shape-5 {
+  right: 26%;
+  top: 10%;
+  z-index: 0;
+  width: 20px;
+  animation: trigger 4s linear infinite;
+}
+.project-section.three .shape-image .shape-6 {
+  right: 6%;
+  bottom: 7%;
+  z-index: 0;
+  width: 63px;
+  animation: trigger 6s linear infinite;
+}
+.project-section.three .shape-image .shape-7 {
+  left: 0;
+  bottom: 0%;
+  z-index: 0;
+  width: 416px;
+}
 .project-section.single-row .pagination {
   margin-top: 30px;
   display: flex;
@@ -9074,6 +9212,15 @@ input[type=color] {
 .faq-section.three .shape-image .shape-img-1 img {
   width: 60px;
 }
+.faq-section.three .shape-image .shape-img-2 {
+  right: -2px;
+  bottom: 28px;
+  z-index: -1;
+  opacity: 0.6;
+}
+.faq-section.three .shape-image .shape-img-2 img {
+  width: 230px;
+}
 .faq-section.three .shape-image .shape-img-3 {
   top: 13%;
   right: 14%;
@@ -9715,6 +9862,21 @@ input[type=color] {
 .counter-section.two .wrapper h4 {
   font-size: 22px;
   line-height: 1.2;
+}
+.counter-section.two.white {
+  background: var(--common-white);
+}
+.counter-section.two.white .wrapper {
+  text-align: center;
+}
+.counter-section.two.white .wrapper h2 {
+  color: var(--text-h);
+}
+.counter-section.two.white .wrapper h3 {
+  color: var(--text-h);
+}
+.counter-section.two.white .wrapper h4 {
+  color: var(--text-h);
 }
 .counter-section .shape-img .shape-1 {
   right: -2px;
