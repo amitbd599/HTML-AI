@@ -4543,12 +4543,16 @@ input[type=color] {
 .service-section.three .swiper .swiper-wrapper .inner-wrapper .img-file {
   border-radius: 5px 5px 0 0;
   overflow: hidden;
+  position: relative;
 }
 .service-section.three .swiper .swiper-wrapper .inner-wrapper .img-file img {
-  transition: all 0.3s linear;
+  transition: all 0.4s linear;
 }
 .service-section.three .swiper .swiper-wrapper .inner-wrapper .text-file {
   padding: 30px 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
 }
 .service-section.three .swiper .swiper-wrapper .inner-wrapper .text-file .title {
   font-size: 20px;
@@ -4586,14 +4590,97 @@ input[type=color] {
   right: -19px;
   top: -1px;
 }
-.service-section.three .swiper .swiper-wrapper .inner-wrapper:hover .img-file img {
-  transform: scale(110%);
+.service-section.three .swiper .swiper-wrapper .inner-wrapper .text-file::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/shape/15_shape.svg");
+  width: 295px;
+  height: 100%;
+  left: 0;
+  top: -15px;
+  z-index: -1;
+  transition: all 0.3s linear;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateY(-250px);
+}
+.service-section.three .swiper .swiper-wrapper .inner-wrapper:hover .text-file::after {
+  transform: translateY(0);
 }
 .service-section.three .swiper .swiper-wrapper .inner-wrapper:hover .link {
   color: var(--theme-1);
 }
 .service-section.three .inner-btn {
   margin-top: 60px;
+}
+.service-section.three .shape-img .shape-1 {
+  top: -4px;
+  left: 0;
+  z-index: -1;
+}
+.service-section.three .shape-img .shape-2 {
+  right: 0;
+  bottom: 0;
+  width: 160px;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+.service-section.three .shape-img .shape-3 {
+  right: 284px;
+  top: 110px;
+  width: 200px;
+  z-index: -1;
+  animation: trigger 6s linear infinite;
+}
+.service-section.three .shape-img .shape-4 {
+  right: 43px;
+  top: 65px;
+  width: 80px;
+  z-index: -1;
+}
+.service-section.three .shape-img .shape-5 {
+  right: 570px;
+  top: 24px;
+  width: 34px;
+  z-index: -1;
+  animation: animationFramesOne 30s linear infinite reverse backwards;
+  -webkit-animation: animationFramesOne 30s linear infinite reverse backwards;
+}
+.service-section.three .shape-img .shape-6 {
+  left: 342px;
+  top: 184px;
+  width: 20px;
+  z-index: -1;
+  animation: trigger 6s linear infinite reverse;
+}
+.service-section.three .shape-img .shape-7 {
+  right: 287px;
+  top: 95px;
+  width: 161px;
+  z-index: -1;
+}
+.service-section.three .shape-img .shape-8 {
+  left: -10px;
+  bottom: -6px;
+  width: 180px;
+  z-index: -1;
+  transform: rotate(90deg);
+  opacity: 0.3;
+}
+.service-section.three .shape-img .shape-9 {
+  left: 548px;
+  bottom: 30px;
+  width: 80px;
+  z-index: -1;
+}
+.service-section.three .shape-img .shape-10 {
+  left: 140px;
+  top: 42px;
+  width: 22px;
+  z-index: -1;
+  animation: animationFramesOne 50s linear infinite;
+  -webkit-animation: animationFramesOne 50s linear infinite;
 }
 
 .service-details-section {
@@ -8872,6 +8959,174 @@ input[type=color] {
   bottom: 70px;
   width: 65px;
   animation: rotate-in-center 12s linear 0s infinite reverse backwards;
+}
+.faq-section.three {
+  background: var(--common-body-2);
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
+}
+.faq-section.three .img-file {
+  position: absolute;
+  top: -300px;
+  right: -9px;
+  animation: rotate-in-center 22s linear 0s infinite reverse backwards;
+}
+.faq-section.three .support {
+  margin-top: 267px;
+  background: var(--common-white);
+  padding: 30px;
+  border-radius: 5px;
+}
+.faq-section.three .support h2 {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--text-h);
+}
+.faq-section.three .support p {
+  margin-top: 10px;
+  line-height: 1.2;
+  color: var(--text-p-1);
+}
+.faq-section.three .support span {
+  display: block;
+  color: var(--text-p-1);
+}
+.faq-section.three .support .inner-btn {
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+.faq-section.three .faq-inner {
+  margin-top: 40px;
+  position: relative;
+  z-index: 9;
+}
+.faq-section.three .faq-inner .intro {
+  margin-top: 15px;
+}
+.faq-section.three .faq-inner .intro h3 {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: var(--fw-600);
+}
+.faq-section.three .faq-inner .faq-list {
+  margin-top: 15px;
+}
+.faq-section.three .faq-inner .faq-list .accordion .accordion-item {
+  margin-bottom: 16px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.faq-section.three .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button {
+  padding: 15px 16px;
+  font-size: 15px !important;
+  line-height: 25px;
+  font-weight: 600;
+  background: var(--theme-1);
+  color: var(--common-white);
+}
+.faq-section.three .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+  background: var(--common-white);
+  color: var(--text-h);
+}
+.faq-section.three .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button:focus {
+  z-index: 3;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none !important;
+}
+.faq-section.three .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "+";
+  background-image: none;
+  transform: none;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.faq-section.three .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "\f068";
+  background-image: none;
+  transform: none;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.faq-section.three .faq-inner .faq-list .accordion .accordion-item .accordion-collapse {
+  background: var(--common-white);
+  color: var(--text-p-1);
+  font-weight: 600;
+}
+.faq-section.three .shape-image .shape-img-1 {
+  left: -12px;
+  top: 8%;
+  z-index: -1;
+}
+.faq-section.three .shape-image .shape-img-1 img {
+  width: 60px;
+}
+.faq-section.three .shape-image .shape-img-3 {
+  top: 13%;
+  right: 14%;
+  z-index: -1;
+  animation: scale-down-center 15s linear infinite alternate-reverse both;
+}
+.faq-section.three .shape-image .shape-img-3 img {
+  width: 120px;
+}
+.faq-section.three .shape-image .shape-img-4 {
+  bottom: 21%;
+  right: 20px;
+  z-index: -1;
+  animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+}
+.faq-section.three .shape-image .shape-img-4 img {
+  width: 40px;
+}
+.faq-section.three .shape-image .shape-img-5 {
+  bottom: 7px;
+  left: -28px;
+  z-index: -1;
+}
+.faq-section.three .shape-image .shape-img-5 img {
+  width: 300px;
+}
+.faq-section.three .shape-image .shape-img-6 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 45s linear infinite reverse;
+  -webkit-animation: animationFramesOne 45s linear infinite reverse;
+}
+.faq-section.three .shape-image .shape-img-6 img {
+  width: 30px;
+}
+.faq-section.three .shape-image .shape-img-7 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 55s linear infinite;
+  -webkit-animation: animationFramesOne 55s linear infinite;
+}
+.faq-section.three .shape-image .shape-img-7 img {
+  width: 25px;
+}
+.faq-section.three .shape-image .shape-img-8 {
+  top: 85px;
+  left: 520px;
+  z-index: -1;
+}
+.faq-section.three .shape-image .shape-img-8 img {
+  width: 200px;
 }
 
 /*----------------------------------------*/
