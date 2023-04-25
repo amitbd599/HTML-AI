@@ -300,4 +300,126 @@
       }
     }
   }
+  &.three {
+    background: var(--common-white);
+    padding: 120px 0;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+
+    .inner-list {
+      position: relative;
+      z-index: 9;
+      ul {
+        li {
+          display: flex;
+          gap: 16px;
+          align-items: flex-start;
+          margin-bottom: 10px;
+          .img-file {
+            margin-top: 8px;
+            width: 170px;
+            height: auto;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: fill;
+            }
+          }
+          h4 {
+            color: var(--text-h);
+            font-size: 22px;
+            font-weight: var(--fw-800);
+            margin: 0;
+          }
+          p {
+            margin-bottom: 0;
+            color: var(--text-p-1);
+          }
+        }
+      }
+    }
+
+    .shape-img {
+      .shape-1 {
+        right: -349px;
+        bottom: -190px;
+        width: 654px;
+        z-index: -1;
+        opacity: 0.7;
+      }
+      .shape-2 {
+        left: 40px;
+        top: 41px;
+        width: 80px;
+        z-index: -1;
+        animation: trigger 6s linear infinite;
+      }
+      .shape-3 {
+        left: 312px;
+        top: 191px;
+        width: 120px;
+        z-index: 0;
+        animation: trigger 6s linear infinite reverse backwards;
+      }
+      .shape-4 {
+        right: 570px;
+        bottom: 24px;
+        width: 30px;
+        z-index: -1;
+        animation: trigger 6s linear 0.3s infinite reverse;
+      }
+      .shape-5 {
+        right: 570px;
+        top: 24px;
+        width: 34px;
+        z-index: -1;
+        animation: animationFramesOne 30s linear infinite reverse backwards;
+        -webkit-animation: animationFramesOne 30s linear infinite reverse
+          backwards;
+      }
+      .shape-6 {
+        right: 342px;
+        top: 67px;
+        width: 20px;
+        z-index: -1;
+        animation: trigger 6s linear infinite reverse;
+      }
+      .shape-7 {
+        left: 340px;
+        top: 48px;
+        width: 180px;
+        z-index: -1;
+      }
+      .shape-8 {
+        left: -10px;
+        bottom: -14px;
+        width: 143px;
+        z-index: -1;
+        transform: rotate(270deg);
+      }
+      .shape-9 {
+        left: 548px;
+        bottom: 30px;
+        width: 80px;
+        z-index: -1;
+      }
+      .shape-10 {
+        left: 548px;
+        top: 30px;
+        width: 25px;
+        z-index: -1;
+        animation: animationFramesOne 50s linear infinite;
+        -webkit-animation: animationFramesOne 50s linear infinite;
+      }
+      .shape-11 {
+        left: 775px;
+        bottom: 130px;
+        width: 50px;
+        z-index: -1;
+        animation: rotate-in-center 12s linear 0s infinite reverse backwards;
+      }
+    }
+  }
 }

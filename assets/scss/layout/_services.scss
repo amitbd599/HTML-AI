@@ -287,72 +287,156 @@
     .inner-btn {
       margin-top: 20px;
     }
+
+    .shape-img {
+      .shape-1 {
+        left: 4px;
+        top: -2px;
+        width: 100px;
+        z-index: -1;
+      }
+      .shape-2 {
+        right: 40px;
+        top: 24px;
+        width: 50px;
+        z-index: -1;
+      }
+      .shape-3 {
+        right: 230px;
+        bottom: 80px;
+        width: 21px;
+        z-index: -1;
+        animation: trigger 6s linear infinite;
+      }
+
+      .shape-5 {
+        right: 570px;
+        top: 24px;
+        width: 34px;
+        z-index: -1;
+        animation: animationFramesOne 30s linear infinite reverse backwards;
+        -webkit-animation: animationFramesOne 30s linear infinite reverse
+          backwards;
+      }
+      .shape-6 {
+        left: 342px;
+        top: 184px;
+        width: 20px;
+        z-index: -1;
+        animation: trigger 6s linear infinite reverse;
+      }
+      .shape-7 {
+        right: 287px;
+        top: 95px;
+        width: 161px;
+        z-index: -1;
+      }
+      .shape-8 {
+        left: -10px;
+        bottom: -6px;
+        width: 180px;
+        z-index: -1;
+        transform: rotate(90deg);
+        opacity: 0.3;
+      }
+      .shape-9 {
+        left: 548px;
+        bottom: 30px;
+        width: 80px;
+        z-index: -1;
+      }
+      .shape-10 {
+        left: 140px;
+        top: 42px;
+        width: 22px;
+        z-index: -1;
+        animation: animationFramesOne 50s linear infinite;
+        -webkit-animation: animationFramesOne 50s linear infinite;
+      }
+    }
   }
+  &.three {
+    background: var(--common-body-3);
+    z-index: 9;
+    overflow: hidden;
+    padding: 120px 0;
+    min-height: auto;
+    position: relative;
 
-  .shape-img {
-    .shape-1 {
-      left: 4px;
-      top: -2px;
-      width: 100px;
-      z-index: -1;
-    }
-    .shape-2 {
-      right: 40px;
-      top: 24px;
-      width: 50px;
-      z-index: -1;
-    }
-    .shape-3 {
-      right: 230px;
-      bottom: 80px;
-      width: 21px;
-      z-index: -1;
-      animation: trigger 6s linear infinite;
+    .section-title-shape-one {
+      margin-bottom: 60px;
     }
 
-    .shape-5 {
-      right: 570px;
-      top: 24px;
-      width: 34px;
-      z-index: -1;
-      animation: animationFramesOne 30s linear infinite reverse backwards;
-      -webkit-animation: animationFramesOne 30s linear infinite reverse
-        backwards;
+    .swiper {
+      .swiper-wrapper {
+        .inner-wrapper {
+          background: var(--common-white);
+          box-shadow: 0px 3px 10px 0px rgba(41, 45, 194, 0.08);
+          border-radius: 5px;
+          margin: 20px 0;
+          .img-file {
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            img {
+              @include transition(0.3s);
+            }
+          }
+          .text-file {
+            padding: 30px 20px;
+            .title {
+              font-size: 20px;
+              font-weight: 800;
+              line-height: 1.2;
+              text-transform: capitalize;
+              color: var(--text-h);
+              a {
+                @include transition(0.2s);
+                position: relative;
+              }
+              &:hover {
+                a {
+                  color: var(--theme-1);
+                }
+              }
+            }
+            p {
+              color: var(--text-p-1);
+              margin: 0;
+            }
+            .link {
+              margin-top: 10px;
+              font-size: 16px;
+              font-weight: 600;
+              color: var(--text-h);
+              @include transition(0.2s);
+              a {
+                position: relative;
+                &::after {
+                  position: absolute;
+                  font-family: "Font Awesome 5 Pro";
+                  content: "\f324";
+                  font-size: 14px;
+                  right: -19px;
+                  top: -1px;
+                }
+              }
+            }
+          }
+          &:hover {
+            .img-file {
+              img {
+                transform: scale(110%);
+              }
+            }
+            .link {
+              color: var(--theme-1);
+            }
+          }
+        }
+      }
     }
-    .shape-6 {
-      left: 342px;
-      top: 184px;
-      width: 20px;
-      z-index: -1;
-      animation: trigger 6s linear infinite reverse;
-    }
-    .shape-7 {
-      right: 287px;
-      top: 95px;
-      width: 161px;
-      z-index: -1;
-    }
-    .shape-8 {
-      left: -10px;
-      bottom: -6px;
-      width: 180px;
-      z-index: -1;
-      transform: rotate(90deg);
-      opacity: 0.3;
-    }
-    .shape-9 {
-      left: 548px;
-      bottom: 30px;
-      width: 80px;
-      z-index: -1;
-    }
-    .shape-10 {
-      left: 140px;
-      top: 42px;
-      width: 22px;
-      z-index: -1;
-      animation: animationFramesOne 50s linear infinite;
-      -webkit-animation: animationFramesOne 50s linear infinite;
+    .inner-btn {
+      margin-top: 60px;
     }
   }
 }
