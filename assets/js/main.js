@@ -169,6 +169,50 @@
       },
     });
   }
+  //!  Testimonial Slider two
+  if (jQuery(".testimonial-two").length > 0) {
+    var testimonialOne = new Swiper(".testimonial-two", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      slidesPerGroup: 1,
+      loop: true,
+      speed: 1000,
+      autoplay: {
+        delay: 6000,
+      },
+      navigation: {
+        nextEl: ".testimonialOne-button-next",
+        prevEl: ".testimonialOne-button-prev",
+      },
+
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          pagination: false,
+          spaceBetween: 20,
+          slidesPerGroup: 1,
+        },
+        500: {
+          slidesPerView: 1,
+          pagination: false,
+          spaceBetween: 20,
+          slidesPerGroup: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+        1400: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  }
 
   //! magnificPopup video view
   $(".popup-video").magnificPopup({
