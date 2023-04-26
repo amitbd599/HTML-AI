@@ -10,6 +10,7 @@
     background: var(--common-body-2);
     padding: 120px 0;
     z-index: 9;
+    overflow: hidden;
     .price-body {
       z-index: 9;
       .price-inner {
@@ -148,10 +149,11 @@
     background: var(--common-white);
     padding: 120px 0;
     z-index: 9;
+    overflow: hidden;
     .price-body {
       z-index: 9;
       .price-inner {
-        background: #e8f2fc;
+        background: #f0fdf4;
         box-shadow: 0px 3px 10px 0px rgba(41, 45, 194, 0.08);
         padding: 40px 30px;
         border-radius: 10px;
@@ -214,6 +216,9 @@
           &:hover {
             // animation: pulse 2s;
           }
+        }
+        .inner-btn {
+          margin-top: 20px;
         }
       }
     }

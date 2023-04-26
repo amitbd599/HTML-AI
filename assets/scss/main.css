@@ -6573,10 +6573,12 @@ input[type=color] {
 /*  03. Team CSS START
 /*----------------------------------------*/
 .team-section {
-  background: var(--common-body-2);
   padding: 120px 0;
   position: relative;
   z-index: 9;
+}
+.team-section.one {
+  background: var(--common-body-2);
 }
 .team-section.one .section-title-shape-one {
   margin-bottom: 60px;
@@ -6868,6 +6870,273 @@ input[type=color] {
   z-index: -1;
 }
 .team-section.one.single-row .shape-image-file .shape-img-8 img {
+  width: 200px;
+}
+.team-section.two {
+  overflow: hidden;
+  background: var(--common-body-3);
+}
+.team-section.two .section-title-shape-one {
+  margin-bottom: 60px;
+}
+.team-section.two .inner-wrapper .img-file {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.team-section.two .inner-wrapper .img-file .shape-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.7294117647);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+.team-section.two .inner-wrapper .img-file .shape-overlay .inner-data .social {
+  justify-content: center;
+  margin-top: 5px;
+}
+.team-section.two .inner-wrapper .img-file:hover .shape-overlay {
+  background: rgba(0, 0, 0, 0.7294117647);
+}
+.team-section.two .inner-wrapper .text-file {
+  margin-top: 20px;
+  text-align: center;
+}
+.team-section.two .inner-wrapper .text-file h3 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: var(--fw-800);
+  margin: 0;
+  color: var(--text-h);
+  transition: all 0.4s linear;
+}
+.team-section.two .inner-wrapper .text-file p {
+  font-size: 18px;
+  text-transform: capitalize;
+  line-height: 1.5;
+  margin-bottom: 0;
+  transition: all 0.4s linear;
+  color: var(--text-h);
+}
+.team-section.two .shape-image .shape-img-1 {
+  left: 15px;
+  top: 30%;
+  z-index: -1;
+  animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+}
+.team-section.two .shape-image .shape-img-1 img {
+  width: 50px;
+}
+.team-section.two .shape-image .shape-img-2 {
+  right: 30%;
+  top: 20%;
+  z-index: -1;
+  animation: animationFramesOne 25s linear infinite;
+  -webkit-animation: animationFramesOne 25s linear infinite;
+}
+.team-section.two .shape-image .shape-img-2 img {
+  width: 20px;
+}
+.team-section.two .shape-image .shape-img-3 {
+  right: 50%;
+  top: 25%;
+  z-index: -1;
+  animation: animationFramesOne 35s linear infinite;
+  -webkit-animation: animationFramesOne 35s linear infinite;
+}
+.team-section.two .shape-image .shape-img-3 img {
+  width: 20px;
+}
+.team-section.two .shape-image .shape-img-4 {
+  right: 5%;
+  top: 20%;
+  z-index: -1;
+  animation: rotate-in-center 12s linear 0s infinite reverse backwards;
+}
+.team-section.two .shape-image .shape-img-4 img {
+  width: 60px;
+}
+.team-section.two .shape-image .shape-img-6 {
+  right: -334px;
+  bottom: -120px;
+  z-index: -1;
+}
+.team-section.two .shape-image .shape-img-6 img {
+  width: 520px;
+}
+.team-section.two .shape-image .shape-img-8 {
+  right: 39%;
+  top: 6%;
+  z-index: -1;
+}
+.team-section.two .shape-image .shape-img-8 img {
+  width: 55px;
+}
+.team-section.two .shape-image .shape-img-9 {
+  right: 68%;
+  top: 10%;
+  z-index: -1;
+}
+.team-section.two .shape-image .shape-img-9 img {
+  width: 130px;
+}
+.team-section.two.single-row {
+  overflow: hidden;
+}
+.team-section.two.single-row .inner-wrapper {
+  margin-bottom: 30px;
+}
+.team-section.two.single-row .inner-wrapper .img-file {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.team-section.two.single-row .inner-wrapper .img-file .shape-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+.team-section.two.single-row .inner-wrapper .img-file .shape-overlay .inner-data {
+  margin-top: 70px;
+}
+.team-section.two.single-row .inner-wrapper .img-file .shape-overlay .inner-data h3 {
+  font-size: 20px;
+  font-weight: var(--fw-600);
+  margin: 0;
+  transition: all 0.4s linear;
+  transform: translateX(-140%);
+}
+.team-section.two.single-row .inner-wrapper .img-file .shape-overlay .inner-data p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 0;
+  transition: all 0.4s linear;
+  transform: translateX(140%);
+}
+.team-section.two.single-row .inner-wrapper .img-file .shape-overlay .inner-data .social {
+  justify-content: center;
+  transform: translateY(337%);
+}
+.team-section.two.single-row .inner-wrapper .img-file:hover .shape-overlay {
+  background: rgba(0, 0, 0, 0.7294117647);
+}
+.team-section.two.single-row .inner-wrapper .img-file:hover .shape-overlay .inner-data h3,
+.team-section.two.single-row .inner-wrapper .img-file:hover .shape-overlay .inner-data p {
+  transform: translateX(0);
+}
+.team-section.two.single-row .inner-wrapper .img-file:hover .shape-overlay .inner-data .social {
+  transform: translateY(0);
+}
+.team-section.two.single-row .pagination {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.team-section.two.single-row .pagination ul {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.team-section.two.single-row .pagination ul li a {
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(180deg, #243949 0%, #00151e 100%);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.team-section.two.single-row .pagination ul li a:hover {
+  animation: pulse-small 0.8s;
+  color: var(--theme-1);
+}
+.team-section.two.single-row .pagination ul li a.active {
+  color: var(--theme-1);
+}
+.team-section.two.single-row .shape-image-file .shape-img-1 {
+  left: -12px;
+  top: 8%;
+  z-index: -1;
+}
+.team-section.two.single-row .shape-image-file .shape-img-1 img {
+  width: 60px;
+}
+.team-section.two.single-row .shape-image-file .shape-img-2 {
+  top: -24px;
+  right: -28px;
+  z-index: -1;
+}
+.team-section.two.single-row .shape-image-file .shape-img-2 img {
+  width: 100px;
+}
+.team-section.two.single-row .shape-image-file .shape-img-3 {
+  top: 13%;
+  right: 14%;
+  z-index: -1;
+  animation: scale-down-center 15s linear infinite alternate-reverse both;
+}
+.team-section.two.single-row .shape-image-file .shape-img-3 img {
+  width: 120px;
+}
+.team-section.two.single-row .shape-image-file .shape-img-4 {
+  bottom: 21%;
+  right: 20px;
+  z-index: -1;
+  animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+}
+.team-section.two.single-row .shape-image-file .shape-img-4 img {
+  width: 40px;
+}
+.team-section.two.single-row .shape-image-file .shape-img-5 {
+  bottom: 40px;
+  left: -28px;
+  z-index: -1;
+}
+.team-section.two.single-row .shape-image-file .shape-img-5 img {
+  width: 200px;
+}
+.team-section.two.single-row .shape-image-file .shape-img-6 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 45s linear infinite reverse;
+  -webkit-animation: animationFramesOne 45s linear infinite reverse;
+}
+.team-section.two.single-row .shape-image-file .shape-img-6 img {
+  width: 30px;
+}
+.team-section.two.single-row .shape-image-file .shape-img-7 {
+  top: 74px;
+  right: 42%;
+  z-index: -1;
+  animation: animationFramesOne 55s linear infinite;
+  -webkit-animation: animationFramesOne 55s linear infinite;
+}
+.team-section.two.single-row .shape-image-file .shape-img-7 img {
+  width: 25px;
+}
+.team-section.two.single-row .shape-image-file .shape-img-8 {
+  top: 26px;
+  right: 54%;
+  z-index: -1;
+}
+.team-section.two.single-row .shape-image-file .shape-img-8 img {
   width: 200px;
 }
 
@@ -8381,6 +8650,7 @@ input[type=color] {
   background: var(--common-body-2);
   padding: 120px 0;
   z-index: 9;
+  overflow: hidden;
 }
 .price-section.one .price-body {
   z-index: 9;
@@ -8507,12 +8777,13 @@ input[type=color] {
   background: var(--common-white);
   padding: 120px 0;
   z-index: 9;
+  overflow: hidden;
 }
 .price-section.two .price-body {
   z-index: 9;
 }
 .price-section.two .price-body .price-inner {
-  background: #e8f2fc;
+  background: #f0fdf4;
   box-shadow: 0px 3px 10px 0px rgba(41, 45, 194, 0.08);
   padding: 40px 30px;
   border-radius: 10px;
@@ -8566,6 +8837,9 @@ input[type=color] {
 }
 .price-section.two .price-body .price-inner.down .price {
   border-bottom: 1px solid var(--border-1);
+}
+.price-section.two .price-body .price-inner .inner-btn {
+  margin-top: 20px;
 }
 .price-section.two .shape-image .shape-2 {
   left: 15px;
