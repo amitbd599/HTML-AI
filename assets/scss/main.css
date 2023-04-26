@@ -8503,6 +8503,127 @@ input[type=color] {
   width: 150px;
   z-index: -1;
 }
+.price-section.two {
+  background: var(--common-white);
+  padding: 120px 0;
+  z-index: 9;
+}
+.price-section.two .price-body {
+  z-index: 9;
+}
+.price-section.two .price-body .price-inner {
+  background: #e8f2fc;
+  box-shadow: 0px 3px 10px 0px rgba(41, 45, 194, 0.08);
+  padding: 40px 30px;
+  border-radius: 10px;
+  margin-top: 60px;
+}
+.price-section.two .price-body .price-inner .price {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  border-bottom: 1px solid var(--border-2);
+}
+.price-section.two .price-body .price-inner .price h4 {
+  font-size: 22px;
+  color: var(--text-h);
+  font-weight: var(--fw-600);
+}
+.price-section.two .price-body .price-inner .price h2 {
+  font-size: 40px;
+  color: var(--text-h);
+  font-weight: var(--fw-600);
+}
+.price-section.two .price-body .price-inner .price h5 {
+  color: var(--text-h);
+  font-size: 12px;
+  font-weight: var(--fw-600);
+  margin-top: 14px;
+}
+.price-section.two .price-body .price-inner .plan {
+  margin-top: 20px;
+  text-align: center;
+}
+.price-section.two .price-body .price-inner .plan h2 {
+  color: var(--text-h);
+  font-size: 30px;
+  font-weight: var(--fw-800);
+  color: var(--text-h);
+}
+.price-section.two .price-body .price-inner .plan .list ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: var(--text-p-1);
+}
+.price-section.two .price-body .price-inner .plan .list ul li.deep {
+  color: var(--text-p-1);
+}
+.price-section.two .price-body .price-inner.down {
+  margin-top: 100px;
+  background: var(--common-white);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 10px 0px rgba(41, 45, 194, 0.08);
+}
+.price-section.two .price-body .price-inner.down .price {
+  border-bottom: 1px solid var(--border-1);
+}
+.price-section.two .shape-image .shape-2 {
+  left: 15px;
+  top: 38%;
+  width: 30px;
+  z-index: -1;
+  animation: animationFramesOne 35s linear 0.6s infinite;
+  -webkit-animation: animationFramesOne 35s linear 0.6s infinite;
+}
+.price-section.two .shape-image .shape-3 {
+  left: 54%;
+  top: 10%;
+  width: 20px;
+  z-index: -1;
+  animation: animationFramesOne 25s linear 0.8s infinite;
+  -webkit-animation: animationFramesOne 25s linear 0.8s infinite;
+}
+.price-section.two .shape-image .shape-4 {
+  right: 20%;
+  top: 18%;
+  width: 50px;
+  z-index: -1;
+  animation: animationFramesOne 45s linear 0.8s infinite;
+  -webkit-animation: animationFramesOne 45s linear 0.8s infinite;
+}
+.price-section.two .shape-image .shape-5 {
+  right: 3%;
+  top: 31%;
+  width: 20px;
+  z-index: -1;
+}
+.price-section.two .shape-image .shape-6 {
+  right: 3%;
+  top: 10%;
+  width: 60px;
+  z-index: -1;
+}
+.price-section.two .shape-image .shape-7 {
+  right: -10px;
+  bottom: -42px;
+  width: 183px;
+  z-index: -1;
+  opacity: 0.6;
+  transform: rotate(180deg);
+}
+.price-section.two .shape-image .shape-9 {
+  bottom: 30%;
+  right: 15px;
+  width: 30px;
+  z-index: -1;
+  animation: slide-top 20s linear 0.6s infinite alternate-reverse both;
+}
+.price-section.two .shape-image .shape-10 {
+  top: 13%;
+  left: 430px;
+  width: 150px;
+  z-index: -1;
+}
 
 /*----------------------------------------*/
 /*  00. Fact CSS START
