@@ -591,41 +591,34 @@
     .blog-items {
       position: relative;
       z-index: 9;
-      margin: 0 8px;
-      box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1),
-        0px 4px 13px -2px rgba(19, 16, 34, 0.06);
+      border-radius: 8px;
+      overflow: hidden;
+      -webkit-box-shadow: 0px 7px 15px 0px rgba(0, 11, 40, 0.06);
+      box-shadow: 0px 7px 15px 0px rgba(0, 11, 40, 0.06);
+      width: 100%;
+      height: 400px;
       .img-file {
-        overflow: hidden;
         width: 100%;
-        height: 400px;
+        height: 100%;
+
+        overflow: hidden;
+
         position: relative;
         &::after {
           content: "";
           position: absolute;
           width: 100%;
           height: 100%;
-          background: #f7f7f7;
+          background: var(--common-white);
           left: 0;
           top: 0;
-          @include transition(0.3s);
-        }
-        &::before {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background-image: url(../img/shape/15_shape.svg);
-          background-position: center center;
-          background-repeat: no-repeat;
-          left: 0;
-          top: -90px;
-          z-index: 9;
           @include transition(0.3s);
         }
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          border-radius: 10px;
         }
       }
 
@@ -645,18 +638,21 @@
             color: var(--text-p-1);
             margin: 0;
             font-size: 16px;
+            @include transition(0.2s);
           }
           h2 {
             margin-top: 20px;
             font-size: 22px;
             font-weight: var(--fw-800);
-            color: var(--text-h);
+
             line-height: 1.2;
-            transition: all 0.1s linear;
+            @include transition(0.2s);
             a {
-              transition: all 0.1s linear;
+              color: var(--text-h);
+              @include transition(0.2s);
             }
             &:hover {
+              @include transition(0.2s);
               color: var(--theme-1);
             }
           }
@@ -665,13 +661,27 @@
             margin-top: 25px;
             color: var(--text-p-1);
             margin: 0;
+            @include transition(0.2s);
           }
           .link {
             display: inline-block;
             margin-top: 16px;
             color: var(--text-p-1);
             font-size: 18px;
-            font-weight: 700;
+            font-weight: 600;
+            @include transition(0.2s);
+            position: relative;
+            &::after {
+              font-family: "Font Awesome 5 Pro";
+              content: "\f324";
+              position: absolute;
+              right: -20px;
+              top: 1px;
+              transition: all 0.3s linear;
+              font-size: 14px;
+              padding-left: 16px;
+              @include transition(0.2s);
+            }
           }
         }
       }
@@ -679,12 +689,32 @@
       &:hover {
         .img-file {
           &::after {
-            opacity: 0;
-            visibility: hidden;
+            background: rgb(0 0 0 / 69%);
           }
           &::before {
-            opacity: 0;
-            visibility: hidden;
+            display: none;
+          }
+        }
+        .text-file {
+          .title {
+            .date {
+              color: var(--common-white);
+            }
+            h2 {
+              a {
+                color: var(--common-white);
+                &:hover {
+                  color: var(--theme-1);
+                }
+              }
+            }
+
+            p {
+              color: var(--common-white);
+            }
+            .link {
+              color: var(--theme-1);
+            }
           }
         }
       }
@@ -701,10 +731,11 @@
         opacity: 0.8;
       }
       .shape-2 {
-        right: 30px;
-        bottom: -40px;
+        right: -10px;
+        bottom: -80px;
         z-index: -1;
-        width: 16%;
+        width: 550px;
+        transform: rotate(180deg);
       }
       .shape-3 {
         left: -2px;
@@ -729,7 +760,7 @@
           alternate-reverse forwards;
       }
       .shape-6 {
-        left: 19%;
+        left: 498px;
         top: 11%;
         z-index: -1;
         width: 150px;
