@@ -10900,6 +10900,45 @@ input[type=color] {
   display: flex;
   justify-content: center;
 }
+.footer-section.three {
+  background-color: var(--common-body-1);
+  padding: 120px 0 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
+}
+.footer-section.three .footer-wrapper {
+  z-index: 9;
+}
+.footer-section.three .footer-wrapper.one .title {
+  font-size: 22px;
+  font-weight: 700;
+}
+.footer-section.three .footer-wrapper.one span {
+  display: block;
+  margin-bottom: 10px;
+}
+.footer-section.three .footer-wrapper.one span i {
+  margin-right: 5px;
+}
+.footer-section.three .footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid var(--border-3);
+  padding-top: 20px;
+}
+.footer-section.three .shape-image .shape-1 {
+  left: -9px;
+  bottom: 10px;
+  width: 281px;
+  z-index: -1;
+}
+.footer-section.three .shape-image .shape-2 {
+  right: -4px;
+  bottom: -7px;
+  width: 400px;
+  z-index: -1;
+  opacity: 0.3;
+}
 
 /*----------------------------------------*/
 /*  00. 404 CSS START
