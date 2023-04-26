@@ -332,6 +332,7 @@
               position: relative;
               @include transition(0.3s);
               &::after {
+                padding-left: 15px;
                 position: absolute;
                 font-family: "Font Awesome 5 Pro";
                 content: "\f324";
