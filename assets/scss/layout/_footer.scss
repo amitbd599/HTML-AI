@@ -46,7 +46,7 @@
           li {
             margin-bottom: 7px;
             a {
-              font-size: 16px;
+              font-size: 15px;
               display: flex;
               gap: 6px;
               align-items: center;
@@ -80,7 +80,7 @@
         }
         ul {
           li {
-            font-size: 16px;
+            font-size: 15px;
             margin-bottom: 6px;
             &.phone {
               font-size: 20px;
@@ -259,6 +259,56 @@
           }
         }
       }
+      &.two {
+        .title {
+          font-size: 22px;
+          font-weight: 700;
+        }
+        .inner {
+          ul {
+            li {
+              display: flex;
+              gap: 12px;
+              margin-bottom: 15px;
+              .img-file {
+                width: 80px;
+                height: 80px;
+                overflow: hidden;
+                position: relative;
+                display: block;
+                border-radius: 5px;
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+              a {
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 1.5;
+                margin-bottom: 3px;
+                display: block;
+                @include transition(0.2s);
+                &:hover {
+                  color: var(--theme-1);
+                }
+              }
+            }
+          }
+        }
+      }
+      &.three {
+        .title {
+          font-size: 22px;
+          font-weight: 700;
+        }
+        .inner {
+          p {
+            margin: 0;
+          }
+        }
+      }
     }
     .footer-bottom {
       margin-top: 40px;
@@ -266,18 +316,12 @@
       padding-top: 20px;
     }
     .shape-image {
-      .shape-1 {
-        left: -9px;
-        bottom: 10px;
-        width: 281px;
-        z-index: -1;
-      }
       .shape-2 {
         right: -4px;
-        bottom: -7px;
-        width: 400px;
+        bottom: -199px;
+        width: 102%;
         z-index: -1;
-        opacity: 0.3;
+        opacity: 0.4;
       }
     }
   }

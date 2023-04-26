@@ -10602,10 +10602,10 @@ input[type=color] {
   animation: pulse-small 1s;
 }
 .news-letter.one .shape-image .shape-1 {
-  left: -3px;
+  left: 18px;
   z-index: -1;
-  width: 200px;
-  top: 13px;
+  width: 30px;
+  top: 60px;
 }
 .news-letter.one .shape-image .shape-2 {
   right: 26%;
@@ -10731,7 +10731,7 @@ input[type=color] {
   margin-bottom: 7px;
 }
 .footer-section.one .footer-wrapper.two ul li a {
-  font-size: 16px;
+  font-size: 15px;
   display: flex;
   gap: 6px;
   align-items: center;
@@ -10760,7 +10760,7 @@ input[type=color] {
   font-weight: var(--fw-700);
 }
 .footer-section.one .footer-wrapper.three ul li {
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 6px;
 }
 .footer-section.one .footer-wrapper.three ul li.phone {
@@ -10921,23 +10921,58 @@ input[type=color] {
 .footer-section.three .footer-wrapper.one span i {
   margin-right: 5px;
 }
+.footer-section.three .footer-wrapper.two .title {
+  font-size: 22px;
+  font-weight: 700;
+}
+.footer-section.three .footer-wrapper.two .inner ul li {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+.footer-section.three .footer-wrapper.two .inner ul li .img-file {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  border-radius: 5px;
+}
+.footer-section.three .footer-wrapper.two .inner ul li .img-file img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.footer-section.three .footer-wrapper.two .inner ul li a {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 3px;
+  display: block;
+  transition: all 0.2s linear;
+}
+.footer-section.three .footer-wrapper.two .inner ul li a:hover {
+  color: var(--theme-1);
+}
+.footer-section.three .footer-wrapper.three .title {
+  font-size: 22px;
+  font-weight: 700;
+}
+.footer-section.three .footer-wrapper.three .inner p {
+  margin: 0;
+}
 .footer-section.three .footer-bottom {
   margin-top: 40px;
   border-top: 1px solid var(--border-3);
   padding-top: 20px;
 }
-.footer-section.three .shape-image .shape-1 {
-  left: -9px;
-  bottom: 10px;
-  width: 281px;
-  z-index: -1;
-}
 .footer-section.three .shape-image .shape-2 {
   right: -4px;
-  bottom: -7px;
-  width: 400px;
+  bottom: -199px;
+  width: 102%;
   z-index: -1;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 /*----------------------------------------*/
