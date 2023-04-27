@@ -10,6 +10,9 @@
   width: 100%;
   display: flex;
   align-items: center;
+  @media #{$lg, $md, $sm, $xs} {
+    padding: 0 30px;
+  }
   .logo-area {
     .logo {
       width: 200px;
@@ -24,6 +27,10 @@
     .main-menu {
       display: flex;
       justify-content: center;
+      @media #{$lg, $md, $sm, $xs} {
+        justify-content: flex-end;
+      }
+
       nav {
         display: block;
         ul {

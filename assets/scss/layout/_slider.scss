@@ -8,7 +8,6 @@
 
 .hero-slider {
   &.one {
-    z-index: 10;
     .swiper {
       .swiper-wrapper {
         position: relative;
@@ -44,11 +43,15 @@
 
           .slider-content-inner {
             position: relative;
-            z-index: 10;
+            z-index: 9;
             display: flex;
             align-items: center;
             width: 100%;
             height: 100%;
+            @media #{$lg, $md, $sm, $xs} {
+              padding: 0 140px;
+              text-align: center;
+            }
             .slider-title {
               font-size: var(--fz-h2);
               text-transform: capitalize;
@@ -68,6 +71,9 @@
             z-index: 10;
             width: 100%;
             height: 435px;
+            @media #{$lg, $md, $sm, $xs} {
+              display: none;
+            }
             .img-wrapper {
               position: relative;
               z-index: 9;
@@ -134,11 +140,9 @@
       .shape-image {
         .inner-shape-1 {
           z-index: 9;
-          top: 100px;
+          top: 50px;
           left: 10px;
-          -webkit-animation: slide-top 10s linear 0.3s infinite
-            alternate-reverse both;
-          animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+
           img {
             width: 60px;
           }
@@ -187,6 +191,9 @@
           img {
             width: 40px;
           }
+          @media #{$lg, $md, $sm, $xs} {
+            display: none;
+          }
         }
         .inner-shape-6 {
           z-index: 9;
@@ -216,6 +223,9 @@
           animation: slide-top 12s linear 0.6s infinite alternate-reverse both;
           img {
             width: 45px;
+          }
+          @media #{$lg, $md, $sm, $xs} {
+            animation: none;
           }
         }
         .inner-shape-9 {
