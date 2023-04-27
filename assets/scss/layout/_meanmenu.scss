@@ -44,7 +44,6 @@
   margin-top: 5px;
   padding: 0 !important;
   line-height: 14px;
-  border: 1px solid #ebebeb !important;
   height: 30px;
   width: 30px;
   line-height: 30px;
@@ -57,6 +56,10 @@
     color: var(--common-white);
     border-color: #ebebeb;
   }
+}
+
+.mean-container .mean-nav ul li.active a {
+  color: var(--theme-1);
 }
 
 .mean-container .mean-nav ul li > a > i {

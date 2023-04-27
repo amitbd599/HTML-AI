@@ -48,14 +48,26 @@
             align-items: center;
             width: 100%;
             height: 100%;
-            @media #{$lg, $md, $sm, $xs} {
+            @media #{$lg} {
               padding: 0 140px;
+              text-align: center;
+            }
+            @media #{ $md} {
+              padding: 0 80px;
+              text-align: center;
+            }
+            @media #{$sm, $xs, $xss} {
+              padding: 0;
               text-align: center;
             }
             .slider-title {
               font-size: var(--fz-h2);
               text-transform: capitalize;
               font-weight: var(--fw-800);
+              @media #{$xs, $xss} {
+                font-size: 30px;
+                line-height: 40px;
+              }
             }
             .description {
               margin-top: 20px;
@@ -71,7 +83,7 @@
             z-index: 10;
             width: 100%;
             height: 435px;
-            @media #{$lg, $md, $sm, $xs} {
+            @media #{$lg, $md, $sm, $xs, $xss} {
               display: none;
             }
             .img-wrapper {
@@ -146,6 +158,9 @@
           img {
             width: 60px;
           }
+          @media #{$sm, $xs, $xss} {
+            display: none;
+          }
         }
         .inner-shape-2 {
           z-index: 9;
@@ -169,6 +184,10 @@
           img {
             width: 50px;
           }
+          @media #{$lg, $md, $sm, $xs, $xss} {
+            top: 19px;
+            left: 740px;
+          }
         }
         .inner-shape-4 {
           z-index: 9;
@@ -179,6 +198,9 @@
           animation: rotate-in-center 16s linear 0.4s infinite reverse backwards;
           img {
             width: 20px;
+          }
+          @media #{$xs, $xss} {
+            left: 50px;
           }
         }
         .inner-shape-5 {
@@ -191,7 +213,7 @@
           img {
             width: 40px;
           }
-          @media #{$lg, $md, $sm, $xs} {
+          @media #{$lg, $md, $sm, $xs, $xss} {
             display: none;
           }
         }
@@ -201,6 +223,15 @@
           left: 36%;
           img {
             width: 50px;
+          }
+          @media #{$md, $sm, $xs, $xss} {
+            bottom: 45px;
+            left: 23%;
+          }
+          @media #{$sm, $xs, $xss} {
+            bottom: 35px;
+            right: 20%;
+            left: auto;
           }
         }
         .inner-shape-7 {
@@ -224,8 +255,11 @@
           img {
             width: 45px;
           }
-          @media #{$lg, $md, $sm, $xs} {
+          @media #{$lg, $md} {
             animation: none;
+          }
+          @media #{$sm, $xs, $xss} {
+            display: none;
           }
         }
         .inner-shape-9 {

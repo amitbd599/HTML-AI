@@ -33,12 +33,18 @@
     &:hover {
       left: 10px;
     }
+    @media #{$xs, $xss} {
+      display: none;
+    }
   }
   &.swiper-button-next {
     right: 15px;
     transition: all 0.2s linear;
     &:hover {
       right: 10px;
+    }
+    @media #{$xs, $xss} {
+      display: none;
     }
   }
 }

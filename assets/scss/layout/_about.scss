@@ -16,12 +16,20 @@
       z-index: 9;
       margin-right: 25px;
       position: relative;
+      @media #{$md, $sm, $xs, $xss} {
+        margin-right: 0;
+      }
+
       .img-file {
         position: relative;
         width: 100%;
         height: 530px;
         border-radius: 8px;
         overflow: hidden;
+        @media #{$xs, $xss} {
+          height: 430px;
+        }
+
         img {
           width: 100%;
           height: 100%;
@@ -91,24 +99,31 @@
       }
     }
     .right-wrapper {
+      position: relative;
       z-index: 9;
+      @media #{$md, $sm, $xs, $xss} {
+        margin-top: 80px;
+      }
+
       .inner-list {
-        margin-top: 10px;
+        margin-top: 20px;
         ul {
           li {
             display: flex;
             gap: 14px;
             align-items: flex-start;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             .img-file {
               margin-top: 8px;
             }
             h4 {
               font-size: 18px;
+              line-height: 28px;
               font-weight: var(--fw-600);
               margin: 0;
             }
             p {
+              margin-top: 5px;
               margin-bottom: 0;
             }
           }
@@ -127,6 +142,10 @@
         img {
           width: 80px;
         }
+        @media #{$md, $sm, $xs, $xss} {
+          bottom: 3%;
+          top: auto;
+        }
       }
       .shape-2 {
         left: 15px;
@@ -137,6 +156,9 @@
         animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
         img {
           width: 40px;
+        }
+        @media #{$md, $sm, $xs, $xss} {
+          display: none;
         }
       }
       .shape-3 {
@@ -155,6 +177,9 @@
         -webkit-animation: animationFramesOne 35s linear infinite;
         img {
           width: 30px;
+        }
+        @media #{$md, $sm, $xs, $xss} {
+          display: none;
         }
       }
       .shape-5 {
@@ -176,6 +201,16 @@
         animation: rotate-in-center 6s linear 0s infinite reverse backwards;
         img {
           width: 25px;
+        }
+        @media #{$md, $sm, $xs, $xss} {
+          left: 64%;
+          top: 4%;
+        }
+        @media #{$sm, $xs, $xss} {
+          left: 57%;
+        }
+        @media #{$xs, $xss} {
+          left: 35%;
         }
       }
     }

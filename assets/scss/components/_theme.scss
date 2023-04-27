@@ -349,13 +349,15 @@ input[type="color"] {
   }
 }
 
-
 .large-container {
   position: static;
   max-width: var(--large-container-width);
   padding: 0px 15px;
   margin: 0 auto;
   width: 100%;
+  @media #{$lg, $md, $sm, $xs, $xss} {
+    padding: 0px 30px;
+  }
 }
 
 .auto-container {
@@ -364,6 +366,9 @@ input[type="color"] {
   padding: 0px 15px;
   margin: 0 auto;
   width: 100%;
+  @media #{$lg, $md, $sm, $xs, $xss} {
+    padding: 0px 30px;
+  }
 }
 
 .small-container {
