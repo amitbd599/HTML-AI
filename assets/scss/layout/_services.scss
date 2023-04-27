@@ -117,6 +117,9 @@
         img {
           width: 80px;
         }
+        @media #{$md, $sm, $xs, $xss} {
+          bottom: 2%;
+        }
       }
       .shape-6 {
         top: 10%;
@@ -134,6 +137,10 @@
         z-index: -1;
         img {
           width: auto;
+        }
+        @media #{$md, $sm, $xs, $xss} {
+          bottom: 7%;
+          left: 10px;
         }
       }
     }
