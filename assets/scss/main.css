@@ -48,7 +48,7 @@
 /*----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,800&family=Orbitron:wght@400;500;600;700;800;900&display=swap");
 :root {
-  --container-width: 1200px;
+  --container-width: 1140px;
   --small-container-width: 1000px;
   --large-container-width: 1550px;
   /**
@@ -2874,6 +2874,7 @@ input[type=color] {
 }
 .section-title-shape-one p {
   margin-top: 15px;
+  margin-bottom: 0;
 }
 .section-title-shape-one.middle {
   text-align: center;
@@ -3862,6 +3863,9 @@ input[type=color] {
 /*----------------------------------------*/
 /*  03. SLIDER CSS START
 /*----------------------------------------*/
+.hero-slider.one {
+  z-index: 10;
+}
 .hero-slider.one .swiper .swiper-wrapper {
   position: relative;
 }
@@ -3896,7 +3900,7 @@ input[type=color] {
 }
 .hero-slider.one .swiper .swiper-wrapper .item-slider .slider-content-inner {
   position: relative;
-  z-index: 9;
+  z-index: 10;
   display: flex;
   align-items: center;
   width: 100%;
@@ -6346,7 +6350,7 @@ input[type=color] {
   overflow: hidden;
 }
 .testimonial-section.one .section-title-shape-one {
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 .testimonial-section.one .swiper {
   z-index: 9;
@@ -7701,7 +7705,7 @@ input[type=color] {
   overflow: hidden;
 }
 .blog-section.one .section-title-shape-one {
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 .blog-section.one .blog-items {
   position: relative;

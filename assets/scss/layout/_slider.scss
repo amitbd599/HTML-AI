@@ -8,6 +8,7 @@
 
 .hero-slider {
   &.one {
+    z-index: 10;
     .swiper {
       .swiper-wrapper {
         position: relative;
@@ -43,7 +44,7 @@
 
           .slider-content-inner {
             position: relative;
-            z-index: 9;
+            z-index: 10;
             display: flex;
             align-items: center;
             width: 100%;
