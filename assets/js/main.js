@@ -238,7 +238,7 @@
 
   //! 00 PreLoader Js
   windowOn.on("load", function () {
-    $(".preloader").fadeOut(500);
+    $(".preloader").fadeOut(1000);
   });
 
   //! 00. Mobile Menu Js
@@ -246,6 +246,12 @@
     meanMenuContainer: ".mobile-menu",
     meanScreenWidth: "991",
     meanExpand: ['<i class="fal fa-plus"></i>'],
+  });
+
+  //! 00. Body overlay Js
+  $(".body-overlay").on("click", function () {
+    $(".sidebar__area").removeClass("sidebar-opened");
+    $(".body-overlay").removeClass("opened");
   });
 
   // **************************************************** //
@@ -274,11 +280,6 @@
   });
 
   ////////////////////////////////////////////////////
-  // 04. Body overlay Js
-  $(".body-overlay").on("click", function () {
-    $(".sidebar__area").removeClass("sidebar-opened");
-    $(".body-overlay").removeClass("opened");
-  });
 
   ////////////////////////////////////////////////////
   // 05. Search Js

@@ -13,9 +13,12 @@
   @media #{$lg, $md, $sm, $xs} {
     padding: 0 30px;
   }
+  @media #{$md, $sm, $xs} {
+    padding: 0;
+  }
   .logo-area {
     .logo {
-      width: 200px;
+      width: 250px;
       img {
         width: 100%;
         height: 100%;

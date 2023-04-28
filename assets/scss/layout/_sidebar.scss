@@ -19,10 +19,45 @@
   transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   z-index: 9999;
   @media #{$xs,$xss} {
-    width: 100%;
+    width: 350px;
   }
   &.sidebar-opened {
     right: 0px;
+  }
+
+  .mobile-footer {
+    margin-top: 20px;
+    .follow {
+      .title {
+        h3 {
+          font-size: 18px;
+          line-height: 1.2;
+        }
+      }
+      .social {
+        margin-top: 10px;
+      }
+    }
+    .contact {
+      margin-top: 20px;
+      .title {
+        h3 {
+          font-size: 18px;
+          line-height: 1.2;
+        }
+      }
+      ul {
+        li {
+          margin-bottom: 8px;
+          display: flex;
+          align-items: center;
+          i {
+            font-size: 18px;
+            padding-right: 6px;
+          }
+        }
+      }
+    }
   }
 
   .sidebar__wrapper {
@@ -63,10 +98,10 @@
     img {
       width: 250px;
       @media #{$xs} {
-        width: 200px;
+        width: 220px;
       }
       @media #{$xss} {
-        width: 200px;
+        width: 220px;
       }
     }
   }

@@ -64,9 +64,10 @@
           }
           .admin {
             margin: 0;
-            font-weight: 700;
+            font-weight: 600;
             color: var(--text-p-1);
-            font-size: 18px;
+            font-size: 16px;
+            text-transform: lowercase;
           }
           span {
             color: var(--text-p-1);
@@ -130,7 +131,7 @@
     }
     .inner-btn {
       margin-top: 70px;
-      @media #{$sm, $xs, $xss} {
+      @media #{$md,$sm, $xs, $xss} {
         margin-top: 20px;
       }
     }
