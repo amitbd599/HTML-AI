@@ -3573,6 +3573,13 @@ input[type=color] {
 .header-area-2 .header-top .right-wrapper {
   justify-content: flex-end;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .header-area-2 .header-inner {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+}
 .header-area-2 .header-inner .logo-area .logo {
   width: 200px;
 }
@@ -3686,8 +3693,11 @@ input[type=color] {
   font-size: 16px;
 }
 .header-area-2 .header-inner .trigger span:first-child {
-  padding-left: 20px;
+  padding-left: 15px;
   border-left: 1px solid var(--border-3);
+}
+.header-area-2 .header-inner .trigger span:first-child i {
+  font-size: 16px;
 }
 
 .header-area-3 {
@@ -3822,6 +3832,9 @@ input[type=color] {
 
 .header__sticky {
   position: fixed !important;
+  height: 80px;
+  display: flex;
+  align-items: center;
   left: 0;
   margin: auto;
   top: 0;
@@ -10861,11 +10874,14 @@ input[type=color] {
   font-size: 16px;
   height: 45px;
   width: 45px;
-  line-height: 49px;
+  line-height: 1.2;
   background: var(--theme-1);
   color: #fff;
   border-radius: 50%;
   transition: all 0.3s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sidebar__area .sidebar__close .sidebar__close-btn:hover {
   animation: pulse-small 1s;
