@@ -60,8 +60,14 @@
         &.down {
           margin-top: 100px;
           background: var(--common-body-1);
+          @media #{$md, $sm, $xs, $xss} {
+            margin-top: 60px;
+          }
           &:hover {
             animation: pulse 2s;
+            @media #{$md, $sm, $xs, $xss} {
+              animation: none;
+            }
           }
         }
       }
@@ -75,6 +81,9 @@
         -webkit-animation: slide-top 10s linear 0.3s infinite alternate-reverse
           both;
         animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+        @media #{$md, $sm, $xs, $xss} {
+          display: none;
+        }
       }
       .shape-2 {
         left: 15px;
@@ -114,6 +123,13 @@
         -webkit-animation: scale-down-center 5s linear infinite
           alternate-reverse both;
         animation: scale-down-center 5s linear infinite alternate-reverse both;
+        @media #{$md, $sm, $xs, $xss} {
+          top: 8%;
+        }
+        @media #{$xs, $xss} {
+          top: 4%;
+          right: 10%;
+        }
       }
       .shape-7 {
         right: 0;
@@ -139,9 +155,20 @@
       }
       .shape-10 {
         top: 13%;
-        right: 37%;
+        right: 56%;
         width: 150px;
         z-index: -1;
+        @media #{$lg, $md, $sm, $xs, $xss} {
+          right: 46%;
+        }
+        @media #{$md, $sm, $xs, $xss} {
+          right: 36%;
+          top: 4%;
+        }
+        @media #{$xss} {
+          right: 30%;
+          top: 3%;
+        }
       }
     }
   }

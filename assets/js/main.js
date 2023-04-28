@@ -49,7 +49,6 @@
         0: {
           slidesPerView: 1,
           pagination: false,
-          spaceBetween: 50,
           slidesPerGroup: 1,
         },
         576: {

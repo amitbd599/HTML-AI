@@ -7033,23 +7033,28 @@ input[type=color] {
 .team-section.one .swiper.team-one .swiper-wrapper .swiper-slide .inner-wrapper .img-file .shape-overlay .inner-data {
   margin-top: 70px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .team-section.one .swiper.team-one .swiper-wrapper .swiper-slide .inner-wrapper .img-file .shape-overlay .inner-data {
+    margin-top: 120px;
+  }
+}
 .team-section.one .swiper.team-one .swiper-wrapper .swiper-slide .inner-wrapper .img-file .shape-overlay .inner-data h3 {
   font-size: 20px;
   font-weight: var(--fw-600);
   margin: 0;
   transition: all 0.4s linear;
-  transform: translateX(-140%);
+  transform: translateX(-200%);
 }
 .team-section.one .swiper.team-one .swiper-wrapper .swiper-slide .inner-wrapper .img-file .shape-overlay .inner-data p {
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 0;
   transition: all 0.4s linear;
-  transform: translateX(140%);
+  transform: translateX(200%);
 }
 .team-section.one .swiper.team-one .swiper-wrapper .swiper-slide .inner-wrapper .img-file .shape-overlay .inner-data .social {
   justify-content: center;
-  transform: translateY(337%);
+  transform: translateY(500%);
 }
 .team-section.one .swiper.team-one .swiper-wrapper .swiper-slide .inner-wrapper .img-file:hover .shape-overlay {
   background: rgba(0, 0, 0, 0.7294117647);
@@ -9308,8 +9313,18 @@ input[type=color] {
   margin-top: 100px;
   background: var(--common-body-1);
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .price-section.one .price-body .price-inner.down {
+    margin-top: 60px;
+  }
+}
 .price-section.one .price-body .price-inner.down:hover {
   animation: pulse 2s;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .price-section.one .price-body .price-inner.down:hover {
+    animation: none;
+  }
 }
 .price-section.one .shape-image .shape-1 {
   left: 15px;
@@ -9317,6 +9332,11 @@ input[type=color] {
   width: 60px;
   z-index: -1;
   animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .price-section.one .shape-image .shape-1 {
+    display: none;
+  }
 }
 .price-section.one .shape-image .shape-2 {
   left: 15px;
@@ -9355,6 +9375,17 @@ input[type=color] {
   z-index: -1;
   animation: scale-down-center 5s linear infinite alternate-reverse both;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .price-section.one .shape-image .shape-6 {
+    top: 8%;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .price-section.one .shape-image .shape-6 {
+    top: 4%;
+    right: 10%;
+  }
+}
 .price-section.one .shape-image .shape-7 {
   right: 0;
   bottom: 10px;
@@ -9377,9 +9408,26 @@ input[type=color] {
 }
 .price-section.one .shape-image .shape-10 {
   top: 13%;
-  right: 37%;
+  right: 56%;
   width: 150px;
   z-index: -1;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .price-section.one .shape-image .shape-10 {
+    right: 46%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .price-section.one .shape-image .shape-10 {
+    right: 36%;
+    top: 4%;
+  }
+}
+@media (max-width: 399px) {
+  .price-section.one .shape-image .shape-10 {
+    right: 30%;
+    top: 3%;
+  }
 }
 .price-section.two {
   background: var(--common-white);
@@ -10790,10 +10838,21 @@ input[type=color] {
   line-height: 1.2;
   color: var(--common-white);
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .counter-section.one .award-part .title h2 {
+    font-size: 22px;
+  }
+}
 .counter-section.one .award-part .inner-btn {
   justify-content: flex-end;
   width: 100%;
   height: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .counter-section.one .award-part .inner-btn {
+    justify-content: flex-start;
+    margin-top: 12px;
+  }
 }
 .counter-section.one .award-part .overlay-text h1 {
   position: absolute;
@@ -10814,12 +10873,21 @@ input[type=color] {
   width: 70px;
   right: 25%;
   top: 50%;
+  z-index: -1;
   animation: rotate-in-center 16s linear 0.4s infinite reverse backwards;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .counter-section.one .award-part .shape-img .shape-1 {
+    width: 53px;
+    right: 23%;
+    top: 54%;
+  }
 }
 .counter-section.one .award-part .shape-img .shape-2 {
   width: 30px;
   right: 45%;
   top: 5%;
+  z-index: -1;
   animation: animationFramesOne 25s linear infinite;
   -webkit-animation: animationFramesOne 25s linear infinite;
 }
@@ -10827,6 +10895,12 @@ input[type=color] {
   width: 15px;
   right: 23%;
   top: 9%;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .counter-section.one .award-part .shape-img .shape-3 {
+    right: 10px;
+    top: 40%;
+  }
 }
 .counter-section.one .award-part .shape-img .shape-4 {
   width: 26px;
@@ -10867,6 +10941,18 @@ input[type=color] {
   margin-top: 70px;
   padding-left: 25px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .counter-section.one .inner-wrapper .right-wrapper {
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .counter-section.one .inner-wrapper .right-wrapper {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
 .counter-section.one .inner-wrapper .right-wrapper .item {
   background: linear-gradient(180deg, #243949 0%, #00151e 100%);
   box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1), 0px 4px 13px -2px rgba(19, 16, 34, 0.06);
@@ -10874,6 +10960,11 @@ input[type=color] {
   padding: 25px 20px;
   text-align: center;
   width: 220px;
+}
+@media only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .counter-section.one .inner-wrapper .right-wrapper .item {
+    width: 240px;
+  }
 }
 .counter-section.one .inner-wrapper .right-wrapper .item .count-body {
   display: flex;
@@ -10904,6 +10995,11 @@ input[type=color] {
   width: 65px;
   animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .counter-section.one .shape-img .shape-5 {
+    display: none;
+  }
+}
 .counter-section.one .shape-img .shape-6 {
   left: 40px;
   top: 3%;
@@ -10919,11 +11015,25 @@ input[type=color] {
   z-index: 0;
   animation: slide-top 15s linear 0.3s infinite alternate-reverse both;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .counter-section.one .shape-img .shape-7 {
+    animation: none;
+    right: 40px;
+    bottom: 38%;
+  }
+}
 .counter-section.one .shape-img .shape-8 {
   right: 30px;
   bottom: 12%;
   width: 60px;
   z-index: 0;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .counter-section.one .shape-img .shape-8 {
+    bottom: 34px;
+    right: auto;
+    left: 12px;
+  }
 }
 .counter-section.two {
   background: var(--common-body-1);
