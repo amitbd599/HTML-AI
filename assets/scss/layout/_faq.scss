@@ -11,9 +11,19 @@
     position: relative;
     overflow: hidden;
     z-index: 9;
+    .img-file {
+      @media #{$lg, $md, $sm, $xs, $xss} {
+        margin-top: 70px;
+        text-align: center;
+      }
+    }
     .faq-inner {
       margin-top: 110px;
       z-index: 9;
+      position: relative;
+      @media #{$sm, $xs, $xss} {
+        margin-top: 60px;
+      }
       .icon-shape {
         width: 80px;
         height: 80px;
@@ -22,6 +32,9 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
+        }
+        @media #{$md, $sm, $xs, $xss} {
+          display: none;
         }
       }
       .intro {
@@ -41,7 +54,7 @@
             overflow: hidden;
             .accordion-header {
               .accordion-button {
-                padding: 15px 16px;
+                padding: 15px 35px 15px 16px;
                 font-size: 15px !important;
                 line-height: 25px;
 
@@ -101,6 +114,9 @@
         img {
           width: 60px;
         }
+        @media #{$md, $sm, $xs, $xss} {
+          top: 3%;
+        }
       }
       .shape-img-2 {
         top: -24px;
@@ -120,6 +136,9 @@
         img {
           width: 120px;
         }
+        @media #{$md, $sm, $xs, $xss} {
+          display: none;
+        }
       }
       .shape-img-4 {
         bottom: 21%;
@@ -130,6 +149,9 @@
         animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
         img {
           width: 40px;
+        }
+        @media #{$md, $sm, $xs, $xss} {
+          display: none;
         }
       }
       .shape-img-5 {
@@ -166,6 +188,14 @@
         z-index: -1;
         img {
           width: 200px;
+          @media #{$md, $sm, $xs, $xss} {
+            width: 150px;
+          }
+        }
+
+        @media #{$md, $sm, $xs, $xss} {
+          top: 90px;
+          right: 36%;
         }
       }
     }

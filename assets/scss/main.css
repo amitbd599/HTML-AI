@@ -9917,9 +9917,21 @@ input[type=color] {
   overflow: hidden;
   z-index: 9;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .faq-section.one .img-file {
+    margin-top: 70px;
+    text-align: center;
+  }
+}
 .faq-section.one .faq-inner {
   margin-top: 110px;
   z-index: 9;
+  position: relative;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .faq-section.one .faq-inner {
+    margin-top: 60px;
+  }
 }
 .faq-section.one .faq-inner .icon-shape {
   width: 80px;
@@ -9931,6 +9943,11 @@ input[type=color] {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .faq-section.one .faq-inner .icon-shape {
+    display: none;
+  }
 }
 .faq-section.one .faq-inner .intro {
   margin-top: 15px;
@@ -9949,7 +9966,7 @@ input[type=color] {
   overflow: hidden;
 }
 .faq-section.one .faq-inner .faq-list .accordion .accordion-item .accordion-header .accordion-button {
-  padding: 15px 16px;
+  padding: 15px 35px 15px 16px;
   font-size: 15px !important;
   line-height: 25px;
   font-weight: 600;
@@ -10003,6 +10020,11 @@ input[type=color] {
 .faq-section.one .shape-image .shape-img-1 img {
   width: 60px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .faq-section.one .shape-image .shape-img-1 {
+    top: 3%;
+  }
+}
 .faq-section.one .shape-image .shape-img-2 {
   top: -24px;
   right: -28px;
@@ -10020,6 +10042,11 @@ input[type=color] {
 .faq-section.one .shape-image .shape-img-3 img {
   width: 120px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .faq-section.one .shape-image .shape-img-3 {
+    display: none;
+  }
+}
 .faq-section.one .shape-image .shape-img-4 {
   bottom: 21%;
   right: 20px;
@@ -10028,6 +10055,11 @@ input[type=color] {
 }
 .faq-section.one .shape-image .shape-img-4 img {
   width: 40px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .faq-section.one .shape-image .shape-img-4 {
+    display: none;
+  }
 }
 .faq-section.one .shape-image .shape-img-5 {
   bottom: 7px;
@@ -10064,6 +10096,17 @@ input[type=color] {
 }
 .faq-section.one .shape-image .shape-img-8 img {
   width: 200px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .faq-section.one .shape-image .shape-img-8 img {
+    width: 150px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .faq-section.one .shape-image .shape-img-8 {
+    top: 90px;
+    right: 36%;
+  }
 }
 .faq-section.one.two .img-file {
   border-radius: 8px;
