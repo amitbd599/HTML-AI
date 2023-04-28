@@ -2528,6 +2528,11 @@ input[type=color] {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .arrow .testimonialOne-button {
+    margin-top: 20px;
+  }
+}
 .arrow .testimonialOne-button i {
   transition: all 0.2s linear;
 }
@@ -6612,10 +6617,25 @@ input[type=color] {
   border-radius: 10px;
   padding: 40px 40px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .testimonial-section.one .swiper.testimonial-one .swiper-wrapper .swiper-slide .inner-wrapper {
+    padding: 30px 30px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .testimonial-section.one .swiper.testimonial-one .swiper-wrapper .swiper-slide .inner-wrapper {
+    margin-top: 30px;
+  }
+}
 .testimonial-section.one .swiper.testimonial-one .swiper-wrapper .swiper-slide .inner-wrapper .intro-body {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .testimonial-section.one .swiper.testimonial-one .swiper-wrapper .swiper-slide .inner-wrapper .intro-body {
+    display: block;
+  }
 }
 .testimonial-section.one .swiper.testimonial-one .swiper-wrapper .swiper-slide .inner-wrapper .intro-body .img-file {
   width: 80px;
@@ -6644,6 +6664,11 @@ input[type=color] {
   margin-top: 5px;
   text-transform: capitalize;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .testimonial-section.one .swiper.testimonial-one .swiper-wrapper .swiper-slide .inner-wrapper .intro-body .text-file {
+    margin-top: 20px;
+  }
+}
 .testimonial-section.one .swiper.testimonial-one .swiper-wrapper .swiper-slide .inner-wrapper .review {
   margin-top: 20px;
   position: relative;
@@ -6667,6 +6692,12 @@ input[type=color] {
   top: -88px;
   right: 0;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .testimonial-section.one .swiper.testimonial-one .swiper-wrapper .swiper-slide .inner-wrapper .review .shape {
+    top: -160px;
+    right: 25px;
+  }
+}
 .testimonial-section.one .swiper.testimonial-one .swiper-wrapper .swiper-slide .inner-wrapper .review .shape i {
   font-size: 60px;
   color: var(--common-white);
@@ -6677,6 +6708,14 @@ input[type=color] {
   width: 30px;
   z-index: -1;
   animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+}
+@media only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .testimonial-section.one .shape-image .shape-1 {
+    left: 17px;
+    top: 5%;
+    width: 24px;
+    animation: none;
+  }
 }
 .testimonial-section.one .shape-image .shape-2 {
   right: 26px;
@@ -6698,6 +6737,13 @@ input[type=color] {
   width: 50px;
   z-index: -1;
   animation: scale-down-center 5s linear infinite alternate-reverse both;
+}
+@media only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .testimonial-section.one .shape-image .shape-4 {
+    left: 36%;
+    top: 5%;
+    animation: rotate-in-center 16s linear 0.4s infinite reverse backwards;
+  }
 }
 .testimonial-section.one .shape-image .shape-5 {
   right: 18%;

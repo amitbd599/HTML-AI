@@ -26,10 +26,21 @@
               background: var(--common-gd);
               border-radius: 10px;
               padding: 40px 40px;
+              @media #{$md, $sm, $xs, $xss} {
+                padding: 30px 30px;
+              }
+              @media #{$sm, $xs, $xss} {
+                margin-top: 30px;
+              }
               .intro-body {
                 display: flex;
                 align-items: center;
                 gap: 15px;
+
+                @media #{$md, $sm, $xs, $xss} {
+                  display: block;
+                }
+
                 .img-file {
                   width: 80px;
                   height: 80px;
@@ -57,6 +68,9 @@
                     margin-top: 5px;
                     text-transform: capitalize;
                   }
+                  @media #{$md, $sm, $xs, $xss} {
+                    margin-top: 20px;
+                  }
                 }
               }
               .review {
@@ -80,6 +94,10 @@
                   position: absolute;
                   top: -88px;
                   right: 0;
+                  @media #{$md, $sm, $xs, $xss} {
+                    top: -160px;
+                    right: 25px;
+                  }
                   i {
                     font-size: 60px;
                     color: var(--common-white);
@@ -100,6 +118,12 @@
         -webkit-animation: slide-top 10s linear 0.3s infinite alternate-reverse
           both;
         animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+        @media #{$xs,$xss} {
+          left: 17px;
+          top: 5%;
+          width: 24px;
+          animation: none;
+        }
       }
       .shape-2 {
         right: 26px;
@@ -123,6 +147,12 @@
         -webkit-animation: scale-down-center 5s linear infinite
           alternate-reverse both;
         animation: scale-down-center 5s linear infinite alternate-reverse both;
+
+        @media #{$xs,$xss} {
+          left: 36%;
+          top: 5%;
+          animation: rotate-in-center 16s linear 0.4s infinite reverse backwards;
+        }
       }
       .shape-5 {
         right: 18%;
