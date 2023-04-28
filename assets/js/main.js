@@ -49,13 +49,12 @@
         0: {
           slidesPerView: 1,
           pagination: false,
-          spaceBetween: 20,
+          spaceBetween: 50,
           slidesPerGroup: 1,
         },
-        500: {
-          slidesPerView: 1,
+        576: {
+          slidesPerView: 2,
           pagination: false,
-          spaceBetween: 20,
           slidesPerGroup: 1,
         },
         768: {
