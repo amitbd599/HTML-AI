@@ -5927,12 +5927,23 @@ input[type=color] {
   margin-bottom: 60px;
 }
 .project-section.one .project-wrapper {
+  position: relative;
   z-index: 9;
   margin-bottom: 40px;
+}
+@media only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .project-section.one .project-wrapper {
+    margin-bottom: 130px;
+  }
 }
 .project-section.one .project-wrapper .img-file {
   border-radius: 5px;
   overflow: hidden;
+}
+@media only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .project-section.one .project-wrapper .img-file {
+    overflow: visible;
+  }
 }
 .project-section.one .project-wrapper .img-file img {
   width: 100%;
@@ -5941,24 +5952,39 @@ input[type=color] {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--common-body-1);
+  background: var(--common-body-2);
   width: 420px;
   padding: 25px 20px;
   border-radius: 5px;
   text-align: center;
   transition: all 0.4s linear;
 }
+@media only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .project-section.one .project-wrapper .img-file .shape-overlay {
+    width: 300px;
+    bottom: -70px;
+  }
+}
 .project-section.one .project-wrapper .img-file .shape-overlay h2 {
   font-size: 26px;
   line-height: 1.2;
 }
+@media only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .project-section.one .project-wrapper .img-file .shape-overlay h2 {
+    font-size: 22px;
+  }
+}
 .project-section.one .project-wrapper .img-file .shape-overlay a {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: var(--fw-700);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+.project-section.one .project-wrapper .img-file .shape-overlay a i {
+  font-size: 14px;
+  margin-top: 2px;
 }
 .project-section.one .project-wrapper .img-file .shape-overlay a:hover {
   color: var(--theme-1);
@@ -5966,6 +5992,11 @@ input[type=color] {
 .project-section.one .project-wrapper:hover .shape-overlay {
   animation: pulse 2s;
   bottom: 30px;
+}
+@media only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .project-section.one .project-wrapper:hover .shape-overlay {
+    bottom: -70px;
+  }
 }
 .project-section.one .inner-btn {
   margin-top: 15px;
@@ -5988,6 +6019,11 @@ input[type=color] {
 .project-section.one .shape-image .shape-img-2 img {
   width: 60px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .project-section.one .shape-image .shape-img-2 {
+    display: none;
+  }
+}
 .project-section.one .shape-image .shape-img-3 {
   left: 10%;
   top: 10%;
@@ -5997,6 +6033,11 @@ input[type=color] {
 }
 .project-section.one .shape-image .shape-img-3 img {
   width: 30px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .project-section.one .shape-image .shape-img-3 {
+    display: none;
+  }
 }
 .project-section.one .shape-image .shape-img-4 {
   left: 15px;
@@ -6008,6 +6049,11 @@ input[type=color] {
 .project-section.one .shape-image .shape-img-4 img {
   width: 15px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .project-section.one .shape-image .shape-img-4 {
+    display: none;
+  }
+}
 .project-section.one .shape-image .shape-img-5 {
   left: -3px;
   bottom: 7%;
@@ -6016,6 +6062,12 @@ input[type=color] {
 .project-section.one .shape-image .shape-img-5 img {
   width: 130px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .project-section.one .shape-image .shape-img-5 {
+    left: -3px;
+    bottom: 10px;
+  }
+}
 .project-section.one .shape-image .shape-img-6 {
   right: 0;
   bottom: 2%;
@@ -6023,6 +6075,12 @@ input[type=color] {
 }
 .project-section.one .shape-image .shape-img-6 img {
   width: 140px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .project-section.one .shape-image .shape-img-6 {
+    right: -10px;
+    bottom: 0;
+  }
 }
 .project-section.one .shape-image .shape-img-7 {
   right: 25px;
@@ -6042,6 +6100,11 @@ input[type=color] {
 .project-section.one .shape-image .shape-img-8 img {
   width: 30px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .project-section.one .shape-image .shape-img-8 {
+    display: none;
+  }
+}
 .project-section.one .shape-image .shape-img-9 {
   right: 60px;
   top: 7%;
@@ -6050,6 +6113,11 @@ input[type=color] {
 .project-section.one .shape-image .shape-img-9 img {
   width: 52px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .project-section.one .shape-image .shape-img-9 {
+    display: none;
+  }
+}
 .project-section.one .shape-image .shape-img-10 {
   left: 25px;
   top: 7%;
@@ -6057,6 +6125,11 @@ input[type=color] {
 }
 .project-section.one .shape-image .shape-img-10 img {
   width: 75px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .project-section.one .shape-image .shape-img-10 {
+    display: none;
+  }
 }
 .project-section.two {
   background: var(--common-body-2);

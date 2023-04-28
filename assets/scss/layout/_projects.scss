@@ -17,11 +17,18 @@
       margin-bottom: 60px;
     }
     .project-wrapper {
+      position: relative;
       z-index: 9;
       margin-bottom: 40px;
+      @media #{$xs, $xss} {
+        margin-bottom: 130px;
+      }
       .img-file {
         border-radius: 5px;
         overflow: hidden;
+        @media #{$xs, $xss} {
+          overflow: visible;
+        }
         img {
           width: 100%;
         }
@@ -29,23 +36,34 @@
           bottom: 20px;
           left: 50%;
           transform: translateX(-50%);
-          background: var(--common-body-1);
+          background: var(--common-body-2);
           width: 420px;
           padding: 25px 20px;
           border-radius: 5px;
           text-align: center;
           transition: all 0.4s linear;
+          @media #{$xs, $xss} {
+            width: 300px;
+            bottom: -70px;
+          }
           h2 {
             font-size: 26px;
             line-height: 1.2;
+            @media #{$xs, $xss} {
+              font-size: 22px;
+            }
           }
           a {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: var(--fw-700);
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;
+            i {
+              font-size: 14px;
+              margin-top: 2px;
+            }
             &:hover {
               color: var(--theme-1);
             }
@@ -56,6 +74,9 @@
         .shape-overlay {
           animation: pulse 2s;
           bottom: 30px;
+          @media #{$xs, $xss} {
+            bottom: -70px;
+          }
         }
       }
     }
@@ -83,6 +104,9 @@
         img {
           width: 60px;
         }
+        @media #{$sm ,$xs, $xss} {
+          display: none;
+        }
       }
       .shape-img-3 {
         left: 10%;
@@ -92,6 +116,9 @@
         -webkit-animation: animationFramesOne 25s linear infinite;
         img {
           width: 30px;
+        }
+        @media #{$sm, $xs, $xss} {
+          display: none;
         }
       }
       .shape-img-4 {
@@ -103,6 +130,9 @@
         img {
           width: 15px;
         }
+        @media #{$sm ,$xs, $xss} {
+          display: none;
+        }
       }
       .shape-img-5 {
         left: -3px;
@@ -111,6 +141,10 @@
         img {
           width: 130px;
         }
+        @media #{$sm ,$xs, $xss} {
+          left: -3px;
+          bottom: 10px;
+        }
       }
       .shape-img-6 {
         right: 0;
@@ -118,6 +152,10 @@
         z-index: -1;
         img {
           width: 140px;
+        }
+        @media #{$sm ,$xs, $xss} {
+          right: -10px;
+          bottom: 0;
         }
       }
       .shape-img-7 {
@@ -138,6 +176,9 @@
         img {
           width: 30px;
         }
+        @media #{$sm ,$xs, $xss} {
+          display: none;
+        }
       }
       .shape-img-9 {
         right: 60px;
@@ -147,6 +188,9 @@
         img {
           width: 52px;
         }
+        @media #{$sm, $xs, $xss} {
+          display: none;
+        }
       }
       .shape-img-10 {
         left: 25px;
@@ -155,6 +199,9 @@
 
         img {
           width: 75px;
+        }
+        @media #{$sm, $xs, $xss} {
+          display: none;
         }
       }
     }
