@@ -670,6 +670,10 @@
       box-shadow: 0px 7px 15px 0px rgba(0, 11, 40, 0.06);
       width: 100%;
       height: 400px;
+      @media #{ $md, $sm, $xs, $xss} {
+        margin-bottom: 30px;
+      }
+
       .img-file {
         width: 100%;
         height: 100%;
@@ -717,9 +721,12 @@
             margin-top: 20px;
             font-size: 22px;
             font-weight: var(--fw-800);
-
             line-height: 1.2;
             @include transition(0.2s);
+            @media #{$xs, $xss} {
+              font-size: 20px;
+            }
+
             a {
               color: var(--text-h);
               @include transition(0.2s);
@@ -815,6 +822,10 @@
         top: 70px;
         z-index: -1;
         width: 50px;
+        @media #{$lg, $md, $sm, $xs, $xss} {
+          left: -2px;
+          top: -30px;
+        }
       }
       .shape-4 {
         right: 86px;

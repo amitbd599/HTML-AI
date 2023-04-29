@@ -116,6 +116,9 @@
     overflow: hidden;
     .text-wrapper {
       text-align: center;
+      @media #{$xs, $xss} {
+        text-align: start;
+      }
 
       h5 {
         font-size: 16px;
@@ -127,14 +130,23 @@
         text-transform: capitalize;
         line-height: 1.2;
         margin: 0;
+
+        @media #{$xs, $xss} {
+          font-size: 22px;
+        }
       }
     }
     .input-wrapper {
       display: flex;
       justify-content: center;
+
+      @media #{$xs, $xss} {
+        justify-content: flex-start;
+      }
       .input-box {
         position: relative;
         margin-top: 24px;
+
         input {
           width: 390px;
           height: 45px;
@@ -145,6 +157,9 @@
           &::-webkit-input-placeholder {
             color: var(--text-p-1);
           }
+          @media #{$xs, $xss} {
+            width: 100%;
+          }
         }
 
         .submit {
@@ -154,6 +169,10 @@
           padding: 10px 15px;
           border-radius: 5px;
           margin-left: 6px;
+          @media #{$xs, $xss} {
+            margin-left: 0;
+            margin-top: 12px;
+          }
           &:hover {
             animation: pulse-small 1s;
           }
@@ -172,6 +191,9 @@
         z-index: -1;
         width: 75px;
         bottom: 15px;
+        @media #{$md, $sm, $xs, $xss} {
+          right: 0%;
+        }
       }
     }
   }
