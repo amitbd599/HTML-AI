@@ -7670,10 +7670,20 @@ input[type=color] {
 .team-section.two .section-title-shape-one {
   margin-bottom: 60px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .team-section.two .inner-wrapper {
+    margin-bottom: 30px;
+  }
+}
 .team-section.two .inner-wrapper .img-file {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .team-section.two .inner-wrapper .img-file img {
+    width: 100%;
+  }
 }
 .team-section.two .inner-wrapper .img-file .shape-overlay {
   position: absolute;
@@ -7766,6 +7776,12 @@ input[type=color] {
   top: 6%;
   z-index: -1;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .team-section.two .shape-image .shape-img-8 {
+    right: 11%;
+    top: 3%;
+  }
+}
 .team-section.two .shape-image .shape-img-8 img {
   width: 55px;
 }
@@ -7773,6 +7789,25 @@ input[type=color] {
   right: 68%;
   top: 10%;
   z-index: -1;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .team-section.two .shape-image .shape-img-9 {
+    right: 75%;
+    top: 5%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .team-section.two .shape-image .shape-img-9 {
+    right: 43%;
+    top: 3%;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .team-section.two .shape-image .shape-img-9 {
+    right: auto;
+    top: 1%;
+    left: 6%;
+  }
 }
 .team-section.two .shape-image .shape-img-9 img {
   width: 130px;

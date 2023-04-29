@@ -365,10 +365,19 @@
     }
 
     .inner-wrapper {
+      @media #{$md, $sm, $xs, $xss} {
+        margin-bottom: 30px;
+      }
+
       .img-file {
         position: relative;
         border-radius: 10px;
         overflow: hidden;
+        img {
+          @media #{$sm, $xs, $xss} {
+            width: 100%;
+          }
+        }
         .shape-overlay {
           position: absolute;
           bottom: 0;
@@ -474,6 +483,10 @@
         right: 39%;
         top: 6%;
         z-index: -1;
+        @media #{$md, $sm, $xs, $xss} {
+          right: 11%;
+          top: 3%;
+        }
 
         img {
           width: 55px;
@@ -483,6 +496,19 @@
         right: 68%;
         top: 10%;
         z-index: -1;
+        @media #{$md} {
+          right: 75%;
+          top: 5%;
+        }
+        @media #{$sm, $xs, $xss} {
+          right: 43%;
+          top: 3%;
+        }
+        @media #{$xs, $xss} {
+          right: auto;
+          top: 1%;
+          left: 6%;
+        }
 
         img {
           width: 130px;
