@@ -12070,6 +12070,7 @@ input[type=color] {
 .footer-section.two .footer-wrapper.two .title {
   font-size: 20px;
   font-weight: var(--fw-700);
+  margin-bottom: 15px;
 }
 .footer-section.two .footer-wrapper.two ul li {
   margin-bottom: 7px;
@@ -12102,6 +12103,7 @@ input[type=color] {
 .footer-section.two .footer-wrapper.three .title {
   font-size: 20px;
   font-weight: var(--fw-700);
+  margin-bottom: 15px;
 }
 .footer-section.two .footer-wrapper.three ul {
   display: grid;
@@ -12133,6 +12135,7 @@ input[type=color] {
 .footer-section.three .footer-wrapper.one .title {
   font-size: 22px;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 .footer-section.three .footer-wrapper.one span {
   display: block;
@@ -12144,6 +12147,7 @@ input[type=color] {
 .footer-section.three .footer-wrapper.two .title {
   font-size: 22px;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 .footer-section.three .footer-wrapper.two .inner ul li {
   display: flex;
@@ -12178,6 +12182,7 @@ input[type=color] {
 .footer-section.three .footer-wrapper.three .title {
   font-size: 22px;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 .footer-section.three .footer-wrapper.three .inner p {
   margin: 0;
