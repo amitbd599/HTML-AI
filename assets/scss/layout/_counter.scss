@@ -252,6 +252,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     .wrapper {
+      .middle {
+        @media #{$md, $sm, $xs, $xss} {
+          justify-content: center !important;
+        }
+      }
+      @media #{$md, $sm, $xs, $xss} {
+        text-align: center;
+      }
       h2 {
         font-size: 50px;
         line-height: 1.2;
@@ -286,6 +294,12 @@
       top: 160px;
       width: 52px;
       animation: trigger 6s linear infinite;
+
+      @media #{$lg, $md, $sm, $xs, $xss} {
+        left: 10px;
+        bottom: 10px;
+        top: auto;
+      }
     }
   }
 }

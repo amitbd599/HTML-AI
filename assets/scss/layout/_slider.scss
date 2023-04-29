@@ -556,9 +556,15 @@
     h2 {
       margin-top: 20px;
       font-size: 50px;
-      line-height: 60px;
+      line-height: 1.2;
       text-transform: capitalize;
       font-weight: var(--fw-800);
+      @media #{ $sm} {
+        font-size: 45px;
+      }
+      @media #{$xs, $xss} {
+        font-size: 40px;
+      }
     }
     p {
       margin-top: 20px;
@@ -595,6 +601,10 @@
       -webkit-animation: rotate-in-center 12s linear 0s infinite reverse
         backwards;
       animation: rotate-in-center 12s linear 0s infinite reverse backwards;
+      @media #{$md, $sm, $xs, $xss} {
+        left: 12%;
+        top: 28px;
+      }
     }
     .shape-4 {
       right: 30%;
@@ -632,6 +642,11 @@
       width: 100px;
       z-index: 0;
       animation: trigger 6s linear infinite;
+      @media #{$sm, $xs, $xss} {
+        right: 3px;
+        bottom: 20px;
+        width: 75px;
+      }
     }
     .shape-9 {
       right: 16%;

@@ -331,12 +331,28 @@
         width: 20px;
         z-index: -1;
         animation: trigger 6s linear infinite reverse;
+        @media #{$md, $sm, $xs, $xss} {
+          left: 50px;
+          top: 184px;
+        }
       }
       .shape-7 {
         right: 287px;
         top: 95px;
         width: 161px;
         z-index: -1;
+        @media #{$lg} {
+          right: 246px;
+          top: 42px;
+        }
+        @media #{$md, $sm, $xs, $xss} {
+          right: 140px;
+          top: 50px;
+          width: 150px;
+        }
+        @media #{$md, $sm, $xs, $xss} {
+          right: 39px;
+        }
       }
       .shape-8 {
         left: -10px;

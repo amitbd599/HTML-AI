@@ -225,6 +225,7 @@
     .inner-list {
       position: relative;
       z-index: 9;
+      margin-top: 20px;
       ul {
         li {
           font-size: 16px;
@@ -255,6 +256,10 @@
       height: 100%;
       display: flex;
       align-items: center;
+      @media #{$md, $sm, $xs, $xss} {
+        padding-left: 0;
+        justify-content: center;
+      }
     }
     .shape-img {
       .shape-1 {
@@ -275,6 +280,9 @@
         width: 120px;
         z-index: -1;
         animation: trigger 6s linear infinite;
+        @media #{$md, $sm, $xs, $xss} {
+          right: 30px;
+        }
       }
       .shape-4 {
         right: 570px;
@@ -282,6 +290,14 @@
         width: 30px;
         z-index: -1;
         animation: trigger 6s linear 0.3s infinite reverse;
+        @media #{$lg} {
+          right: 349px;
+          bottom: 24px;
+        }
+        @media #{$md, $sm, $xs, $xss} {
+          left: 240px;
+          right: auto;
+        }
       }
       .shape-5 {
         right: 570px;
@@ -304,6 +320,13 @@
         top: 48px;
         width: 180px;
         z-index: -1;
+        @media #{$sm, $xs, $xss} {
+          left: 225px;
+          width: 150px;
+        }
+        @media #{$xs, $xss} {
+          left: 145px;
+        }
       }
       .shape-8 {
         left: -10px;
@@ -313,10 +336,13 @@
         transform: rotate(270deg);
       }
       .shape-9 {
-        left: 548px;
+        left: 419px;
         bottom: 30px;
         width: 80px;
         z-index: -1;
+        @media #{$xs, $xss} {
+          display: none;
+        }
       }
       .shape-10 {
         left: 548px;
