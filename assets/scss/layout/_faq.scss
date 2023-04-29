@@ -226,6 +226,9 @@
           padding: 50px 50px;
           border-radius: 8px;
           width: 100%;
+          @media #{$sm, $xs, $xss} {
+            padding: 30px 20px;
+          }
         }
       }
       .shape-image {
@@ -239,12 +242,22 @@
           top: 53px;
           width: 80px;
           animation: trigger 8s linear infinite;
+          @media #{$sm, $xs, $xss} {
+            right: 47px;
+            top: 15px;
+            width: 70px;
+          }
         }
         .shape-3 {
           right: 260px;
           bottom: 70px;
           width: 65px;
           animation: rotate-in-center 12s linear 0s infinite reverse backwards;
+          @media #{$sm, $xs, $xss} {
+            right: 80px;
+            bottom: 46px;
+            width: 50px;
+          }
         }
       }
     }

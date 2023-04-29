@@ -154,32 +154,26 @@ h6 {
 
 h1 {
   font-size: var(--fz-h1);
-  line-height: 80px;
 }
 
 h2 {
   font-size: var(--fz-h2);
-  line-height: 50px;
 }
 
 h3 {
   font-size: var(--fz-h3);
-  line-height: 45px;
 }
 
 h4 {
   font-size: var(--fz-h4);
-  line-height: 44px;
 }
 
 h5 {
   font-size: var(--fz-h5);
-  line-height: 36px;
 }
 
 h6 {
   font-size: var(--fz-h6);
-  line-height: 30px;
 }
 
 ul {
@@ -399,35 +393,31 @@ input[type=color] {
 .large-container {
   position: static;
   max-width: var(--large-container-width);
-  padding: 0px 15px;
-  margin: 0 auto;
   width: 100%;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
-  .large-container {
-    padding: 0px 30px;
-  }
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .auto-container {
   position: static;
   max-width: var(--container-width);
-  padding: 0px 15px;
-  margin: 0 auto;
   width: 100%;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
-  .auto-container {
-    padding: 0px 30px;
-  }
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .small-container {
   position: static;
   max-width: var(--small-container-width);
-  padding: 0px 15px;
-  margin: 0 auto;
   width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*--
@@ -10500,6 +10490,11 @@ input[type=color] {
   border-radius: 8px;
   width: 100%;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .faq-section.one.two .faq-inner .faq-list {
+    padding: 30px 20px;
+  }
+}
 .faq-section.one.two .shape-image .shape-1 {
   left: 11px;
   bottom: 20px;
@@ -10511,11 +10506,25 @@ input[type=color] {
   width: 80px;
   animation: trigger 8s linear infinite;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .faq-section.one.two .shape-image .shape-2 {
+    right: 47px;
+    top: 15px;
+    width: 70px;
+  }
+}
 .faq-section.one.two .shape-image .shape-3 {
   right: 260px;
   bottom: 70px;
   width: 65px;
   animation: rotate-in-center 12s linear 0s infinite reverse backwards;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .faq-section.one.two .shape-image .shape-3 {
+    right: 80px;
+    bottom: 46px;
+    width: 50px;
+  }
 }
 .faq-section.three {
   background: var(--common-body-2);
