@@ -18,8 +18,11 @@
   -moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   z-index: 9999;
-  @media #{$xs,$xss} {
-    width: 350px;
+  @media #{$xs} {
+    width: 320px;
+  }
+  @media #{$xss} {
+    width: 290px;
   }
   &.sidebar-opened {
     right: 0px;

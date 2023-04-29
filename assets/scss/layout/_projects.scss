@@ -15,6 +15,8 @@
     overflow: hidden;
     .section-title-shape-one {
       margin-bottom: 60px;
+      position: relative;
+      z-index: 9;
     }
     .project-wrapper {
       position: relative;
@@ -228,11 +230,18 @@
       .shape-overlay {
         position: absolute;
         background: var(--common-white);
-        padding: 20px;
+        padding: 25px 20px;
         bottom: -40%;
         left: 0;
         margin: 35px;
         border-radius: 8px;
+        @media #{$sm} {
+          bottom: -30%;
+        }
+        @media #{$xs, $xss} {
+          bottom: -45%;
+        }
+
         h3 {
           text-align: center;
           font-size: 22px;
@@ -261,20 +270,27 @@
       .shape-1 {
         right: 0;
         top: 0;
-        z-index: 0;
+        z-index: -1;
         width: 150px;
         transform: rotate(90deg);
       }
       .shape-2 {
         left: 41%;
         top: 12%;
-        z-index: 0;
+        z-index: -1;
         width: 140px;
+        @media #{$lg, $md, $sm, $xs, $xss} {
+          left: 44%;
+          top: 100px;
+        }
+        @media #{$sm, $xs, $xss} {
+          top: 74px;
+        }
       }
       .shape-3 {
         right: 41%;
         top: 12%;
-        z-index: 0;
+        z-index: -1;
         width: 20px;
         animation: animationFramesOne 30s linear infinite reverse backwards;
         -webkit-animation: animationFramesOne 30s linear infinite reverse
@@ -283,7 +299,7 @@
       .shape-4 {
         right: 21%;
         top: 18%;
-        z-index: 0;
+        z-index: -1;
         width: 20px;
         animation: animationFramesOne 30s linear infinite;
         -webkit-animation: animationFramesOne 30s linear infinite;
@@ -291,21 +307,25 @@
       .shape-5 {
         right: 26%;
         top: 10%;
-        z-index: 0;
+        z-index: -1;
         width: 20px;
         animation: trigger 4s linear infinite;
       }
       .shape-6 {
         right: 6%;
         bottom: 7%;
-        z-index: 0;
+        z-index: -1;
         width: 63px;
         animation: trigger 6s linear infinite;
+        @media #{$sm, $xs, $xss} {
+          right: 15px;
+          bottom: 35px;
+        }
       }
       .shape-7 {
         left: 0;
         bottom: 0%;
-        z-index: 0;
+        z-index: -1;
         width: 416px;
       }
     }

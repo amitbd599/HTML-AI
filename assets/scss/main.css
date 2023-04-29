@@ -2796,6 +2796,11 @@ input[type=color] {
   transform: translateX(100%);
   transition: all 0.5s linear;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .sidebar-right {
+    display: none;
+  }
+}
 .sidebar-right .wrapper {
   position: fixed;
   right: 0;
@@ -6034,6 +6039,8 @@ input[type=color] {
 }
 .project-section.one .section-title-shape-one {
   margin-bottom: 60px;
+  position: relative;
+  z-index: 9;
 }
 .project-section.one .project-wrapper {
   position: relative;
@@ -6263,11 +6270,21 @@ input[type=color] {
 .project-section.two .project-wrapper .shape-overlay {
   position: absolute;
   background: var(--common-white);
-  padding: 20px;
+  padding: 25px 20px;
   bottom: -40%;
   left: 0;
   margin: 35px;
   border-radius: 8px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .project-section.two .project-wrapper .shape-overlay {
+    bottom: -30%;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .project-section.two .project-wrapper .shape-overlay {
+    bottom: -45%;
+  }
 }
 .project-section.two .project-wrapper .shape-overlay h3 {
   text-align: center;
@@ -6293,20 +6310,31 @@ input[type=color] {
 .project-section.two .shape-image .shape-1 {
   right: 0;
   top: 0;
-  z-index: 0;
+  z-index: -1;
   width: 150px;
   transform: rotate(90deg);
 }
 .project-section.two .shape-image .shape-2 {
   left: 41%;
   top: 12%;
-  z-index: 0;
+  z-index: -1;
   width: 140px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .project-section.two .shape-image .shape-2 {
+    left: 44%;
+    top: 100px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .project-section.two .shape-image .shape-2 {
+    top: 74px;
+  }
 }
 .project-section.two .shape-image .shape-3 {
   right: 41%;
   top: 12%;
-  z-index: 0;
+  z-index: -1;
   width: 20px;
   animation: animationFramesOne 30s linear infinite reverse backwards;
   -webkit-animation: animationFramesOne 30s linear infinite reverse backwards;
@@ -6314,7 +6342,7 @@ input[type=color] {
 .project-section.two .shape-image .shape-4 {
   right: 21%;
   top: 18%;
-  z-index: 0;
+  z-index: -1;
   width: 20px;
   animation: animationFramesOne 30s linear infinite;
   -webkit-animation: animationFramesOne 30s linear infinite;
@@ -6322,21 +6350,27 @@ input[type=color] {
 .project-section.two .shape-image .shape-5 {
   right: 26%;
   top: 10%;
-  z-index: 0;
+  z-index: -1;
   width: 20px;
   animation: trigger 4s linear infinite;
 }
 .project-section.two .shape-image .shape-6 {
   right: 6%;
   bottom: 7%;
-  z-index: 0;
+  z-index: -1;
   width: 63px;
   animation: trigger 6s linear infinite;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .project-section.two .shape-image .shape-6 {
+    right: 15px;
+    bottom: 35px;
+  }
 }
 .project-section.two .shape-image .shape-7 {
   left: 0;
   bottom: 0%;
-  z-index: 0;
+  z-index: -1;
   width: 416px;
 }
 .project-section.three {
@@ -8604,13 +8638,18 @@ input[type=color] {
   overflow: hidden;
 }
 .blog-section.two .section-title-shape-one {
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 .blog-section.two .blog-items {
   position: relative;
   z-index: 9;
-  margin: 0 8px;
+  margin: 0 5px;
   box-shadow: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1), 0px 4px 13px -2px rgba(19, 16, 34, 0.06);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .blog-section.two .blog-items {
+    margin-bottom: 35px;
+  }
 }
 .blog-section.two .blog-items .img-file {
   border-radius: 8px 8px 0 0;
@@ -8626,14 +8665,11 @@ input[type=color] {
   padding: 20px;
   border-radius: 0 0 8px 8px;
 }
-.blog-section.two .blog-items .text-file .intro {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .blog-section.two .blog-items .text-file .intro .date,
 .blog-section.two .blog-items .text-file .intro .admin,
 .blog-section.two .blog-items .text-file .intro .comment {
+  display: inline-block;
+  margin-right: 6px;
   color: var(--text-p-1);
 }
 .blog-section.two .blog-items .text-file .title {
@@ -8686,6 +8722,11 @@ input[type=color] {
 .blog-section.two .inner-btn {
   margin-top: 70px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .blog-section.two .inner-btn {
+    margin-top: 40px;
+  }
+}
 .blog-section.two .shape-image .shape-1 {
   left: -66px;
   bottom: 50px;
@@ -8698,7 +8739,15 @@ input[type=color] {
   right: 30px;
   bottom: -40px;
   z-index: -1;
-  width: 16%;
+  width: 200px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .blog-section.two .shape-image .shape-2 {
+    right: 30px;
+    bottom: -63px;
+    z-index: -1;
+    width: 160px;
+  }
 }
 .blog-section.two .shape-image .shape-3 {
   left: -2px;
@@ -8706,12 +8755,23 @@ input[type=color] {
   z-index: -1;
   width: 50px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .blog-section.two .shape-image .shape-3 {
+    left: -2px;
+    top: -20px;
+  }
+}
 .blog-section.two .shape-image .shape-4 {
   right: 86px;
   top: 95px;
   z-index: -1;
   width: 80px;
   animation: rotate-in-center 22s linear 0s infinite reverse backwards;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .blog-section.two .shape-image .shape-4 {
+    display: none;
+  }
 }
 .blog-section.two .shape-image .shape-5 {
   right: 34%;
@@ -8727,6 +8787,18 @@ input[type=color] {
   z-index: -1;
   width: 70px;
   animation: trigger 6s linear infinite;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-section.two .shape-image .shape-6 {
+    left: 16%;
+    top: 30px;
+    width: 50px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .blog-section.two .shape-image .shape-6 {
+    display: none;
+  }
 }
 .blog-section.two .pagination {
   margin-top: 20px;
@@ -10949,9 +11021,14 @@ input[type=color] {
   transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   z-index: 9999;
 }
-@media only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+@media only screen and (min-width: 400px) and (max-width: 575px) {
   .sidebar__area {
-    width: 350px;
+    width: 320px;
+  }
+}
+@media (max-width: 399px) {
+  .sidebar__area {
+    width: 290px;
   }
 }
 .sidebar__area.sidebar-opened {
@@ -11681,6 +11758,11 @@ input[type=color] {
   overflow: hidden;
   z-index: 9;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .footer-section.two {
+    padding: 80px 0 0;
+  }
+}
 .footer-section.two .footer-wrapper {
   z-index: 9;
 }
@@ -11729,6 +11811,12 @@ input[type=color] {
 }
 .footer-section.two .footer-wrapper.one .form-sub .input-box .submit:hover {
   animation: pulse-small 1s;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .footer-section.two .footer-wrapper.one .form-sub .input-box .submit {
+    margin-left: 0;
+    margin-top: 12px;
+  }
 }
 .footer-section.two .footer-wrapper.one .social.one {
   margin-top: 26px;
