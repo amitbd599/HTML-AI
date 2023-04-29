@@ -53,10 +53,11 @@
         li {
           margin-bottom: 8px;
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           i {
             font-size: 18px;
             padding-right: 6px;
+            padding-top: 4px;
           }
         }
       }

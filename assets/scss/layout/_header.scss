@@ -330,6 +330,8 @@
   z-index: 99;
   display: flex;
   align-items: center;
+  height: 80px;
+  width: 100%;
   .logo-area {
     .logo {
       width: 200px;
@@ -357,6 +359,9 @@
       height: 100%;
       background-repeat: no-repeat;
       background-position: center;
+      @media #{$lg, $md, $sm, $xs, $xss} {
+        right: -74px;
+      }
     }
 
     .main-menu {

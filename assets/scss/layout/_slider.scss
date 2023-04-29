@@ -281,7 +281,9 @@
     .swiper {
       .swiper-wrapper {
         position: relative;
+        z-index: 9;
         height: 700px;
+
         .item-slider {
           height: auto;
           position: relative;
@@ -324,9 +326,11 @@
             }
             .slider-title {
               font-size: 46px;
-              line-height: 60px;
               text-transform: capitalize;
               font-weight: var(--fw-800);
+              @media #{$xs, $xss} {
+                font-size: 30px;
+              }
             }
             .description {
               margin-top: 20px;
@@ -353,10 +357,16 @@
               z-index: 9;
               height: 100%;
               overflow: hidden;
+              @media #{$md, $sm, $xs, $xss} {
+                display: none;
+              }
               img {
                 width: 100%;
-                height: 100%;
+                height: auto;
                 object-fit: cover;
+                @media #{$lg, $md, $sm, $xs, $xss} {
+                  height: auto;
+                }
               }
             }
           }
@@ -432,6 +442,9 @@
           img {
             width: 60px;
           }
+          @media #{$lg, $md, $sm, $xs, $xss} {
+            display: none;
+          }
         }
         .inner-shape-2 {
           z-index: 9;
@@ -442,6 +455,10 @@
           animation: rotate-in-center 12s linear 0s infinite reverse backwards;
           img {
             width: 40px;
+          }
+          @media #{$lg, $md, $sm, $xs, $xss} {
+            top: 130px;
+            left: 70px;
           }
         }
         .inner-shape-3 {
@@ -454,6 +471,13 @@
           img {
             width: 50px;
           }
+          @media #{$md, $sm} {
+            top: 94px;
+            right: 220px;
+          }
+          @media #{$xs, $xss} {
+            right: 80px;
+          }
         }
         .inner-shape-4 {
           z-index: 9;
@@ -461,6 +485,13 @@
           left: 247px;
           img {
             width: 150px;
+          }
+          @media #{$md} {
+            bottom: -24px;
+            left: 0;
+          }
+          @media #{$sm, $xs, $xss} {
+            display: none;
           }
         }
         .inner-shape-5 {
@@ -473,6 +504,13 @@
           img {
             width: 40px;
           }
+          @media #{$md} {
+            bottom: 36px;
+            left: 65%;
+          }
+          @media #{$sm, $xs, $xss} {
+            display: none;
+          }
         }
         .inner-shape-6 {
           z-index: 9;
@@ -483,6 +521,9 @@
           animation: slide-right 10s linear 0.3s infinite alternate-reverse both;
           img {
             width: 30px;
+          }
+          @media #{$sm, $xs, $xss} {
+            display: none;
           }
         }
         .inner-shape-7 {
@@ -505,6 +546,9 @@
           animation: slide-top 12s linear 0.6s infinite alternate-reverse both;
           img {
             width: 45px;
+          }
+          @media #{$lg, $md, $sm, $xs, $xss} {
+            display: none;
           }
         }
         .inner-shape-9 {
