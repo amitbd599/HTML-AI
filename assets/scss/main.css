@@ -2882,6 +2882,10 @@ input[type=color] {
   transform: translateX(0);
 }
 
+.modal-open {
+  padding-right: 0 !important;
+}
+
 /*----------------------------------------*/
 /*  05. Section Tilte CSS START
 /*----------------------------------------*/
@@ -3571,6 +3575,13 @@ input[type=color] {
 }
 .header-area-2 .header-top .right-wrapper {
   justify-content: flex-end;
+}
+.header-area-2 .header-inner {
+  background: var(--common-body-1);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
   .header-area-2 .header-inner {

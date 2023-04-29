@@ -217,13 +217,23 @@
     type: "iframe",
   });
 
-  //! Sticky Header Js
+  //! Sticky Header-1 Js
   windowOn.on("scroll", function () {
     var scroll = $(window).scrollTop();
     if (scroll < 100) {
       $("#header-sticky").removeClass("header__sticky");
     } else {
       $("#header-sticky").addClass("header__sticky");
+    }
+  });
+
+  //! Sticky Header-2 Js
+  windowOn.on("scroll", function () {
+    var scroll = $(window).scrollTop();
+    if (scroll < 100) {
+      $("#header-sticky-2").removeClass("header__sticky");
+    } else {
+      $("#header-sticky-2").addClass("header__sticky");
     }
   });
 
