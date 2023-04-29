@@ -481,6 +481,11 @@
         width: 50px;
         z-index: -1;
         animation: rotate-in-center 12s linear 0s infinite reverse;
+        @media #{$sm, $xs, $xss} {
+          right: 50px;
+          top: 10%;
+          left: auto;
+        }
       }
       .shape-5 {
         right: 18%;
