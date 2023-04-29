@@ -274,12 +274,18 @@
       top: -300px;
       right: -9px;
       animation: rotate-in-center 22s linear 0s infinite reverse backwards;
+      @media #{$md, $sm, $xs, $xss} {
+        display: none;
+      }
     }
     .support {
       margin-top: 267px;
       background: var(--common-white);
       padding: 30px;
       border-radius: 5px;
+      @media #{$md, $sm, $xs, $xss} {
+        margin-top: 40px;
+      }
       h2 {
         font-size: 26px;
         line-height: 1.2;
@@ -322,7 +328,7 @@
             overflow: hidden;
             .accordion-header {
               .accordion-button {
-                padding: 15px 16px;
+                padding: 15px 35px 15px 16px;
                 font-size: 15px !important;
                 line-height: 25px;
 
@@ -379,8 +385,16 @@
         left: -12px;
         top: 8%;
         z-index: -1;
+        @media #{$md, $sm, $xs, $xss} {
+          left: -12px;
+          top: 40px;
+        }
+
         img {
-          width: 60px;
+          width: 80px;
+          @media #{$md, $sm, $xs, $xss} {
+            width: 100px;
+          }
         }
       }
       .shape-img-2 {
