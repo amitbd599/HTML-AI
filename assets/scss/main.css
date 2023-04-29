@@ -9944,6 +9944,11 @@ input[type=color] {
 .price-section.two .price-body .price-inner.down .price {
   border-bottom: 1px solid var(--border-1);
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .price-section.two .price-body .price-inner.down {
+    margin-top: 60px;
+  }
+}
 .price-section.two .price-body .price-inner .inner-btn {
   margin-top: 20px;
 }
@@ -10003,6 +10008,18 @@ input[type=color] {
   left: 430px;
   width: 150px;
   z-index: -1;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .price-section.two .shape-image .shape-10 {
+    top: 98px;
+    left: 340px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .price-section.two .shape-image .shape-10 {
+    top: 50px;
+    left: 218px;
+  }
 }
 
 /*----------------------------------------*/

@@ -243,6 +243,9 @@
           &:hover {
             // animation: pulse 2s;
           }
+          @media #{$md, $sm, $xs, $xss} {
+            margin-top: 60px;
+          }
         }
         .inner-btn {
           margin-top: 20px;
@@ -309,6 +312,14 @@
         left: 430px;
         width: 150px;
         z-index: -1;
+        @media #{$md, $sm} {
+          top: 98px;
+          left: 340px;
+        }
+        @media #{$xs, $xss} {
+          top: 50px;
+          left: 218px;
+        }
       }
     }
   }
