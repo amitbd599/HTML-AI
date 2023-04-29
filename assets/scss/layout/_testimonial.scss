@@ -196,6 +196,8 @@
     }
     .section-title-shape-one {
       margin-bottom: 70px;
+      z-index: 9;
+      position: relative;
     }
     .swiper {
       z-index: 9;
@@ -206,6 +208,10 @@
               background: var(--common-gd);
               border-radius: 10px;
               padding: 40px 40px;
+              @media #{$md, $xs, $xss} {
+                padding: 30px 30px;
+              }
+
               .intro-body {
                 display: flex;
                 align-items: center;
@@ -226,9 +232,12 @@
                     font-size: 22px;
                     font-weight: var(--fw-600);
                     margin: 0px;
-                    line-height: normal;
+                    line-height: 1.2;
                     text-transform: capitalize;
                     margin-bottom: 12px;
+                    @media #{$md} {
+                      font-size: 20px;
+                    }
                   }
                   h5 {
                     font-size: 14px;
@@ -244,6 +253,9 @@
                 margin-top: 20px;
                 position: relative;
                 padding-left: 95px;
+                @media #{$md,$xs, $xss} {
+                  padding-left: 0;
+                }
                 p {
                   font-size: 15px;
                   margin: 0;
@@ -260,11 +272,14 @@
                   display: flex;
                   justify-content: flex-end;
                   position: absolute;
-                  bottom: 103px;
+                  top: 0;
                   left: 14px;
                   i {
                     font-size: 60px;
                     color: var(--common-white);
+                  }
+                  @media #{$md, $xs, $xss} {
+                    display: none;
                   }
                 }
               }
@@ -316,6 +331,11 @@
         -webkit-animation: scale-down-center 5s linear infinite
           alternate-reverse both;
         animation: scale-down-center 5s linear infinite alternate-reverse both;
+        @media #{$sm, $xs, $xss} {
+          left: auto;
+          right: 40px;
+          top: 25px;
+        }
       }
       .shape-5 {
         right: 18%;
@@ -324,7 +344,11 @@
         z-index: 0;
         animation: animationFramesOne 60s linear 0.8s infinite;
         -webkit-animation: animationFramesOne 60s linear 0.8s infinite;
-        opacity: 0.5;
+        opacity: 1;
+        @media #{$sm, $xs, $xss} {
+          right: 15%;
+          top: 20%;
+        }
       }
       .shape-6 {
         right: 42%;

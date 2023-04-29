@@ -340,7 +340,7 @@
         bottom: 30px;
         width: 80px;
         z-index: -1;
-        @media #{$xs, $xss} {
+        @media #{$sm, $xs, $xss} {
           display: none;
         }
       }
