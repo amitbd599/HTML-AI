@@ -5015,6 +5015,11 @@ input[type=color] {
 .service-section.three .swiper .swiper-wrapper .inner-wrapper .img-file img {
   transition: all 0.4s linear;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .service-section.three .swiper .swiper-wrapper .inner-wrapper .img-file img {
+    width: 100%;
+  }
+}
 .service-section.three .swiper .swiper-wrapper .inner-wrapper .text-file {
   padding: 30px 20px;
   position: relative;
@@ -5027,6 +5032,11 @@ input[type=color] {
   line-height: 1.2;
   text-transform: capitalize;
   color: var(--text-h);
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .service-section.three .swiper .swiper-wrapper .inner-wrapper .text-file .title {
+    font-size: 22px;
+  }
 }
 .service-section.three .swiper .swiper-wrapper .inner-wrapper .text-file .title a {
   transition: all 0.2s linear;
@@ -5057,26 +5067,28 @@ input[type=color] {
   right: -19px;
   top: -1px;
 }
-.service-section.three .swiper .swiper-wrapper .inner-wrapper .text-file::after {
+.service-section.three .swiper .swiper-wrapper .inner-wrapper .text-file .shape-overlay {
   position: absolute;
-  content: "";
-  background-image: url("../img/shape/15_shape.svg");
-  width: 295px;
-  height: 100%;
   left: 0;
-  top: -15px;
+  top: 0;
   z-index: -1;
+  opacity: 0.6;
+  transform: translateX(-100%);
   transition: all 0.3s linear;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: translateY(-250px);
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .service-section.three .swiper .swiper-wrapper .inner-wrapper .text-file .shape-overlay {
+    display: none;
+  }
 }
 .service-section.three .swiper .swiper-wrapper .inner-wrapper:hover .text-file::after {
   transform: translateY(0);
 }
 .service-section.three .swiper .swiper-wrapper .inner-wrapper:hover .link {
   color: var(--theme-1);
+}
+.service-section.three .swiper .swiper-wrapper .inner-wrapper:hover .shape-overlay {
+  transform: translateX(0);
 }
 .service-section.three .inner-btn {
   margin-top: 60px;
@@ -5099,6 +5111,12 @@ input[type=color] {
   width: 200px;
   z-index: -1;
   animation: trigger 6s linear infinite;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .service-section.three .shape-img .shape-3 {
+    right: 188px;
+    top: 70px;
+  }
 }
 .service-section.three .shape-img .shape-4 {
   right: 43px;
