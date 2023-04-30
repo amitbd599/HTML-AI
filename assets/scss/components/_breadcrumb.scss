@@ -21,9 +21,10 @@
     left: 0;
     top: 0;
     background: #0006;
-    z-index: -1;
+    z-index: 0;
   }
   .breadcrumb-inner {
+    position: relative;
     z-index: 9;
     h2 {
       font-size: 36px;
@@ -50,15 +51,18 @@
     .shape-1 {
       right: 115px;
       bottom: 22%;
-      z-index: 0;
+      z-index: 2;
       animation: trigger 6s linear infinite;
       width: 140px;
+      @media #{$sm, $xs, $xss} {
+        right: 26px;
+      }
     }
     .shape-2 {
       right: 35%;
       bottom: 67%;
       width: 20px;
-      z-index: 0;
+      z-index: 1;
       animation: animationFramesOne 35s linear infinite;
       -webkit-animation: animationFramesOne 35s linear infinite;
     }
@@ -66,7 +70,7 @@
       right: 45%;
       bottom: 57%;
       width: 26px;
-      z-index: 0;
+      z-index: 1;
       animation: animationFramesOne 55s linear infinite reverse;
       -webkit-animation: animationFramesOne 55s linear infinite reverse;
     }
@@ -74,7 +78,7 @@
       right: 56%;
       bottom: 62%;
       width: 15px;
-      z-index: 0;
+      z-index: 1;
       animation: animationFramesOne 60s linear infinite;
       -webkit-animation: animationFramesOne 60s linear infinite;
     }
@@ -82,7 +86,7 @@
       right: 26%;
       bottom: 8%;
       width: 35px;
-      z-index: 0;
+      z-index: 1;
       animation: rotate-in-center 10s linear 0s infinite;
       -webkit-animation: rotate-in-center 10s linear 0s infinite;
     }

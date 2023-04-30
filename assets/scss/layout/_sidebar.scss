@@ -22,7 +22,7 @@
     width: 320px;
   }
   @media #{$xss} {
-    width: 290px;
+    width: 300px;
   }
   &.sidebar-opened {
     right: 0px;
@@ -68,16 +68,16 @@
     position: relative;
     padding: 45px;
     background: var(--tp-grey-5);
-    @media #{$xs} {
-      padding: 20px;
+    @media #{$sm, $xs, $xss} {
+      padding: 25px;
     }
   }
   .sidebar__close {
     position: absolute;
     top: 35px;
     right: 45px;
-    @media #{$xs} {
-      top: 22px;
+    @media #{$xs, $xss} {
+      top: 20px;
       right: 20px;
     }
     .sidebar__close-btn {

@@ -2966,9 +2966,10 @@ input[type=color] {
   left: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.4);
-  z-index: -1;
+  z-index: 0;
 }
 .breadcrumb .breadcrumb-inner {
+  position: relative;
   z-index: 9;
 }
 .breadcrumb .breadcrumb-inner h2 {
@@ -2994,15 +2995,20 @@ input[type=color] {
 .breadcrumb .shape-img .shape-1 {
   right: 115px;
   bottom: 22%;
-  z-index: 0;
+  z-index: 2;
   animation: trigger 6s linear infinite;
   width: 140px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .breadcrumb .shape-img .shape-1 {
+    right: 26px;
+  }
 }
 .breadcrumb .shape-img .shape-2 {
   right: 35%;
   bottom: 67%;
   width: 20px;
-  z-index: 0;
+  z-index: 1;
   animation: animationFramesOne 35s linear infinite;
   -webkit-animation: animationFramesOne 35s linear infinite;
 }
@@ -3010,7 +3016,7 @@ input[type=color] {
   right: 45%;
   bottom: 57%;
   width: 26px;
-  z-index: 0;
+  z-index: 1;
   animation: animationFramesOne 55s linear infinite reverse;
   -webkit-animation: animationFramesOne 55s linear infinite reverse;
 }
@@ -3018,7 +3024,7 @@ input[type=color] {
   right: 56%;
   bottom: 62%;
   width: 15px;
-  z-index: 0;
+  z-index: 1;
   animation: animationFramesOne 60s linear infinite;
   -webkit-animation: animationFramesOne 60s linear infinite;
 }
@@ -3026,7 +3032,7 @@ input[type=color] {
   right: 26%;
   bottom: 8%;
   width: 35px;
-  z-index: 0;
+  z-index: 1;
   animation: rotate-in-center 10s linear 0s infinite;
   -webkit-animation: rotate-in-center 10s linear 0s infinite;
 }
@@ -11242,7 +11248,7 @@ input[type=color] {
 }
 @media (max-width: 399px) {
   .sidebar__area {
-    width: 290px;
+    width: 300px;
   }
 }
 .sidebar__area.sidebar-opened {
@@ -11280,9 +11286,9 @@ input[type=color] {
   padding: 45px;
   background: var(--tp-grey-5);
 }
-@media only screen and (min-width: 400px) and (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
   .sidebar__area .sidebar__wrapper {
-    padding: 20px;
+    padding: 25px;
   }
 }
 .sidebar__area .sidebar__close {
@@ -11290,9 +11296,9 @@ input[type=color] {
   top: 35px;
   right: 45px;
 }
-@media only screen and (min-width: 400px) and (max-width: 575px) {
+@media only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
   .sidebar__area .sidebar__close {
-    top: 22px;
+    top: 20px;
     right: 20px;
   }
 }
