@@ -5,6 +5,10 @@
 /*----------------------------------------*/
 
 .widget-area {
+  @media #{$md, $sm, $xs, $xss} {
+    margin-top: 60px;
+  }
+
   .widget {
     &.widget-search {
       .search {

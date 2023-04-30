@@ -8210,6 +8210,11 @@ input[type=color] {
 /*----------------------------------------*/
 /*  00. Widgets CSS START
 /*----------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .widget-area {
+    margin-top: 60px;
+  }
+}
 .widget-area .widget.widget-search .search {
   background: var(--common-white);
   padding: 15px 20px;
@@ -8672,6 +8677,11 @@ input[type=color] {
   top: 8%;
   z-index: -1;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .blog-section.one.blog-grid .shape-image-file .shape-img-1 {
+    top: 30px;
+  }
+}
 .blog-section.one.blog-grid .shape-image-file .shape-img-1 img {
   width: 60px;
 }
@@ -8697,6 +8707,11 @@ input[type=color] {
   right: 20px;
   z-index: -1;
   animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .blog-section.one.blog-grid .shape-image-file .shape-img-4 {
+    display: none;
+  }
 }
 .blog-section.one.blog-grid .shape-image-file .shape-img-4 img {
   width: 40px;
