@@ -7447,6 +7447,7 @@ input[type=color] {
   font-size: 20px;
   font-weight: var(--fw-600);
   margin: 0;
+  margin-bottom: 15px;
   transition: all 0.4s linear;
   transform: translateX(-200%);
 }
@@ -11166,6 +11167,14 @@ input[type=color] {
   padding-right: 20px;
   width: 100%;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .contact-section .contact-form .form-author,
+  .contact-section .contact-form .form-email,
+  .contact-section .contact-form .form-web,
+  .contact-section .contact-form .form-comment {
+    padding-right: 0;
+  }
+}
 .contact-section .contact-form .form-author label,
 .contact-section .contact-form .form-email label,
 .contact-section .contact-form .form-web label,
@@ -11201,6 +11210,11 @@ input[type=color] {
 .contact-section .appointment {
   margin-top: 15px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .contact-section .appointment {
+    margin-top: 50px;
+  }
+}
 .contact-section .appointment .title h4 {
   font-size: 22px;
   line-height: normal;
@@ -11221,6 +11235,11 @@ input[type=color] {
 .contact-section .location-tag {
   margin-top: 80px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .contact-section .location-tag {
+    margin-top: 30px;
+  }
+}
 .contact-section .location-tag .item {
   background: var(--common-white);
   padding: 30px 20px;
@@ -11228,6 +11247,11 @@ input[type=color] {
   text-align: center;
   transition: all 0.2s linear;
   cursor: pointer;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .contact-section .location-tag .item {
+    margin-top: 30px;
+  }
 }
 .contact-section .location-tag .item .icon i {
   color: var(--theme-1);
@@ -11272,6 +11296,11 @@ input[type=color] {
   top: 8%;
   z-index: -1;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .contact-section .shape-image-file .shape-img-1 {
+    top: 30px;
+  }
+}
 .contact-section .shape-image-file .shape-img-1 img {
   width: 60px;
 }
@@ -11297,6 +11326,11 @@ input[type=color] {
   right: 20px;
   z-index: -1;
   animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .contact-section .shape-image-file .shape-img-4 {
+    display: none;
+  }
 }
 .contact-section .shape-image-file .shape-img-4 img {
   width: 40px;
@@ -11333,6 +11367,12 @@ input[type=color] {
   top: 26px;
   right: 54%;
   z-index: -1;
+}
+@media only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .contact-section .shape-image-file .shape-img-8 {
+    top: 70px;
+    right: 25%;
+  }
 }
 .contact-section .shape-image-file .shape-img-8 img {
   width: 200px;
