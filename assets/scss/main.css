@@ -7308,7 +7308,7 @@ input[type=color] {
      object-fit: cover;
 }
 .testimonial-section.three .swiper.testimonial-two .swiper-wrapper .swiper-slide .inner-wrapper .intro-body .text-file h3 {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.2;
   color: var(--text-h);
   font-weight: var(--fw-600);
@@ -7605,18 +7605,18 @@ input[type=color] {
   margin: 0;
   margin-bottom: 15px;
   transition: all 0.4s linear;
-  transform: translateX(-140%);
+  transform: translateX(-200%);
 }
 .team-section.one.single-row .inner-wrapper .img-file .shape-overlay .inner-data p {
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 0;
   transition: all 0.4s linear;
-  transform: translateX(140%);
+  transform: translateX(200%);
 }
 .team-section.one.single-row .inner-wrapper .img-file .shape-overlay .inner-data .social {
   justify-content: center;
-  transform: translateY(337%);
+  transform: translateY(500%);
 }
 .team-section.one.single-row .inner-wrapper .img-file:hover .shape-overlay {
   background: rgba(0, 0, 0, 0.7294117647);
@@ -9156,7 +9156,7 @@ input[type=color] {
 }
 .blog-section.three .blog-items .text-file .title h2 {
   margin-top: 20px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: var(--fw-800);
   line-height: 1.2;
   transition: all 0.2s linear;
