@@ -406,13 +406,13 @@ input[type=color] {
 .auto-container {
   position: static;
   max-width: var(--container-width);
-  padding: 0px 15px;
+  padding: 0px 30px;
   margin: 0 auto;
   width: 100%;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
   .auto-container {
-    padding: 0px 30px;
+    padding: 0px 15px;
   }
 }
 
@@ -8763,10 +8763,11 @@ input[type=color] {
   background: transparent;
 }
 .blog-section.one.blog-list .blog-items .text-file .intro {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 15px;
+  display: block;
+}
+.blog-section.one.blog-list .blog-items .text-file .intro .item {
+  display: inline-block;
+  margin-right: 10px;
 }
 .blog-section.one.blog-list .blog-items .text-file .intro .dp-img {
   width: auto;
@@ -8813,6 +8814,11 @@ input[type=color] {
   top: 8%;
   z-index: -1;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .blog-section.one.blog-list .shape-image-file .shape-img-1 {
+    top: 30px;
+  }
+}
 .blog-section.one.blog-list .shape-image-file .shape-img-1 img {
   width: 60px;
 }
@@ -8838,6 +8844,11 @@ input[type=color] {
   right: 20px;
   z-index: -1;
   animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .blog-section.one.blog-list .shape-image-file .shape-img-4 {
+    display: none;
+  }
 }
 .blog-section.one.blog-list .shape-image-file .shape-img-4 img {
   width: 40px;
