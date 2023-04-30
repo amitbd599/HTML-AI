@@ -10751,9 +10751,9 @@ input[type=color] {
 .faq-section.one .shape-image .shape-img-1 img {
   width: 60px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
   .faq-section.one .shape-image .shape-img-1 {
-    top: 3%;
+    top: 30px;
   }
 }
 .faq-section.one .shape-image .shape-img-2 {
@@ -10833,10 +10833,15 @@ input[type=color] {
     width: 150px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
   .faq-section.one .shape-image .shape-img-8 {
     top: 90px;
     right: 36%;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 575px), (max-width: 399px) {
+  .faq-section.one .shape-image .shape-img-8 {
+    top: 40px;
   }
 }
 .faq-section.one.two .img-file {

@@ -114,8 +114,8 @@
         img {
           width: 60px;
         }
-        @media #{$md, $sm, $xs, $xss} {
-          top: 3%;
+        @media #{$lg, $md, $sm, $xs, $xss} {
+          top: 30px;
         }
       }
       .shape-img-2 {
@@ -193,9 +193,12 @@
           }
         }
 
-        @media #{$md, $sm, $xs, $xss} {
+        @media #{$md, $sm} {
           top: 90px;
           right: 36%;
+        }
+        @media #{$xs, $xss} {
+          top: 40px;
         }
       }
     }
