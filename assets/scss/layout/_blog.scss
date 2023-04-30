@@ -949,6 +949,10 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+          @media #{ $xs, $xss} {
+            display: block;
+          }
+
           .blog-tags {
             a {
               color: var(--common-white);
@@ -962,6 +966,9 @@
             }
           }
           .social {
+            @media #{ $xs, $xss} {
+              margin-top: 10px;
+            }
             ul {
               display: flex;
               gap: 10px;
