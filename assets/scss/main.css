@@ -12285,11 +12285,14 @@ input[type=color] {
   background: var(--common-body-1);
   padding: 120px 0;
   position: relative;
+  width: 100%;
+  min-height: 100vh;
   z-index: 9;
+  display: flex;
+  align-items: center;
 }
 .error-section .wrapper {
   text-align: center;
-  width: 100%;
 }
 .error-section .wrapper .img-file {
   width: 400px;
