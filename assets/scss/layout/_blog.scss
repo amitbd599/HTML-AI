@@ -894,15 +894,14 @@
         }
         .meta {
           ul {
-            display: flex;
-            gap: 20px;
+            display: block;
             li {
-              display: flex;
-              align-items: center;
-              gap: 8px;
+              display: inline-block;
+              margin-right: 8px;
               span {
                 font-size: 16px;
                 font-weight: 600;
+                padding-right: 5px;
               }
               a {
                 color: var(--common-white);
@@ -1081,6 +1080,11 @@
               padding: 5px 15px;
             }
           }
+          .form-email {
+            @media #{$sm, $xs, $xss} {
+              margin-top: 15px;
+            }
+          }
           .form-web {
             margin-top: 15px;
           }
@@ -1100,8 +1104,12 @@
           .cookies-consent {
             margin-top: 10px;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 5px;
+            input {
+              margin-top: 7px;
+              margin-right: 4px;
+            }
           }
           .form-submit {
             margin-top: 20px;
@@ -1148,6 +1156,10 @@
       -webkit-animation: slide-top 10s linear 0.3s infinite alternate-reverse
         both;
       animation: slide-top 10s linear 0.3s infinite alternate-reverse both;
+      @media #{$sm, $xs, $xss} {
+        display: none;
+      }
+
       img {
         width: 40px;
       }
