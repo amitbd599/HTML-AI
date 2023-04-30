@@ -152,6 +152,10 @@
           left: -12px;
           top: 8%;
           z-index: -1;
+          @media #{$lg, $md, $sm, $xs, $xss} {
+            top: 0;
+          }
+
           img {
             width: 60px;
           }
