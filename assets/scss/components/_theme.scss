@@ -2,10 +2,10 @@
 
 /*-----------------------------------------------------------------------------------
 
-    Theme Name: Dustrilox - Construction & Industry HTML5 Template
-    Author: Theme Pure
-    Support: basictheme@gmail.com
-    Description: Dustrilox - Construction & Industry HTML5 Template
+    Theme Name: ArtificeTech - AI Technology & IT Solutions HTML Template
+    Author: themesoft69
+    Support: themesoft69@gmail.com
+    Description: ArtificeTech - AI Technology & IT Solutions HTML Template
     Version: 1.0
 
 -----------------------------------------------------------------------------------
@@ -13,36 +13,36 @@
 /************ TABLE OF CONTENTS ***************
 
     01. THEME DEFAULT CSS
-    02. background CSS
-	03. spacing css
-	04. buttons css
-	05. carousel css
-	06. page-title css
-	07. modal css
-	08. section-title css
-	09. breadcrumb css
-	10. animation css
-	11. preloader css
-	12. header css
-	13. meanmenu css
-	14. slider css
-	15. services css
-	16. about css
-	17. banner css
-	18. feature css
-	19. projects css
-	20. testimonial css
-	21. team css
-	22. blog css
-	23. brand css
-	24. process css
-	25. pricing css
-	26. fact css
-	27. portfolio css
-	28. faq css
-	29. contact css
-	30. sidebar css
-	31. footer css
+    02. Spacing
+	03. Buttons
+	04. Carousel
+	05. Backtotop
+	06. Modal
+	07. Section-title
+	08. Animation
+	09. Preloader
+	10. Common
+	11. Header
+	12. Meanmenu
+	13. Slider
+	14. Services
+	15. About
+	16. Projects
+	17. Testimonial
+	18. Team
+	19. Review
+	20. Widget
+	21. Blog
+	22. Breadcrumb
+	23. Pricing
+	24. Faq
+	25. Contact
+	26. Sidebar
+	27. Counter
+	28. Newsletter
+	29. 404
+	30. Footer
+
 
 **********************************************/
 
@@ -136,29 +136,6 @@ p {
   line-height: 26px;
 }
 
-// a,
-// .btn,
-// button,
-// span,
-// p,
-// i,
-// input,
-// select,
-// textarea,
-// li,
-// img,
-// svg path,
-// *::after,
-// *::before,
-// .transition-3,
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   @include transition(0.1s);
-// }
 ul {
   list-style: none;
   margin: 0;
@@ -219,18 +196,18 @@ input[type="color"] {
 }
 
 *::-moz-selection {
-  background: var(--common-black);
-  color: var(--common-white);
+  background: var(--common-white);
+  color: var(--common-black);
   text-shadow: none;
 }
 ::-moz-selection {
-  background: var(--common-black);
-  color: var(--common-white);
+  background: var(--common-white);
+  color: var(--common-black);
   text-shadow: none;
 }
 ::selection {
-  background: var(--common-black);
-  color: var(--common-white);
+  background: var(--common-white);
+  color: var(--common-black);
   text-shadow: none;
 }
 
