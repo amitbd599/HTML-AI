@@ -17,6 +17,8 @@
 12. Mobile Menu Js
 13. Body overlay Js
 14. Wow Js
+15. Sidebar Js
+16. Data CSS Js
 
 ****************************************************/
 
@@ -278,4 +280,30 @@
 
   //! 14. Wow Js
   new WOW().init();
+
+  //! 15. Sidebar Js
+  $(".sidebar-toggle-btn").on("click", function () {
+    $(".sidebar__area").addClass("sidebar-opened");
+    $(".body-overlay").addClass("opened");
+  });
+  $(".sidebar__close-btn").on("click", function () {
+    $(".sidebar__area").removeClass("sidebar-opened");
+    $(".body-overlay").removeClass("opened");
+  });
+
+  //! 16. Data CSS Js
+  $("[data-background").each(function () {
+    $(this).css(
+      "background-image",
+      "url( " + $(this).attr("data-background") + "  )"
+    );
+  });
+
+  $("[data-width]").each(function () {
+    $(this).css("width", $(this).attr("data-width"));
+  });
+
+  $("[data-bg-color]").each(function () {
+    $(this).css("background-color", $(this).attr("data-bg-color"));
+  });
 })(jQuery);
