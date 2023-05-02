@@ -62,12 +62,12 @@
       breakpoints: {
         0: {
           slidesPerView: 1,
-          pagination: false,
+          // pagination: false,
           slidesPerGroup: 1,
         },
         576: {
           slidesPerView: 2,
-          pagination: false,
+          // pagination: false,
           slidesPerGroup: 1,
         },
         768: {
