@@ -2,7 +2,6 @@
 
     Theme Name: FaconTech - AI Technology & IT Solutions HTML Template
     Author: themesoft69
-    Support: themesoft69@gmail.com
     Description: FaconTech - AI Technology & IT Solutions HTML Template
     Version: 1.0
 
@@ -10769,7 +10768,7 @@ input[type="color"] {
 .blog-section.two .blog-items .text-file .intro .admin,
 .blog-section.two .blog-items .text-file .intro .comment {
   display: inline-block;
-  margin-right: 6px;
+  margin-right: 5px;
   color: var(--text-p-1);
 }
 .blog-section.two .blog-items .text-file .title {
